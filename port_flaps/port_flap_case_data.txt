@@ -1,0 +1,13 @@
+| Port  Flap                | Sample  Frequency | Telemetry Start        | Event Start   | Event End     | Telemetry End | Event Device | Device Port | File Name                  |
+| ------------------------- | ----------------- | ---------------------- | ------------- | ------------- | ------------- | ------------ | ----------- | -------------------------- |
+| clear                     | 4 seconds         | 6/16/2017  14:16:00 PM |               |               | 6/16/17 14:48 |              |             | multi_device_port_flap.csv |
+| Port Flap -  single event | 4 seconds         |                        | 6/16/17 14:19 | 6/16/17 14:22 |               | leaf1        | Hu0/0/0/30  |                            |
+| event clear               |                   |                        | 6/16/17 14:22 | 6/16/17 14:25 |               |              |             |                            |
+| Port Flap -  single event | 4 seconds         |                        | 6/16/17 14:25 | 6/16/17 14:28 |               | spine4       | Hu0/0/0/28  |                            |
+| event clear               |                   |                        | 6/16/17 14:28 | 6/16/17 14:30 |               |              |             |                            |
+| Port Flap -  single event | 4 seconds         |                        | 6/16/17 14:30 | 6/16/17 14:33 |               | dr01         | Hu0/0/0/22  |                            |
+| event clear               |                   |                        | 6/16/17 14:33 | 6/16/17 14:36 |               |              |             |                            |
+| Port Flap -  single event | 4 seconds         |                        | 6/16/17 14:36 | 6/16/17 14:39 |               | leaf8        | Hu0/0/0/6   |                            |
+| event clear               |                   |                        | 6/16/17 14:39 | 6/16/17 14:42 |               |              |             |                            |
+| Port Flap -  single event | 4 seconds         |                        | 6/16/17 14:42 | 6/16/17 14:45 |               | spine2       | Hu0/0/0/10  |                            |
+| event clear               |                   |                        | 6/16/17 14:45 | 6/16/17 14:48 |               |              |             |                            |

@@ -1,0 +1,38 @@
+### NOTE:  Leaf4 is missing from the test as it is currently isolated for another set of testing
+### so you will not see telemetry records for this device in the data set.
+
+The bgp clear test clears all BGP information to represent a BGP process crash and recover.  
+This clears 
+ 1) neighbors; 
+ 2) all learned and programmed routes other than attached;
+ 3) all learned and programmed paths
+
+The test scenario has ~1.3Tbps of application traffic traversing the fabric.  Traffic scenarios 
+included sustained:
+ 1) TCP flows;
+ 2) G.711a IP voice call (64 kbps per call);
+ 3) RTP Blue Ray movie (45 Mbps per stream);
+ 4) Skype-1050P stream;
+ 5) AMR-WB VOIP (23.85 kbps per call);
+ 6) YouTube 4K video stream
+
+The differing application flow/stream types give us the ability to see the various performance metric 
+changes for the applications.  Items such as jitter, MOS for voice, drops for each of the various flows and protocols, 
+etc.  
+
+This dataset reflects the impacts of clearing all bgp information at various places throughput our CLOS fabric. 
+The first four tests effect positions in the leaf spine leaf of the clos.  Each leaf having a different number
+of downstream connections to edge routers and top of rack switches.   The spine tests will show the effect of traffic
+redistribution over the remaining ECMP paths but will push the traffic rehashing back to the leafs.
+
+Event 1 leaf1
+Event 2 spine4
+Event 3 leaf8  
+Event 4 spine2
+
+The last three tests have multiple devices in the event.  The first has two leafs which will force traffic changes
+back to the ToR and edge routers as well as effect traffic at the spines.  The next test effects two spines which will
+effect traffic  to the remaining two spines and across the leafs.  the last test removes three spines forcing all traffic
+to a single spine, effecting rehashing on all leafs.
+
+
