@@ -25,11 +25,13 @@ The first four tests effect positions in the leaf spine leaf of the clos.  Each 
 of downstream connections to edge routers and top of rack switches.   The spine tests will show the effect of traffic
 redistribution over the remaining ECMP paths but will push the traffic rehashing back to the leafs.
 
+There is a 5 minute period of stable, clean traffic clear of any network anomalies to establish the baseline normal behavior
+
 Event 1 leaf1
 Event 2 leaf6
 Event 3 spine2  
 Event 4 cascade bgp clear of leaf2 followed by leaf8 30 seconds later
-Event 5 casecade bgp clear of spine1 followed by spine2 and then spine3 with ~45 second gap between each event.
+Event 5 cascade bgp clear of spine1 followed by spine2 and then spine3 with ~45 second gap between each event.
 
 The last two tests have multiple devices in the event.  The first has two leafs, one on either side of the spine which
 will force traffic changes back to the ToR and edge routers as well as effect traffic at the spines.  The next test effects
