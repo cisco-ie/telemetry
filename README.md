@@ -1,6 +1,6 @@
 # Network Anomaly Data Sets
 
-This data set is for anyone interested  in working with network anomaly based
+These data sets are for anyone interested  in working with network anomaly based
 machine learning, data science and research.
 
 Our goal is to start with data sets and documentation that are geared to supervised 
@@ -20,18 +20,16 @@ In the data set folders you will find the data sets in a CSV format, a header de
 file and the case data file which will reflect the events, time of the events and the 
 device(s) where event triggers are initiated.
 
-You will aslo find ground truth that reflect the topology, all connections 
-cdp neighbors) and device types.
 
-telemetry_topology_maps.pdf provides you:
+You will aslo find ground truth that reflect the topology, all connections, 
+cdp neighbors, and device types.
 
+ground_truth_docs/telemetry_topology_maps.pdf provides you:
     slide 1 logical topology map with links colored based on the numbe of ECMP links and speed
-    
     slide 2 actual connected topology
-    
     slide 3 device types in position
     
-CDP_ground_truth_v1.pdf file shows all device connections for the network under test
+ground_truth_docs/CDP_ground_truth.pdf file shows all device connections for the network under test
 
 
 
