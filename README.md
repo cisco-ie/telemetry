@@ -1,5 +1,18 @@
 # Network Anomaly Data Sets
 
+###########################  Update as of August 4th, 2017 ###############################
+
+By request we have added the device log files for the bgpclear event from leaf, spine
+and edge routers (dr) for natural langauge processing of the events.  As this was an 
+addition of information, to have it be in sync with the bgpclear csv file, we configured 
+logging to increase the amount of information logged and reran the test.  
+
+There is a new csv file for bgpclear which is now names bgpclear842017.csv.
+
+Moving forward we will have log files included with all network anomalies.
+
+##########################################################################################
+
 These data sets are for anyone interested  in working with network anomaly based
 machine learning, data science and research.
 
