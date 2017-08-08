@@ -30,7 +30,7 @@ Each datasets include the following:
     - `telemetry_topology_maps.pdf`
         - **Slide 1:** Logical topology map with links colored based on the numbe of ECMP links and speed
         - **Slide 2:** Actual connected topology
-        - **Slide 3:** device types in position
+        - **Slide 3:** Device types in position
     - `CDP_ground_truth.pdf`: Device connections for the network under test
 
 ## Road Map
