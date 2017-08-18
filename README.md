@@ -32,6 +32,7 @@ Each datasets include the following:
         - **Slide 2:** Actual connected topology
         - **Slide 3:** Device types in position
     - `CDP_ground_truth.pdf`: Device connections for the network under test
+- `baseline` - Baseline datasets containting no anomalies for initial modeling of the expected normal behavior of the network under test 
 
 ## Road Map
 - Host/Application Metrics
