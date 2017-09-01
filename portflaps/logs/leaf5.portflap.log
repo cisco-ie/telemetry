@@ -1,0 +1,228 @@
+Fri Sep  1 12:50:16.569 PDT
+RP/0/RP0/CPU0:Sep  1 09:08:42.033 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.36 Down - Peer closing down the session (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:08:42.033 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.38 Down - BGP Notification received, out of resource (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:08:42.034 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.34 Down - BGP Notification received, out of resource (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:09:10.666 : resmon[380]: %HA-HA_WD-4-MEMORY_ALARM : Memory threshold crossed: Minor with 755.592MB free. Previous state: Normal 
+RP/0/RP0/CPU0:Sep  1 09:09:10.667 : resmon[380]: %HA-HA_WD-6-TOP_MEMORY_USERS_INFO : Top 5 consumers of system memory (812800 Kbytes free):  
+RP/0/RP0/CPU0:Sep  1 09:09:10.667 : resmon[380]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 0: Process Name: ./pipeline[0], pid: 24491, Heap usage: 3543768 kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:10.667 : resmon[380]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 1: Process Name: emsd[0], pid: 7742, Heap usage: 1103028 kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:10.667 : resmon[380]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 2: Process Name: prm_server[0], pid: 3153, Heap usage: 285832 kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:10.667 : resmon[380]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 3: Process Name: fib_mgr[0], pid: 3823, Heap usage: 155772 kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:10.667 : resmon[380]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 4: Process Name: spp[0], pid: 2692, Heap usage: 103728 kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:21.392 : resmon[380]: %HA-HA_WD-4-MEMORY_STATE_CHANGE : New memory state: Severe 
+RP/0/RP0/CPU0:Sep  1 09:09:21.393 : resmon[380]: %HA-HA_WD-4-TOP_MEMORY_USERS_WARNING : Top 5 consumers of system memory (674616 Kbytes free):  
+RP/0/RP0/CPU0:Sep  1 09:09:21.393 : resmon[380]: %HA-HA_WD-4-TOP_MEMORY_USER_WARNING : 0: Process Name: ./pipeline[0], pid: 24491, Heap usage 3669656 Kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:21.393 : resmon[380]: %HA-HA_WD-4-TOP_MEMORY_USER_WARNING : 1: Process Name: emsd[0], pid: 7742, Heap usage 1116872 Kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:21.393 : resmon[380]: %HA-HA_WD-4-TOP_MEMORY_USER_WARNING : 2: Process Name: prm_server[0], pid: 3153, Heap usage 285832 Kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:21.393 : resmon[380]: %HA-HA_WD-4-TOP_MEMORY_USER_WARNING : 3: Process Name: fib_mgr[0], pid: 3823, Heap usage 155772 Kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:21.393 : resmon[380]: %HA-HA_WD-4-TOP_MEMORY_USER_WARNING : 4: Process Name: spp[0], pid: 2692, Heap usage 103728 Kbytes. 
+RP/0/RP0/CPU0:Sep  1 09:09:22.396 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.14.38 reset due to SEVERE low memory condition - use 'clear bgp 172.31.14.38' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.38 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.14.36 reset due to SEVERE low memory condition - use 'clear bgp 172.31.14.36' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.36 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.14.34 reset due to SEVERE low memory condition - use 'clear bgp 172.31.14.34' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.34 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.12.38 reset due to SEVERE low memory condition - use 'clear bgp 172.31.12.38' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.38 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.12.36 reset due to SEVERE low memory condition - use 'clear bgp 172.31.12.36' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.36 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.12.34 reset due to SEVERE low memory condition - use 'clear bgp 172.31.12.34' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.34 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.11.38 reset due to SEVERE low memory condition - use 'clear bgp 172.31.11.38' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:09:22.399 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.38 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:09:24.545 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:09:28.765 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:09:54.553 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:09:57.426 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:10:24.574 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:10:25.600 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:10:54.588 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:10:55.352 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.11.36 reset due to SEVERE low memory condition - use 'clear bgp 172.31.11.36' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.36 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 172.31.11.34 reset due to SEVERE low memory condition - use 'clear bgp 172.31.11.34' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.34 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1438 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1438' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1438 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1436 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1436' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1436 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1434 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1434' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1434 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1338 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1338' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:11:22.400 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1338 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:11:22.918 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:11:24.596 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:11:51.465 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:11:54.603 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:12:20.934 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:12:24.610 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:12:49.572 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:12:54.619 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:13:16.687 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:13:22.400 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1336 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1336' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1336 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1334 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1334' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1334 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1238 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1238' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1238 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1236 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1236' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1236 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1234 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1234' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:13:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1234 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:13:24.631 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:13:44.732 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:13:54.638 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:14:13.644 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:14:24.647 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:14:42.214 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:14:54.653 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:15:11.621 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:15:22.401 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1138 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1138' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:15:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1138 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:15:22.401 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1136 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1136' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:15:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1136 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:15:22.401 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:0:1ab:fab0:1134 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:0:1ab:fab0:1134' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:15:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1134 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:15:22.401 : bgp[1050]: %ROUTING-BGP-5-LOWMEM_RESET : neighbor 2001:420:289:2000:1eaf:5:a4a:2541 reset due to SEVERE low memory condition - use 'clear bgp 2001:420:289:2000:1eaf:5:a4a:2541' to re-enable 
+RP/0/RP0/CPU0:Sep  1 09:15:22.401 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:1eaf:5:a4a:2541 Down - Shutdown during SEVERE low memory condition (CEASE notification sent - out of resource) (VRF: default) (AS: 64004) 
+RP/0/RP0/CPU0:Sep  1 09:15:24.660 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:15:41.100 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:15:54.667 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:16:06.269 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.32 Down - Peer closing down the session (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:16:06.285 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1132 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:16:09.686 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.32 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:16:09.695 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1232 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:16:10.800 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:16:24.674 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:16:31.341 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.32 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:16:31.345 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1332 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:16:34.778 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.32 Down - Peer closing down the session (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:16:34.783 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1432 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:16:37.904 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:16:54.677 : fib_mgr[375]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:17:06.180 : l2fib[201]: %OS-SHMWIN-2-ERROR_ENCOUNTERED : SHMWIN: Error encountered: System memory state is severe, please check the availability of the system memory  
+RP/0/RP0/CPU0:Sep  1 09:17:17.010 : SSHD_[66884]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'admin' from '10.200.96.148' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Sep  1 09:17:17.654 : resmon[380]: %HA-HA_WD-4-MEMORY_ALARM : Memory threshold crossed: Normal with 2707.508MB free. Previous state: Severe 
+RP/0/RP0/CPU0:Sep  1 09:17:19.556 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.1 Down - User clear requested (CEASE notification sent - administrative reset) (VRF: default) (AS: 65502) 
+RP/0/RP0/CPU0:Sep  1 09:17:19.556 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.3 Down - User clear requested (CEASE notification sent - administrative reset) (VRF: default) (AS: 65502) 
+RP/0/RP0/CPU0:Sep  1 09:17:19.556 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.31 Down - User clear requested (CEASE notification sent - administrative reset) (VRF: default) (AS: 64003) 
+RP/0/RP0/CPU0:Sep  1 09:17:19.556 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.41 Down - User clear requested (CEASE notification sent - administrative reset) (VRF: default) (AS: 64004) 
+RP/0/RP0/CPU0:Sep  1 09:17:19.556 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.57 Down - User clear requested (CEASE notification sent - administrative reset) (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep  1 09:17:19.556 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2501 Down - User clear requested (CEASE notification sent - administrative reset) (VRF: default) (AS: 65502) 
+RP/0/RP0/CPU0:Sep  1 09:17:19.557 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2503 Down - User clear requested (CEASE notification sent - administrative reset) (VRF: default) (AS: 65502) 
+RP/0/RP0/CPU0:Sep  1 09:17:19.557 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:1eaf:5:a3a:2531 Down - User clear requested (CEASE notification sent - administrative reset) (VRF: default) (AS: 64003) 
+RP/0/RP0/CPU0:Sep  1 09:17:19.557 : bgp[1050]: %ROUTING-BGP-5-NSR_STATE_CHANGE : Changed state to NSR-Ready 
+RP/0/RP0/CPU0:Sep  1 09:17:19.630 : SSHD_[66884]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'admin' from '10.200.96.148' logged out on 'vty0' 
+RP/0/RP0/CPU0:Sep  1 09:17:20.367 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.32 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:17:20.368 : bgp[1050]: %ROUTING-BGP-5-NSR_STATE_CHANGE : Changed state to Not NSR-Ready 
+RP/0/RP0/CPU0:Sep  1 09:17:22.088 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1336 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:17:24.226 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1434 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:17:24.632 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.34 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:17:25.116 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1436 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:17:25.591 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.36 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:17:26.967 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.36 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:17:28.063 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1138 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:17:28.297 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1338 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:17:28.414 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1134 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:17:30.960 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:1eaf:5:a3a:2531 Up (VRF: default) (AS: 64003) 
+RP/0/RP0/CPU0:Sep  1 09:17:31.129 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.38 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:17:31.570 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.41 Up (VRF: default) (AS: 64004) 
+RP/0/RP0/CPU0:Sep  1 09:17:31.968 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.31 Up (VRF: default) (AS: 64003) 
+RP/0/RP0/CPU0:Sep  1 09:17:33.952 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.36 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:17:35.213 : SSHD_[66926]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'admin' from '10.200.96.148' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Sep  1 09:17:36.039 : SSHD_[66926]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'admin' from '10.200.96.148' logged out on 'vty0' 
+RP/0/RP0/CPU0:Sep  1 09:17:36.273 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1432 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:17:37.299 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.36 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:17:37.356 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1234 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:17:39.272 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.32 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:17:40.562 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.34 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:17:42.119 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.34 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:17:42.241 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.32 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:17:42.252 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.34 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:17:46.576 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1238 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:17:46.956 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1136 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:17:47.085 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.38 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:17:47.371 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1334 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:17:47.818 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1236 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:17:48.343 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.38 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:17:48.438 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.32 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:17:48.828 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.1 Up (VRF: default) (AS: 65502) 
+RP/0/RP0/CPU0:Sep  1 09:17:49.612 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:1eaf:5:a4a:2541 Up (VRF: default) (AS: 64004) 
+RP/0/RP0/CPU0:Sep  1 09:17:50.348 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1438 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:17:51.228 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1132 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:17:52.499 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.57 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep  1 09:17:54.041 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2503 Up (VRF: default) (AS: 65502) 
+RP/0/RP0/CPU0:Sep  1 09:17:55.458 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1332 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:17:59.456 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2501 Up (VRF: default) (AS: 65502) 
+RP/0/RP0/CPU0:Sep  1 09:17:59.747 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.3 Up (VRF: default) (AS: 65502) 
+RP/0/RP0/CPU0:Sep  1 09:18:00.773 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1232 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:18:05.749 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.38 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:18:58.506 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.34 Down - Peer closing down the session (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:18:58.506 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.38 Down - Peer closing down the session (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:18:58.507 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.32 Down - Peer closing down the session (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:18:58.508 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.36 Down - Peer closing down the session (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:18:58.522 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1132 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:18:58.522 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1134 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:18:58.522 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1136 Down - Peer closing down the session (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:18:58.522 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1138 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:01.694 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.38 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:01.694 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.32 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:01.695 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.34 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:01.695 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.36 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:01.716 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1234 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:01.716 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1232 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:01.717 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1236 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:01.717 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1238 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:05.030 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.32 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:05.030 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.34 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:05.032 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.36 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:05.032 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.38 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:05.055 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1332 Down - Peer closing down the session (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:05.055 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1334 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:05.055 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1338 Down - Peer closing down the session (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:05.055 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1336 Down - Peer closing down the session (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:08.246 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.32 Down - Peer closing down the session (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:08.246 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.34 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:08.247 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.36 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:08.247 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.38 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:08.260 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1432 Down - Peer closing down the session (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:08.260 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1434 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:08.260 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1436 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:08.261 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1438 Down - Peer closing down the session (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:27.645 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1138 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:30.603 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.36 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:32.598 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.34 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:33.350 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1332 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:33.390 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.32 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:33.842 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.38 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:33.922 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.32 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:34.461 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1132 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:34.816 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.32 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:34.854 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1336 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:35.136 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1234 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:35.236 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.34 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:35.823 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1134 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:38.325 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1236 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:38.743 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.36 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:39.940 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1334 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:42.385 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.36 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:42.431 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1434 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:42.734 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1136 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:43.241 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1436 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:43.330 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.38 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:43.558 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.34 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:43.864 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.38 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep  1 09:19:45.091 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1438 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:47.078 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1232 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:47.200 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1338 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:49.213 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.36 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:19:50.792 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.38 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:51.934 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.34 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep  1 09:19:51.999 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1432 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:19:53.392 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1238 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep  1 09:20:00.044 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.14.32 Up (VRF: default) (AS: 65014) 
+RP/0/RP0/CPU0:Sep  1 09:20:02.963 : SSHD_[67105]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'admin' from '10.200.96.148' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Sep  1 09:20:03.850 : SSHD_[67105]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'admin' from '10.200.96.148' logged out on 'vty0' 
+RP/0/RP0/CPU0:Sep  1 09:20:38.900 : SSHD_[67251]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'admin' from '10.200.96.148' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Sep  1 09:20:41.434 : SSHD_[67251]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'admin' from '10.200.96.148' logged out on 'vty0' 
+RP/0/RP0/CPU0:Sep  1 12:50:16.226 : SSHD_[66652]: %SECURITY-SSHD-6-INFO_SUCCESS_COMMAND : Successfully authenticated user 'admin' from '10.200.96.148' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256', command 'show log') 
