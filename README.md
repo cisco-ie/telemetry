@@ -25,7 +25,8 @@ Each datasets include the following:
 - **Case File:** Information reflecting the events, time of the events, and device(s) where event triggers are initiated
 
 ### Folders & Files
-- `/bgpclear` - Relevant dataset files
+- `/portflap` - Relevant datasets and log files
+- `/bgpclear` - Relevant dataset and log files
 - `/ground_truth_docs` - Information regarding the topology, all connections, cdp neighbors, and device types
     - `telemetry_topology_maps.pdf`
         - **Slide 1:** Logical topology map with links colored based on the numbe of ECMP links and speed
