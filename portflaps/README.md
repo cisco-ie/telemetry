@@ -12,7 +12,7 @@ machine learning, data science and research
 ## Port State Changes
 This data set covers three different types of port state changes that can and are seen in a network. 
 These three types are an optical transceiver pulled from a network port on a given device and then
-once the event stabalizes, the transceiver is reinserted.  
+once the event stabilizes, the transceiver is reinserted.  
 
 The second type of port state change is an admin state change from up to down, a port shutdown. 
 As with the first port state change, once the network event stabilizes the state of the port
