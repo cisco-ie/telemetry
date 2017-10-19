@@ -24,7 +24,7 @@ routers (dr) for natural langauge processing of the events. As this was an addit
 to have it be in sync with the bgpclear csv file, we configured logging to increase the amount of
 information logged and reran the test.
 
-There is a new csv file for bgpclear which is now names bgpclear842017.csv.
+There is a new csv file for bgpclear which is now named bgpclear08042017.csv.
 
 Moving forward we will have log files included with all network anomalies.
 
@@ -102,3 +102,13 @@ These metrics are sampled per device:
 Cisco-IOS-XR-ip-rib-ipv4-oper:rib/vrfs/vrf/afs/af/safs/saf/ip-rib-route-table-names/ip-rib-route-table-name/protocol/bgp/as/information
 Cisco-IOS-XR-ipv4-bgp-oper:bgp/instances/instance/instance-active/default-vrf/process-info
 
+#### Files ####
+
+bgpclear08042017.csv.gz            primary dataset
+bgpclear_casedata.txt              timing and device information for inserted anomaly events
+bgpclear_header.txt                list of header strings with column numbers
+bgpclear_header_definitions.docx   explaination of metrics
+bgpclear_header_definitions.pdf
+bgpclear_no_traffic.csv.gz         same dataset, but no network traffic is flowing
+bgpclear_no_traffic_casedata.txt   timing and device information for inserted anomaly events
+bgpclear_no_traffic_header.txt     list of header strings with column numbers
