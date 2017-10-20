@@ -35,6 +35,13 @@ the event trigger and the subsequent event bloom where the trigger happens on Sp
 
 Logfiles for the duration of the events for all devices in the fabric are found under /portflap/logs
 
+### Files
+
+portflap_casedata.txt                  Times and devices where anomaly's occured
+portflap_header.txt                    Header line of .csv file with column numbers
+portflap_header_definitions.docx       Description of each column's data
+portflaptypes.csv.gz                   Network data
+
 
 ## License
 [Creative Commons Attribution-NonCommercial 4.0](LICENSE) &copy; [Cisco Innovation Edge](https://github.com/cisco-ie/telemetry/blob/master/LICENSE)
