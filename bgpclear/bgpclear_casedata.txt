@@ -1,9 +1,9 @@
-| Port  Flap       | Sample Frequency | Telemetry Start | Event Start  | Event End    | Telemetry End | Event Device    | Comments                | File Name    |
-| ---------------- | ---------------- | --------------- | ------------ | ------------ | ------------- | --------------- | ----------------------- | ------------ |
-| Clean Base  Line | 4 sedonds        | 8/4/17 10:15    |              |              | 8/4/17 10:48  |                 |                         | bgpclear.csv |
-| BGP Clear  start |                  |                 | 8/4/17 10:20 | 8/4/17 10:22 |               | leaf1           |                         |              |
-| BGP Clear  start |                  |                 | 8/4/17 10:25 | 8/4/17 10:27 |               | leaf6           |                         |              |
-| BGP Clear  start |                  |                 | 8/4/17 10:30 | 8/4/17 10:32 |               | spine 2         |                         |              |
-| BGP Clear  start |                  |                 | 8/4/17 10:35 | 8/4/17 10:38 |               | leaf 2 & leaf 8 | 30 sec between failures |              |
-| BGP Clear  start |                  |                 | 8/4/17 10:40 | 8/4/17 10:43 |               | spine 1 - 3     | 45 sec between failures |              |
-| ---------------- | ---------------- | --------------- | ------------ | ------------ | ------------- | --------------- | ----------------------- | ------------ |
+| Port  Flap       | Sample Frequency | Telemetry Start (PDT)| Event Start (PDT)| Event End (PDT)| Telemetry End (PDT)| Event Device    | Comments                | File Name            |
+| ---------------- | ---------------- | -------------------- | ---------------- | -------------- | ------------------ | --------------- | ----------------------- | -------------------- |
+| Clean Base  Line | 4 seconds        | 8/4/17 10:15         |                  |                | 8/4/17 10:48       |                 |                         | bgpclear08042017.csv |
+| BGP Clear  start |                  |                      | 8/4/17 10:20     | 8/4/17 10:22   |                    | leaf1           |                         |                      |
+| BGP Clear  start |                  |                      | 8/4/17 10:25     | 8/4/17 10:27   |                    | leaf6           |                         |                      |
+| BGP Clear  start |                  |                      | 8/4/17 10:30     | 8/4/17 10:32   |                    | spine 2         |                         |                      |
+| BGP Clear  start |                  |                      | 8/4/17 10:35     | 8/4/17 10:38   |                    | leaf 2 & leaf 8 | 30 sec between failures |                      |
+| BGP Clear  start |                  |                      | 8/4/17 10:40     | 8/4/17 10:43   |                    | spine 1 - 3     | 45 sec between failures |                      |
+| ---------------- | ---------------- | -------------------- | ---------------- | -------------- | ------------------ | --------------- | ----------------------- | -------------------- |
