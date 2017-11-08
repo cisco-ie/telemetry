@@ -2,10 +2,6 @@
     <a href="https://github.com/cisco-ie/telemetry" target="_blank"><img src="https://user-images.githubusercontent.com/6020066/29088554-449866a6-7c2e-11e7-9b92-8e2802619122.png"></a>
  </p>
 
-<p align="center">
-    <a href="https://github.com/cisco-ie/telemetry/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=flat-square" alt="CC License"></a>
-</p>
-
 > Open-source datasets for anyone interested in working with network anomaly based
 machine learning, data science and research
 
