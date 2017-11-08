@@ -39,4 +39,4 @@ Each datasets include the following:
 - Host/Application Metrics
 
 ## License
-[Creative Commons Attribution-NonCommercial 4.0](LICENSE) &copy; [Cisco Innovation Edge](https://github.com/cisco-ie/telemetry/blob/master/LICENSE)
+[Community Data License Agreementeative - Permissive, Version 1.0 ](LICENSE) &copy; [Cisco Innovation Edge](https://github.com/cisco-ie/telemetry/blob/master/LICENSE)
