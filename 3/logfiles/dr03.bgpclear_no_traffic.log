@@ -1,0 +1,92 @@
+Last switch-over Tue Sep 19 17:37:37 2017: 1 day, 19 hours, 33 minutes ago
+RP/0/RP0/CPU0:Sep 19 17:37:37.589 : processmgr[51]: %OS-SYSMGR-5-NOTICE : This standby node is going active at Tue Sep 19 17:37:37 2017   
+RP/0/RP0/CPU0:Sep 19 17:37:37.590 : rmf_svr[197]: %HA-REDCON-6-GO_ACTIVE : this card going active 
+RP/0/RP0/CPU0:Sep 19 17:37:37.620 : processmgr[51]: %OS-SYSMGR-5-NOTICE : This node is active now at Tue Sep 19 17:37:37 2017  
+RP/0/RP0/CPU0:Sep 19 17:37:37.620 : processmgr[51]: %OS-SYSMGR-5-NOTICE : Critical failover elapsed time 0.033 seconds (0.000% idle)  
+RP/0/RP0/CPU0:Sep 19 17:37:39.255 : ipv6_mfwd_partner[258]: %ROUTING-IPV4_MFWD-3-GEN_ERR : Warning: MFIB nsf off received  but nsf on never received : Success 
+RP/0/RP0/CPU0:Sep 19 17:37:40.092 : rmf_svr[197]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :RP-REDUNDANCY-LOST :DECLARE :0:  
+RP/0/RP0/CPU0:Sep 19 17:37:40.092 : rmf_svr[197]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :RP-REDUNDANCY-LOST :DECLARE :0:  
+LC/0/1/CPU0:Sep 19 17:37:39.256 : ipv6_mfwd_partner[220]: %ROUTING-IPV4_MFWD-3-GEN_ERR : Warning: MFIB nsf off received  but nsf on never received : Success 
+LC/0/0/CPU0:Sep 19 17:37:39.256 : ipv6_mfwd_partner[197]: %ROUTING-IPV4_MFWD-3-GEN_ERR : Warning: MFIB nsf off received  but nsf on never received : Success 
+RP/0/RP0/CPU0:Sep 19 17:37:40.457 : rmf_svr[197]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :RP-REDUNDANCY-LOST :DECLARE :0:  
+RP/0/RP0/CPU0:Sep 19 17:37:40.850 : kim[219]: XR statistics will be pushed into the linux kernel at 1 second intervals
+RP/0/RP0/CPU0:Sep 19 17:37:41.606 : bgp[1050]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : default:(S)inst-id 0, Connection Close 
+RP/0/RP0/CPU0:Sep 19 17:37:41.606 : bgp[1050]: %ROUTING-BGP-5-LSD_CONN_FAIL : [5999] : BGP has lost Connection to the LSD. LSD down event received 
+RP/0/RP0/CPU0:Sep 19 17:37:49.442 : bpm[1065]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : bpm-active:(bgp-bpm-active)inst-id 0, Service Published 
+RP/0/RP0/CPU0:Sep 19 17:37:49.450 : bgp[1050]: %ROUTING-BGP-5-NSR_STATE_CHANGE : Changed state to Not NSR-Ready 
+RP/0/RP0/CPU0:Sep 19 17:37:49.455 : bpm[1065]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : bpm-default:(A)inst-id 0, Connection Open 
+RP/0/RP0/CPU0:Sep 19 17:37:49.655 : bgp[1050]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : default, process instance 1:(A)inst-id 0, Connection Establised 
+RP/0/RP0/CPU0:Sep 19 17:38:11.132 : dumper[68468]: %OS-SYSLOG-6-LOG_INFO : Dumping core /misc/scratch/core/daps_4258.by.11.20170919-173811.xr-vm_node0_RP0_CPU0.87d80.core.gz 
+RP/0/RP0/CPU0:Sep 19 17:38:12.811 : processmgr[51]: daps(1) (jid 211) (pid 4258) (fail_count 1) abnormally terminated, restart scheduled 
+RP/0/RP0/CPU0:Sep 19 17:38:12.811 : processmgr[51]: %OS-SYSMGR-3-ERROR : daps(1) (jid 211) exited, will be respawned with a delay (slow-restart)   
+RP/0/RP0/CPU0:Sep 19 17:38:12.811 : processmgr[51]: %OS-SYSMGR-3-ERROR : daps(211) (fail count 1) will be respawned in 10 seconds  
+RP/0/RP0/CPU0:Sep 19 17:38:14.466 : emsd[1087]: %MGBL-EMS-6-EMSD_SERVICE_START : emsd service start 
+RP/0/RP0/CPU0:Sep 19 17:38:14.467 : ntpd[178]: %IP-IP_NTP_LIB-7-EXIT_MESSAGE : NTP process detected error : DLRSC event:New Node or DLRSC migrated., restarting to recover. 
+0/RP0/ADMIN0:Sep 19 17:38:15.911 : confd_helper[3151]: %MGBL-CONFD_HELPER-5-SYSADMIN_COMMIT : A sysadmin configuration change has been committed. Use 'show configuration commit list' in admin mode for more details  
+0/RP0/ADMIN0:Sep 19 17:38:15.929 : aaad[3142]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/1/ADMIN0:Sep 19 17:38:15.931 : aaad[3147]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/0/ADMIN0:Sep 19 17:38:15.931 : aaad[2704]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/FC1/ADMIN0:Sep 19 17:23:17.328 : aaad[2113]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/FC3/ADMIN0:Sep 19 17:23:17.948 : aaad[2116]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/FC0/ADMIN0:Sep 19 17:26:57.218 : aaad[2117]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/FC2/ADMIN0:Sep 19 17:23:51.020 : aaad[2101]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/FC5/ADMIN0:Sep 19 17:23:42.307 : aaad[2112]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/FC4/ADMIN0:Sep 19 17:23:31.529 : aaad[2112]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/SC1/ADMIN0:Sep 19 17:21:20.771 : aaad[2116]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+0/SC0/ADMIN0:Sep 19 17:20:58.460 : aaad[2097]: %MGBL-AAAD-7-DEBUG : AAA subscription number of users 0   
+RP/0/RP0/CPU0:Sep 19 17:38:16.036 : processmgr[51]: %OS-SYSMGR-5-NOTICE : This node fully active now at Tue Sep 19 17:38:16 2017  
+RP/0/RP0/CPU0:Sep 19 17:38:16.036 : processmgr[51]: %OS-SYSMGR-5-NOTICE : Final failover elapsed time 38.449 seconds (0.000% idle)  
+0/RP0/ADMIN0:Sep 19 17:38:16.306 : confd_helper[3151]: %MGBL-CONFD_HELPER-5-SYSADMIN_COMMIT : A sysadmin configuration change has been committed. Use 'show configuration commit list' in admin mode for more details  
+RP/0/RP0/CPU0:Sep 19 17:38:23.575 : dumper[198]: %OS-COREHELPER-6-CORE_COPIED : Copied core daps_4258.by.11.20170919-173811.xr-vm_node0_RP0_CPU0.87d80.core.gz to 0/RP0/CPU0:/misc/disk1 
+RP/0/RP0/CPU0:Sep 19 17:38:23.791 : dumper[198]: %OS-COREHELPER-6-DELETE_CORE : Deleted core file daps_4258.by.11.20170919-173811.xr-vm_node0_RP0_CPU0.87d80.core.gz. 
+RP/0/RP0/CPU0:Sep 19 17:38:25.078 : logger[66840]: %OS-SYSLOG-4-LOG_WARNING : PAM detected crash for daps on 0_RP0_CPU0. All necessary files for debug have been collected and saved at 0/RP0/CPU0 : harddisk:/cisco_support/PAM-ncs5500-crash-xr_0_RP0_CPU0-daps-2017Sep19-173824.tgz (Please copy tgz file out of the router and send to Cisco support. This tgz file will be removed after 14 days.) 
+RP/0/RP0/CPU0:Sep 19 17:38:25.987 : kim[219]: XR statistics will be pushed into the linux kernel at 10 second intervals
+0/RP0/ADMIN0:Sep 19 17:38:45.912 : confd_helper[3151]: %MGBL-CONFD_HELPER-7-DEBUG : Backing up running configuration  
+0/RP0/ADMIN0:Sep 19 17:38:56.697 : card_mgr[3144]: %DRIVER-CARD_MGR-5-OIR_INSERTED : Card inserted in location 0/RP1, inventory info will be updated after card boots up  
+0/SC0/ADMIN0:Sep 19 17:21:44.460 : esd-EPC-SW[2108]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_UP : The physical link state of the control ethernet switch port 2 has changed. New Link state UP, Admin state: UP  
+0/SC1/ADMIN0:Sep 19 17:22:06.777 : esd-EOBC-SW[2135]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_UP : The physical link state of the control ethernet switch port 25 has changed. New Link state UP, Admin state: UP  
+0/SC0/ADMIN0:Sep 19 17:21:44.464 : esd-EOBC-SW[2116]: %INFRA-ESD-6-PORT_STATE_CHANGE_ADMIN_UP : The admin state of the control ethernet switch port 24 has changed. New Admin state: UP, Link state UP  
+0/SC0/ADMIN0:Sep 19 17:21:44.464 : esd-EOBC-SW[2116]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_UP : The physical link state of the control ethernet switch port 24 has changed. New Link state UP, Admin state: UP  
+0/SC0/ADMIN0:Sep 19 17:21:44.539 : esd-EPC-SW[2108]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_DOWN : The physical link state of the control ethernet switch port 2 has changed. New Link state DOWN, Admin state: UP  
+0/SC0/ADMIN0:Sep 19 17:21:44.541 : esd-EOBC-SW[2116]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_DOWN : The physical link state of the control ethernet switch port 24 has changed. New Link state DOWN, Admin state: UP  
+0/SC1/ADMIN0:Sep 19 17:22:12.579 : esd-EPC-SW[2132]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_UP : The physical link state of the control ethernet switch port 3 has changed. New Link state UP, Admin state: UP  
+0/SC1/ADMIN0:Sep 19 17:22:15.103 : esd-EPC-SW[2132]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_DOWN : The physical link state of the control ethernet switch port 3 has changed. New Link state DOWN, Admin state: UP  
+0/RP0/ADMIN0:Sep 19 17:40:19.910 : cm[3145]: %ROUTING-TOPO-6-LEAD : Lead type: Backup system lead System: 0462.7309.007c.  
+0/RP0/ADMIN0:Sep 19 17:40:27.355 : shelf_mgr[3261]: %INFRA-SHELF_MGR-6-CARD_HW_OPERATIONAL : Card: 0/RP1 hardware state going to Operational  
+0/RP0/ADMIN0:Sep 19 17:40:27.355 : shelf_mgr[3261]: %INFRA-SHELF_MGR-6-CARD_SW_OPERATIONAL : Card: 0/RP1 software state going to Operational  
+0/RP0/ADMIN0:Sep 19 17:40:27.356 : shelf_mgr[3261]: %INFRA-SHELF_MGR-5-CARD_INSERTION : Location: 0/RP1, Serial #: SAL2009ZJZY  
+0/RP0/ADMIN0:Sep 19 17:40:27.356 : shelf_mgr[3261]: %INFRA-SHELF_MGR-6-HW_EVENT : Rcvd HW event HW_EVENT_OK, event_reason_str 'Initial discovered state: BOOTED (card ok)' for card 0/RP1  
+RP/0/RP0/CPU0:Sep 19 17:40:30.134 : ntpd[178]: %IP-IP_NTP-5-HP_CONN_RECOVERED : High priority NTP peer connection recovered - Stratum 15->1. 
+0/RP1/ADMIN0:Sep 19 17:40:38.326 : sdr_mgr[2832]: %SM-SDR_MANAGER-4-INFO : Info: SDR-RM Standby Initialized  
+0/RP1/ADMIN0:Sep 19 17:40:38.669 : sdr_mgr[2832]: %SM-SDR_MANAGER-4-INFO : Info: SDR-SM Standby Initialized  
+0/RP1/ADMIN0:Sep 19 17:40:40.962 : confd_helper[2704]: %MGBL-CONFD_HELPER-5-CONFIG_LOCK_NOTICE : sysadmin configuration ready for commits  
+0/RP1/ADMIN0:Sep 19 17:40:40.964 : confd_helper[2704]: %MGBL-CONFD_HELPER-6-STATE : Successfully setup ConfD validations  
+0/RP1/ADMIN0:Sep 19 17:40:41.530 : confd_helper[2704]: %MGBL-CONFD_HELPER-7-DEBUG :  subscription done  
+0/RP1/ADMIN0:Sep 19 17:40:42.750 : vm_manager[2904]: %INFRA-VM_MANAGER-4-INFO : Info: vm_manager started VM default-sdr--1  
+RP/0/RP0/CPU0:Sep 19 17:40:52.463 : rmf_svr[197]: %HA-REDCON-6-STANDBY_CONNECTION_UP : connection to standby card is UP, location RP0/RP0/CPU0  
+RP/0/RP1/CPU0:Sep 19 17:40:50.446 : grid_svr[258]: %PLATFORM-GRID_SVR-7-ERR_INIT : Sysdb register EDM failed due to 'sysdb' detected the 'warning' condition 'No role obtained from Process Manager it may not be ready. Please retry again' 
+RP/0/RP1/CPU0:Sep 19 17:40:51.974 : rmf_svr[334]: %HA-REDCON-6-GO_STANDBY : this card going standby, location RP/0/RP1/CPU0 
+RP/0/RP0/CPU0:Sep 19 17:41:01.459 : rmf_svr[197]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :RP-REDUNDANCY-LOST :CLEAR :0:  
+RP/0/RP1/CPU0:Sep 19 17:41:02.384 : locald_DLRSC[265]: %SECURITY-LOCALD-4-SECRET_ALREADY_EXISTS : Warning: The secret is configured too for user 'dev-pts-5' 
+RP/0/RP1/CPU0:Sep 19 17:41:02.384 : locald_DLRSC[265]: %SECURITY-LOCALD-4-PASSWD_ALREADY_EXISTS : Warning: The password is configured too for user 'dev-pts-5' 
+RP/0/RP1/CPU0:Sep 19 17:41:04.180 : ifmgr[142]: platform_pfi_ifh_get_if_alloc_info: Setting pic
+RP/0/RP1/CPU0:Sep 19 17:41:11.058 : processmgr[51]: Received PI Plane Ready
+RP/0/RP1/CPU0:Sep 19 17:41:11.203 : ifmgr[142]: %PKT_INFRA-LINK-5-CHANGED : Interface MgmtEth0/RP1/CPU0/0, changed state to Administratively Down 
+RP/0/RP1/CPU0:Sep 19 17:41:11.204 : cfgmgr-rp[201]: %MGBL-CONFIG-6-OIR_RESTORE : Configuration for node '0/RP1/0' has been restored. 
+RP/0/RP1/CPU0:Sep 19 17:41:15.200 : ipsec_mp[335]: %SECURITY-IMP-6-PROC_READY : Process ipsec_mp is ready 
+RP/0/RP0/CPU0:Sep 19 17:41:15.486 : bpm[1065]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : bpm-default:(S)inst-id 0, Connection Open 
+RP/0/RP1/CPU0:Sep 19 17:41:15.706 : bgp[1050]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : default, process instance 1:(S)inst-id 0, Connection Establised 
+RP/0/RP1/CPU0:Sep 19 17:41:16.443 : bgp[1050]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : default:(S)inst-id 0, Initial Config Done 
+RP/0/RP1/CPU0:Sep 19 17:41:16.650 : syslog_dev[119]: emsd[1087] PID-19880: Create memory monitor thread: rlimit_kb 2097152, poll_interval_ms 200, notify_cb (nil) 
+RP/0/RP0/CPU0:Sep 19 17:41:35.762 : wdsysmon_fd_edm[319]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:35.762 : wdsysmon_fd_edm[319]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:41:52.463 : rmf_svr[197]: %HA-REDCON-1-STANDBY_READY : standby card is ready 
+RP/0/RP1/CPU0:Sep 19 17:41:52.465 : rmf_svr[334]: %HA-REDCON-6-STBY_STANDBY_READY : This card is standby and is ready 
+RP/0/RP0/CPU0:Sep 19 17:42:02.463 : rmf_svr[197]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :RP-REDUNDANCY-LOST :CLEAR :0:  
+RP/0/RP0/CPU0:Sep 19 17:42:27.856 : bgp[1050]: %ROUTING-BGP-5-NSR_STATE_CHANGE : Changed state to NSR-Ready 
+RP/0/RP0/CPU0:Sep 19 17:42:37.856 : rmf_svr[197]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :RP-REDUNDANCY-LOST :CLEAR :0:  
+RP/0/RP0/CPU0:Sep 19 17:50:29.290 : syslog_dev[115]: mibd_infra[150] PID-31646: init_ciscosyslogmib : Running on dlrsc  
+RP/0/RP0/CPU0:Sep 19 17:55:51.809 : sysmgr_control[68596]: %OS-SYSMGR-4-PROC_RESTART_NAME : User admin (vty1) requested a restart of process emsd at 0/RP0/CPU0 
+RP/0/RP0/CPU0:Sep 19 17:55:52.459 : emsd[1087]: %MGBL-EMS-6-EMSD_SERVICE_START : emsd service start 
+RP/0/RP0/CPU0:Sep 19 17:55:54.779 : syslog_dev[115]: emsd[1087] PID-4388: Create memory monitor thread: rlimit_kb 2097152, poll_interval_ms 200, notify_cb (nil) 
+RP/0/RP0/CPU0:Sep 19 18:00:14.181 : sysmgr_control[69200]: %OS-SYSMGR-4-PROC_RESTART_NAME : User admin (vty1) requested a restart of process telemetry_encoder at 0/RP0/CPU0 

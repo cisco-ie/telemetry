@@ -1,0 +1,171 @@
+RP/0/RP0/CPU0:Sep 19 16:49:01.797 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.28.5 Down - BGP Notification sent, hold time expired (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:49:01.802 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:1eaf:8:d03:2805 Down - BGP Notification sent, hold time expired (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:52:13.314 : ifmgr[380]: %PKT_INFRA-LINK-3-UPDOWN : Interface HundredGigE0/0/0/26, changed state to Down 
+RP/0/RP0/CPU0:Sep 19 16:52:13.314 : ifmgr[380]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface HundredGigE0/0/0/26, changed state to Down 
+RP/0/RP0/CPU0:Sep 19 16:52:30.617 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.617 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.617 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-0 :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-1 :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-2 :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-3 :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-0 LOW ALARM :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-1 LOW ALARM :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-2 LOW ALARM :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:30.618 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-3 LOW ALARM :DECLARE : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:52:31.609 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:52:31.609 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:52:31.609 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:52:52.001 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :CLEAR : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:52:52.001 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :CLEAR : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:53:12.312 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:53:12.312 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:53:12.312 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:53:12.312 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-0 LOW ALARM :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:53:12.312 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-1 LOW ALARM :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:53:12.312 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-2 LOW ALARM :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:53:12.312 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-3 LOW ALARM :DECLARE : Optics0/0/0/27:  Optics0/0/0/27 
+RP/0/RP0/CPU0:Sep 19 16:53:38.869 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.62 Down - BGP Notification received, out of resource (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 16:53:38.869 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.60 Down - BGP Notification received, out of resource (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 16:53:38.871 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.58 Down - Peer closing down the session (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 16:54:43.359 : resmon[220]: %HA-HA_WD-4-MEMORY_ALARM : Memory threshold crossed: Minor with 803.893MB free. Previous state: Normal 
+RP/0/RP0/CPU0:Sep 19 16:54:43.360 : resmon[220]: %HA-HA_WD-6-TOP_MEMORY_USERS_INFO : Top 5 consumers of system memory (817386 Kbytes free):  
+RP/0/RP0/CPU0:Sep 19 16:54:43.360 : resmon[220]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 0: Process Name: ./pipeline[0], pid: 788, Heap usage: 3566516 kbytes. 
+RP/0/RP0/CPU0:Sep 19 16:54:43.360 : resmon[220]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 1: Process Name: emsd[0], pid: 7851, Heap usage: 1091832 kbytes. 
+RP/0/RP0/CPU0:Sep 19 16:54:43.360 : resmon[220]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 2: Process Name: prm_server[0], pid: 3182, Heap usage: 287456 kbytes. 
+RP/0/RP0/CPU0:Sep 19 16:54:43.360 : resmon[220]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 3: Process Name: fib_mgr[0], pid: 3854, Heap usage: 150976 kbytes. 
+RP/0/RP0/CPU0:Sep 19 16:54:43.360 : resmon[220]: %HA-HA_WD-6-TOP_MEMORY_USER_INFO : 4: Process Name: spp[0], pid: 2689, Heap usage: 100436 kbytes. 
+RP/0/RP0/CPU0:Sep 19 16:54:53.546 : /pkg/sbin/sysmgr_log[66271]: %OS-SYSMGR-7-CHECK_LOG : /pkg/bin/resmon_debug_mem_script invoked by (Resmon). No LTRACE dump for ./pipeline 
+RP/0/RP0/CPU0:Sep 19 16:54:53.619 : /pkg/sbin/sysmgr_log[66278]: %OS-SYSMGR-7-CHECK_LOG : /pkg/bin/resmon_debug_mem_script invoked by pid 2704 (Resmon). Output is in /misc/scratch//resmon_debug/debug_mem.node0_RP0_CPU0.788.log 
+RP/0/RP0/CPU0:Sep 19 16:54:59.279 : resmon[220]: %HA-HA_WD-6-MEMORY_RECOVERY_RESTART : Process ./pipeline[0] (pid 788) using 3720900 kbytes of heap memory will be killed. It will be restarted if it is managed by sysmgr. 
+RP/0/RP0/CPU0:Sep 19 16:55:28.397 : ifmgr[380]: %PKT_INFRA-LINK-3-UPDOWN : Interface HundredGigE0/0/0/26, changed state to Up 
+RP/0/RP0/CPU0:Sep 19 16:55:28.398 : ifmgr[380]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface HundredGigE0/0/0/26, changed state to Up 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-0 :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-1 :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-2 :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-3 :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.842 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-0 LOW ALARM :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.843 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-1 LOW ALARM :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.843 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-2 LOW ALARM :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:55:33.843 : optics_driver[221]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX POWER LANE-3 LOW ALARM :CLEAR : Optics0/0/0/26:  Optics0/0/0/26 
+RP/0/RP0/CPU0:Sep 19 16:56:01.993 : resmon[220]: %HA-HA_WD-4-MEMORY_ALARM : Memory threshold crossed: Normal with 4248.188MB free. Previous state: Minor 
+RP/0/RP0/CPU0:Sep 19 16:56:07.895 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.28.5 Up (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:56:23.618 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:1eaf:8:d03:2805 Up (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:56:57.125 : SSHD_[66439]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'admin' from '10.200.96.148' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Sep 19 16:56:58.071 : SSHD_[66439]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'admin' from '10.200.96.148' logged out on 'vty0' 
+RP/0/RP0/CPU0:Sep 19 16:57:39.643 : SSHD_[66583]: %SECURITY-SSHD-6-INFO_SUCCESS : Successfully authenticated user 'admin' from '10.200.96.148' on 'vty0'(cipher 'aes128-ctr', mac 'hmac-sha2-256') 
+RP/0/RP0/CPU0:Sep 19 16:57:42.144 : SSHD_[66583]: %SECURITY-SSHD-6-INFO_USER_LOGOUT : User 'admin' from '10.200.96.148' logged out on 'vty0' 
+RP/0/RP0/CPU0:Sep 19 17:27:28.026 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.56 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:27:28.041 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1358 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:27:28.041 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1362 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:27:28.041 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1356 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:27:28.042 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1360 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:27:40.913 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.60 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:27:42.187 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.58 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:27:58.455 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.62 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:27:59.406 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1360 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:00.643 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1362 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:04.274 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1356 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:04.519 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1358 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:05.185 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.56 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:08.633 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.56 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:08.634 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.60 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:08.635 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.58 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:08.640 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.62 Down - Peer closing down the session (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:08.655 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1356 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:08.660 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1358 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:08.660 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1360 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:08.660 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1362 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:39.011 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.60 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:40.074 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.56 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:40.293 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1356 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:43.201 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1362 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:43.983 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.58 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:45.751 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1360 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:53.661 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.62 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:28:56.103 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1358 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 17:29:49.703 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.56 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:29:49.704 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.58 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:29:49.705 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.60 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:29:49.707 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.62 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:29:49.722 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1256 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:29:49.722 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1258 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:29:49.722 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1260 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:29:49.723 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1262 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:30:19.360 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.62 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:30:19.649 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.56 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:30:22.830 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1262 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:30:25.226 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1258 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:30:26.093 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1260 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:30:29.062 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1256 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:30:34.439 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.60 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 17:30:36.377 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.58 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:01.532 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.58 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:01.532 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.60 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:01.532 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.56 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:01.533 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.62 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:01.546 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1262 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:01.546 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1256 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:01.546 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1258 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:01.546 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1260 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:30.758 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1260 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:32.138 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.58 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:33.514 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1256 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:33.663 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1258 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:33.680 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.56 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:35.112 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.60 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:35.640 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.62 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:30:42.520 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1262 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:41:20.310 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.56 Down - Peer closing down the session (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:20.310 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.58 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:20.310 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.60 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:20.312 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.62 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:20.329 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1158 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:20.329 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1156 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:20.329 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1160 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:20.329 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1162 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:50.361 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.62 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:52.082 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1162 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:52.272 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.58 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:52.490 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.60 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:52.878 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1158 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:53.497 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1156 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:57.030 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1160 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:41:57.898 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.11.56 Up (VRF: default) (AS: 65011) 
+RP/0/RP0/CPU0:Sep 19 20:42:13.350 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.56 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:13.351 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.60 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:13.352 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.58 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:13.352 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.62 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:13.362 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1262 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:13.362 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1256 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:13.363 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1258 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:13.365 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1260 Down - Peer closing down the session (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:49.111 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1262 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:50.145 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.56 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:52.010 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1256 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:53.484 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.62 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:55.818 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.60 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:56.628 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.12.58 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:42:57.670 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1260 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:43:02.157 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1258 Up (VRF: default) (AS: 65012) 
+RP/0/RP0/CPU0:Sep 19 20:43:04.957 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.56 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:04.958 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.58 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:04.958 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.60 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:04.958 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.62 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:04.968 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1358 Down - Peer closing down the session (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:04.968 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1356 Down - Peer closing down the session (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:04.972 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1362 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:04.972 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1360 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:30.909 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.60 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:32.890 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1360 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:33.581 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.58 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:36.146 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.56 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:37.518 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.13.62 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:39.333 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1356 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:40.279 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1358 Up (VRF: default) (AS: 65013) 
+RP/0/RP0/CPU0:Sep 19 20:43:45.058 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:1362 Up (VRF: default) (AS: 65013) 

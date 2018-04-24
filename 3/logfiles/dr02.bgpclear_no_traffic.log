@@ -1,0 +1,220 @@
+RP/0/RP0/CPU0:Sep 19 01:56:59.340 : dumper[320]: %OS-COREHELPER-6-START : dump_core starts, only one core is dumped at a time 
+RP/0/RP0/CPU0:Sep 19 01:57:00.284 : dumper[320]: %OS-COREHELPER-6-CORE_COPIED : Copied core rmf_cli_edm_10312.by.user.20170919-015659.xr-vm_node0_RP0_CPU0.696e3.core.gz to 0/RP0/CPU0:/misc/disk1 
+RP/0/RP0/CPU0:Sep 19 01:57:00.287 : dumper[320]: %OS-COREHELPER-6-DELETE_CORE : Deleted core file rmf_cli_edm_10312.by.user.20170919-015659.xr-vm_node0_RP0_CPU0.696e3.core.gz. 
+RP/0/RP0/CPU0:Sep 19 02:27:36.415 : dumper[320]: %OS-COREHELPER-6-START : dump_core starts, only one core is dumped at a time 
+RP/0/RP0/CPU0:Sep 19 02:27:37.350 : dumper[320]: %OS-COREHELPER-6-CORE_COPIED : Copied core rmf_cli_edm_10312.by.user.20170919-022736.xr-vm_node0_RP0_CPU0.696e3.core.gz to 0/RP0/CPU0:/misc/disk1 
+RP/0/RP0/CPU0:Sep 19 02:27:37.353 : dumper[320]: %OS-COREHELPER-6-DELETE_CORE : Deleted core file rmf_cli_edm_10312.by.user.20170919-022736.xr-vm_node0_RP0_CPU0.696e3.core.gz. 
+RP/0/RP0/CPU0:Sep 19 02:27:53.839 : logger[65933]: %OS-SYSLOG-4-LOG_WARNING : PAM detected significant memory increase (from 29.00MB at 2017/Sep/13/13:07:43 to 103.00MB at 2017/Sep/19/00:24:59) for rmf_cli_edm on 0_RP0_CPU0. All necessary files for debug have been collected and saved at 0/RP0/CPU0 : harddisk:/cisco_support/PAM-ncs5500-memory_leak-xr_0_RP0_CPU0-rmf_cli_edm-2017Sep19-022752.tgz (Please copy tgz file out of the router and send to Cisco support. This tgz file will be removed after 14 days.) 
+RP/0/RP0/CPU0:Sep 19 16:44:43.272 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.2 Down - Peer closing down the session (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Sep 19 16:44:43.272 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.26.2 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 16:44:43.272 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.0 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Sep 19 16:44:43.272 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.26.0 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 16:44:43.286 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2602 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 16:44:43.286 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2600 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Sep 19 16:44:43.286 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2602 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP1/CPU0:Sep 19 16:44:43.286 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2600 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 16:45:14.820 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.0 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 16:45:21.053 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.2 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 16:45:22.793 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2600 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 16:45:23.682 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2602 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 16:47:18.452 : tcp[344]: %IP-TCP_NSR-5-DISABLED : 172.31.2.2:16691 <-> 172.31.2.3:179:: NSR disabled for TCP connection because Retransmission threshold exceeded 
+RP/0/RP0/CPU0:Sep 19 16:47:18.452 : tcp[344]: %IP-TCP_NSR-5-DISABLED : 172.31.2.4:37787 <-> 172.31.2.5:179:: NSR disabled for TCP connection because Retransmission threshold exceeded 
+RP/0/RP0/CPU0:Sep 19 16:47:18.453 : bgp[1050]: %ROUTING-BGP-3-NBR_NSR_DISABLED : NSR disabled on neighbor 172.31.2.3 due to 'ip-tcp' detected the 'warning' condition 'NSR is down because the retransmission threshold exceeded (probably because downstream RP is not healthy)' 
+RP/0/RP1/CPU0:Sep 19 16:47:18.453 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.2.3 on standby RP due to Peer closing down the session (VRF: default) 
+RP/0/RP1/CPU0:Sep 19 16:47:18.453 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.2.5 on standby RP due to Peer closing down the session (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 16:47:18.454 : tcp[344]: %IP-TCP_NSR-5-DISABLED : 172.31.2.0:52276 <-> 172.31.2.1:179:: NSR disabled for TCP connection because Retransmission threshold exceeded 
+RP/0/RP1/CPU0:Sep 19 16:47:18.454 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.2.1 on standby RP due to Peer closing down the session (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 16:47:19.807 : tcp[344]: %IP-TCP_NSR-5-DISABLED : 2001:420:289:2000:0:d02:d03:202:14670 <-> 2001:420:289:2000:0:d02:d03:203:179:: NSR disabled for TCP connection because Retransmission threshold exceeded 
+RP/0/RP0/CPU0:Sep 19 16:47:19.807 : tcp[344]: %IP-TCP_NSR-5-DISABLED : 2001:420:289:2000:0:d02:d03:200:46390 <-> 2001:420:289:2000:0:d02:d03:201:179:: NSR disabled for TCP connection because Retransmission threshold exceeded 
+RP/0/RP0/CPU0:Sep 19 16:47:19.807 : tcp[344]: %IP-TCP_NSR-5-DISABLED : 2001:420:289:2000:0:d02:d03:204:19284 <-> 2001:420:289:2000:0:d02:d03:205:179:: NSR disabled for TCP connection because Retransmission threshold exceeded 
+RP/0/RP1/CPU0:Sep 19 16:47:19.807 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:d02:d03:203 on standby RP due to Peer closing down the session (VRF: default) 
+RP/0/RP1/CPU0:Sep 19 16:47:19.808 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:d02:d03:201 on standby RP due to Peer closing down the session (VRF: default) 
+RP/0/RP1/CPU0:Sep 19 16:47:19.808 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:d02:d03:205 on standby RP due to Peer closing down the session (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 16:49:01.794 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.2.5 Down - BGP Notification sent, hold time expired (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:49:01.794 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.2.3 Down - BGP Notification sent, hold time expired (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:49:01.794 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.2.1 Down - BGP Notification sent, hold time expired (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:49:01.801 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:d02:d03:205 Down - BGP Notification sent, hold time expired (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:49:01.801 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:d02:d03:203 Down - BGP Notification sent, hold time expired (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:49:01.801 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:d02:d03:201 Down - BGP Notification sent, hold time expired (VRF: default) (AS: 65503) 
+LC/0/1/CPU0:Sep 19 16:52:12.391 : ifmgr[312]: %PKT_INFRA-LINK-3-UPDOWN : Interface HundredGigE0/1/0/1, changed state to Down 
+LC/0/1/CPU0:Sep 19 16:52:12.391 : ifmgr[312]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface HundredGigE0/1/0/1, changed state to Down 
+LC/0/1/CPU0:Sep 19 16:52:12.396 : ifmgr[312]: %PKT_INFRA-LINK-3-UPDOWN : Interface HundredGigE0/1/0/2, changed state to Down 
+LC/0/1/CPU0:Sep 19 16:52:12.396 : ifmgr[312]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface HundredGigE0/1/0/2, changed state to Down 
+LC/0/1/CPU0:Sep 19 16:52:12.402 : ifmgr[312]: %PKT_INFRA-LINK-3-UPDOWN : Interface HundredGigE0/1/0/0, changed state to Down 
+LC/0/1/CPU0:Sep 19 16:52:12.402 : ifmgr[312]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface HundredGigE0/1/0/0, changed state to Down 
+LC/0/1/CPU0:Sep 19 16:52:13.424 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :DECLARE : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:52:13.424 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :DECLARE : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:52:13.424 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :DECLARE : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:52:13.424 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :DECLARE : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:52:13.424 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-0 :DECLARE : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:52:13.424 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-1 :DECLARE : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:52:13.425 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-2 :DECLARE : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:52:13.425 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-3 :DECLARE : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:52:14.695 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :DECLARE : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:52:14.695 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :DECLARE : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:52:14.695 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :DECLARE : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:52:14.695 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :DECLARE : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:52:14.695 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-0 :DECLARE : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:52:14.695 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-1 :DECLARE : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:52:14.695 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-2 :DECLARE : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:52:14.695 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-3 :DECLARE : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:52:15.966 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :DECLARE : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:52:15.966 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :DECLARE : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:52:15.966 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :DECLARE : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:52:15.966 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :DECLARE : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:52:15.966 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-0 :DECLARE : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:52:15.966 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-1 :DECLARE : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:52:15.967 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-2 :DECLARE : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:52:15.967 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-3 :DECLARE : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:55:31.235 : ifmgr[312]: %PKT_INFRA-LINK-3-UPDOWN : Interface HundredGigE0/1/0/2, changed state to Up 
+LC/0/1/CPU0:Sep 19 16:55:31.236 : ifmgr[312]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface HundredGigE0/1/0/2, changed state to Up 
+LC/0/1/CPU0:Sep 19 16:55:34.929 : ifmgr[312]: %PKT_INFRA-LINK-3-UPDOWN : Interface HundredGigE0/1/0/1, changed state to Up 
+LC/0/1/CPU0:Sep 19 16:55:34.930 : ifmgr[312]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface HundredGigE0/1/0/1, changed state to Up 
+LC/0/1/CPU0:Sep 19 16:55:38.612 : ifmgr[312]: %PKT_INFRA-LINK-3-UPDOWN : Interface HundredGigE0/1/0/0, changed state to Up 
+LC/0/1/CPU0:Sep 19 16:55:38.614 : ifmgr[312]: %PKT_INFRA-LINEPROTO-5-UPDOWN : Line protocol on Interface HundredGigE0/1/0/0, changed state to Up 
+RP/0/RP0/CPU0:Sep 19 16:55:40.813 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.2.5 Up (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:55:42.303 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.2.3 Up (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:55:44.316 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:d02:d03:205 Up (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:55:45.092 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:d02:d03:201 Up (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 16:55:48.218 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:d02:d03:203 Up (VRF: default) (AS: 65503) 
+LC/0/1/CPU0:Sep 19 16:55:49.594 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :CLEAR : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:55:49.594 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :CLEAR : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:55:49.594 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :CLEAR : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:55:49.595 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :CLEAR : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:55:49.595 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-0 :CLEAR : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:55:49.595 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-1 :CLEAR : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:55:49.595 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-2 :CLEAR : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:55:49.595 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-3 :CLEAR : Optics0/1/0/0:  Optics0/1/0/0 
+LC/0/1/CPU0:Sep 19 16:55:50.865 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :CLEAR : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:55:50.865 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :CLEAR : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:55:50.866 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :CLEAR : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:55:50.866 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :CLEAR : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:55:50.866 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-0 :CLEAR : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:55:50.866 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-1 :CLEAR : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:55:50.866 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-2 :CLEAR : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:55:50.866 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-3 :CLEAR : Optics0/1/0/1:  Optics0/1/0/1 
+LC/0/1/CPU0:Sep 19 16:55:52.137 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-0 :CLEAR : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:55:52.137 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-1 :CLEAR : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:55:52.137 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-2 :CLEAR : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:55:52.137 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOS LANE-3 :CLEAR : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:55:52.138 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-0 :CLEAR : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:55:52.138 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-1 :CLEAR : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:55:52.138 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-2 :CLEAR : Optics0/1/0/2:  Optics0/1/0/2 
+LC/0/1/CPU0:Sep 19 16:55:52.138 : optics_driver[298]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :OPTICS RX LOL LANE-3 :CLEAR : Optics0/1/0/2:  Optics0/1/0/2 
+RP/0/RP0/CPU0:Sep 19 16:55:54.545 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.2.1 Up (VRF: default) (AS: 65503) 
+RP/0/RP0/CPU0:Sep 19 17:31:27.501 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.0 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65025) 
+RP/0/RP1/CPU0:Sep 19 17:31:27.501 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.25.0 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 17:31:27.508 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.2 Down - Peer closing down the session (VRF: default) (AS: 65025) 
+RP/0/RP1/CPU0:Sep 19 17:31:27.508 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.25.2 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 17:31:27.516 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2500 Down - Peer closing down the session (VRF: default) (AS: 65025) 
+RP/0/RP1/CPU0:Sep 19 17:31:27.516 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2502 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 17:31:27.516 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2502 Down - Peer closing down the session (VRF: default) (AS: 65025) 
+RP/0/RP1/CPU0:Sep 19 17:31:27.516 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2500 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 17:31:56.140 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.2 Up (VRF: default) (AS: 65025) 
+RP/0/RP0/CPU0:Sep 19 17:31:58.321 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2500 Up (VRF: default) (AS: 65025) 
+RP/0/RP0/CPU0:Sep 19 17:31:58.358 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2502 Up (VRF: default) (AS: 65025) 
+RP/0/RP0/CPU0:Sep 19 17:32:06.704 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.25.0 Up (VRF: default) (AS: 65025) 
+RP/0/RP1/CPU0:Sep 19 17:34:27.509 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.25.2 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 17:34:27.509 : bgp[1050]: %ROUTING-BGP-3-NBR_NSR_DISABLED : NSR disabled on neighbor 172.31.25.2 due to Standby reset 
+0/SC1/ADMIN0:Sep 19 17:21:21.189 : esd-EOBC-SW[2105]: %INFRA-ESD-6-PORT_STATE_CHANGE_ADMIN_UP : The admin state of the control ethernet switch port 25 has changed. New Admin state: UP, Link state DOWN  
+0/SC1/ADMIN0:Sep 19 17:21:21.189 : esd-EOBC-SW[2105]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_DOWN : The physical link state of the control ethernet switch port 25 has changed. New Link state DOWN, Admin state: UP  
+0/RP0/ADMIN0:Sep 19 17:37:16.549 : card_mgr[3069]: %DRIVER-CARD_MGR-5-OIR_REMOVED : NC55-RP removed from location 0/RP1  
+0/RP0/ADMIN0:Sep 19 17:37:16.550 : cm[3079]: %ROUTING-TOPO-5-OIR_ACTION : OIR card removed having serial number: SAL2009ZJYJ.  
+RP/0/RP0/CPU0:Sep 19 17:37:16.552 : rmf_svr[318]: %HA-REDCON-6-STANDBY_CONNECTION_DOWN : connection to standby card is DOWN 
+0/RP0/ADMIN0:Sep 19 17:37:16.550 : shelf_mgr[3171]: %INFRA-SHELF_MGR-5-CARD_REMOVAL : Location: 0/RP1, Serial#: SAL2009ZJYJ  
+RP/0/RP0/CPU0:Sep 19 17:37:16.561 : bpm[1065]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : bpm-default:(S)inst-id 0, Connection Closed 
+RP/0/RP0/CPU0:Sep 19 17:37:16.563 : bgp[1050]: %ROUTING-BGP-3-NBR_NSR_DISABLED : NSR disabled on neighbor 172.31.2.1 due to 'ip-tcp' detected the 'warning' condition 'NSR is down because a downstream TCP disconnected' 
+RP/0/RP0/CPU0:Sep 19 17:37:19.052 : rmf_svr[318]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :RP-REDUNDANCY-LOST :DECLARE :0:  
+RP/0/RP0/CPU0:Sep 19 17:37:19.052 : rmf_svr[318]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :RP-REDUNDANCY-LOST :DECLARE :0:  
+RP/0/RP0/CPU0:Sep 19 17:37:19.067 : rmf_svr[318]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :RP-REDUNDANCY-LOST :DECLARE :0:  
+0/RP0/ADMIN0:Sep 19 17:37:20.184 : emon_proxy[3100]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :EMON detected EPC heartbeat failure to a card :DECLARE :0/RP1: EPC Heartbeat failure detected on 0/RP1  
+0/RP0/ADMIN0:Sep 19 17:37:20.184 : emon_proxy[3100]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :EMON detected EOBC heartbeat failure to a card :DECLARE :0/RP1: EOBC Heartbeat failure detected on 0/RP1  
+RP/0/RP0/CPU0:Sep 19 17:37:27.511 : bgp[1050]: %ROUTING-BGP-5-NSR_STATE_CHANGE : Changed state to Not NSR-Ready 
+0/RP0/ADMIN0:Sep 19 17:38:47.087 : card_mgr[3069]: %DRIVER-CARD_MGR-5-OIR_INSERTED : Card inserted in location 0/RP1, inventory info will be updated after card boots up  
+0/SC0/ADMIN0:Sep 19 17:21:49.337 : esd-EPC-SW[2133]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_UP : The physical link state of the control ethernet switch port 2 has changed. New Link state UP, Admin state: UP  
+0/SC1/ADMIN0:Sep 19 17:22:58.138 : esd-EOBC-SW[2105]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_UP : The physical link state of the control ethernet switch port 25 has changed. New Link state UP, Admin state: UP  
+0/SC0/ADMIN0:Sep 19 17:21:49.342 : esd-EOBC-SW[2134]: %INFRA-ESD-6-PORT_STATE_CHANGE_ADMIN_UP : The admin state of the control ethernet switch port 24 has changed. New Admin state: UP, Link state UP  
+0/SC0/ADMIN0:Sep 19 17:21:49.342 : esd-EOBC-SW[2134]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_UP : The physical link state of the control ethernet switch port 24 has changed. New Link state UP, Admin state: UP  
+0/SC0/ADMIN0:Sep 19 17:21:49.414 : esd-EPC-SW[2133]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_DOWN : The physical link state of the control ethernet switch port 2 has changed. New Link state DOWN, Admin state: UP  
+0/SC0/ADMIN0:Sep 19 17:21:49.418 : esd-EOBC-SW[2134]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_DOWN : The physical link state of the control ethernet switch port 24 has changed. New Link state DOWN, Admin state: UP  
+0/SC1/ADMIN0:Sep 19 17:23:03.921 : esd-EPC-SW[2104]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_UP : The physical link state of the control ethernet switch port 3 has changed. New Link state UP, Admin state: UP  
+0/SC1/ADMIN0:Sep 19 17:23:06.455 : esd-EPC-SW[2104]: %INFRA-ESD-6-PORT_STATE_CHANGE_LINK_DOWN : The physical link state of the control ethernet switch port 3 has changed. New Link state DOWN, Admin state: UP  
+0/RP0/ADMIN0:Sep 19 17:40:11.113 : cm[3079]: %ROUTING-TOPO-6-LEAD : Lead type: Backup system lead System: 0462.7308.ffc8.  
+0/RP0/ADMIN0:Sep 19 17:40:13.993 : shelf_mgr[3171]: %INFRA-SHELF_MGR-5-CARD_INSERTION : Location: 0/RP1, Serial #: SAL2009ZJYJ  
+0/RP0/ADMIN0:Sep 19 17:40:13.993 : shelf_mgr[3171]: %INFRA-SHELF_MGR-6-HW_EVENT : Rcvd HW event HW_EVENT_OK, event_reason_str 'Initial discovered state: BOOTED (card ok)' for card 0/RP1  
+0/RP0/ADMIN0:Sep 19 17:40:13.993 : shelf_mgr[3171]: %INFRA-SHELF_MGR-6-CARD_HW_OPERATIONAL : Card: 0/RP1 hardware state going to Operational  
+0/RP0/ADMIN0:Sep 19 17:40:13.995 : shelf_mgr[3171]: %INFRA-SHELF_MGR-6-CARD_SW_OPERATIONAL : Card: 0/RP1 software state going to Operational  
+0/RP1/ADMIN0:Sep 19 17:40:14.522 : confd_helper[2703]: %MGBL-CONFD_HELPER-6-STATE : Successfully setup ConfD validations  
+0/RP1/ADMIN0:Sep 19 17:40:16.172 : confd_helper[2703]: %MGBL-CONFD_HELPER-7-DEBUG :  subscription done  
+0/RP1/ADMIN0:Sep 19 17:40:16.172 : confd_helper[2703]: %MGBL-CONFD_HELPER-6-STATE : setup_confd_actions_callbacks:274 Calling confd_register_action_cbs.   
+0/RP1/ADMIN0:Sep 19 17:40:28.050 : sdr_mgr[2840]: %SM-SDR_MANAGER-4-INFO : Info: SDR-RM Standby Initialized  
+0/RP1/ADMIN0:Sep 19 17:40:28.182 : pm[2488]: %INFRA-Process_Manager-3-PROCESS_RESTART : Process led_mgr (IID: 0) restarted  
+0/RP1/ADMIN0:Sep 19 17:40:32.392 : vm_manager[2908]: %INFRA-VM_MANAGER-4-INFO : Info: vm_manager started VM default-sdr--1  
+RP/0/RP0/CPU0:Sep 19 17:40:41.461 : wdsysmon_fd_edm[280]: connection to /dev/resmon/procmib.d/node0_RP1_CPU0 failed 
+RP/0/RP0/CPU0:Sep 19 17:40:41.461 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:40:42.440 : rmf_cli_edm[342]: Error: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511: Failed to connect to /dev/rmf.d/node0_RP1_CPU0
+RP/0/RP0/CPU0:Sep 19 17:40:44.798 : rmf_svr[318]: %HA-REDCON-6-STANDBY_CONNECTION_UP : connection to standby card is UP, location RP0/RP0/CPU0  
+RP/0/RP1/CPU0:Sep 19 17:40:40.233 : grid_svr[264]: %PLATFORM-GRID_SVR-7-ERR_INIT : Sysdb register EDM failed due to 'sysdb' detected the 'warning' condition 'No role obtained from Process Manager it may not be ready. Please retry again' 
+RP/0/RP1/CPU0:Sep 19 17:40:43.802 : rmf_svr[406]: %HA-REDCON-6-GO_STANDBY : this card going standby, location RP/0/RP1/CPU0 
+RP/0/RP0/CPU0:Sep 19 17:40:48.693 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:40:48.693 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:40:53.797 : rmf_svr[318]: %PKT_INFRA-FM-2-FAULT_CRITICAL : ALARM_CRITICAL :RP-REDUNDANCY-LOST :CLEAR :0:  
+RP/0/RP0/CPU0:Sep 19 17:40:55.803 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:40:55.803 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP1/CPU0:Sep 19 17:40:56.523 : ifmgr[359]: platform_pfi_ifh_get_if_alloc_info: Setting pic
+RP/0/RP1/CPU0:Sep 19 17:41:02.440 : processmgr[51]: Received PI Plane Ready
+RP/0/RP1/CPU0:Sep 19 17:41:02.583 : ifmgr[359]: %PKT_INFRA-LINK-5-CHANGED : Interface MgmtEth0/RP1/CPU0/0, changed state to Administratively Down 
+RP/0/RP1/CPU0:Sep 19 17:41:02.585 : cfgmgr-rp[371]: %MGBL-CONFIG-6-OIR_RESTORE : Configuration for node '0/RP1/0' has been restored. 
+RP/0/RP0/CPU0:Sep 19 17:41:06.340 : bpm[1065]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : bpm-default:(S)inst-id 0, Connection Open 
+RP/0/RP1/CPU0:Sep 19 17:41:06.549 : bgp[1050]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : default, process instance 1:(S)inst-id 0, Connection Establised 
+RP/0/RP1/CPU0:Sep 19 17:41:06.688 : ipsec_mp[381]: %SECURITY-IMP-6-PROC_READY : Process ipsec_mp is ready 
+RP/0/RP1/CPU0:Sep 19 17:41:07.301 : bgp[1050]: %ROUTING-BGP-5-ASYNC_IPC_STATUS : default:(S)inst-id 0, Initial Config Done 
+RP/0/RP1/CPU0:Sep 19 17:41:07.670 : syslog_dev[117]: emsd[1087] PID-19496: Create memory monitor thread: rlimit_kb 2097152, poll_interval_ms 200, notify_cb (nil) 
+RP/0/RP0/CPU0:Sep 19 17:41:15.166 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:15.166 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:41:22.244 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:22.244 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:41:27.230 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:27.230 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:41:29.326 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:29.326 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:41:36.873 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:36.873 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:41:44.429 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:44.429 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:41:51.968 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:51.968 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:41:59.497 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:41:59.497 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:42:07.051 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:42:07.051 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:42:14.577 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:42:14.577 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:42:19.371 : bgp[1050]: %ROUTING-BGP-5-NSR_STATE_CHANGE : Changed state to NSR-Ready 
+RP/0/RP0/CPU0:Sep 19 17:42:22.129 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:42:22.129 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:42:29.371 : rmf_svr[318]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :RP-REDUNDANCY-LOST :CLEAR :0:  
+RP/0/RP0/CPU0:Sep 19 17:42:29.675 : wdsysmon_fd_edm[280]: cpu usage table not yet initialized 
+RP/0/RP0/CPU0:Sep 19 17:42:29.675 : wdsysmon_fd_edm[280]: wdsysmon_fd_proc_cpu_edm_get_bag failed: 'Subsystem(8191)' detected the 'unknown' condition 'Code(63)': Unknown error 511
+RP/0/RP0/CPU0:Sep 19 17:42:31.986 : rmf_svr[318]: %HA-REDCON-1-STANDBY_READY : standby card is ready 
+RP/0/RP1/CPU0:Sep 19 17:42:31.988 : rmf_svr[406]: %HA-REDCON-6-STBY_STANDBY_READY : This card is standby and is ready 
+RP/0/RP0/CPU0:Sep 19 17:42:41.987 : rmf_svr[318]: %PKT_INFRA-FM-3-FAULT_MAJOR : ALARM_MAJOR :RP-REDUNDANCY-LOST :CLEAR :0:  
+RP/0/RP0/CPU0:Sep 19 17:47:51.315 : SSHD_[66239]: %SECURITY-SSHD-6-INFO_GENERAL : Client closes socket connection 
+RP/0/RP0/CPU0:Sep 19 17:47:51.315 : SSHD_[66239]: %SECURITY-SSHD-3-ERR_GENERAL : Failed to receive User authentication request 
+RP/0/RP0/CPU0:Sep 19 17:53:15.968 : sysmgr_control[66446]: %OS-SYSMGR-4-PROC_RESTART_NAME : User admin (vty0) requested a restart of process emsd at 0/RP0/CPU0 
+RP/0/RP0/CPU0:Sep 19 17:53:16.600 : emsd[1087]: %MGBL-EMS-6-EMSD_SERVICE_START : emsd service start 
+RP/0/RP0/CPU0:Sep 19 17:53:18.935 : syslog_dev[114]: emsd[1087] PID-21276: Create memory monitor thread: rlimit_kb 2097152, poll_interval_ms 200, notify_cb (nil) 
+RP/0/RP0/CPU0:Sep 19 20:24:54.738 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.2 Down - Peer closing down the session (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 20:24:54.738 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.0 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Sep 19 20:24:54.738 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.26.0 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP1/CPU0:Sep 19 20:24:54.738 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.26.2 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 20:24:54.749 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2600 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Sep 19 20:24:54.749 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2600 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 20:24:54.749 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2602 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Sep 19 20:24:54.749 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2602 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 20:25:21.508 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.0 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 20:25:23.245 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2600 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 20:25:26.211 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.2 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Sep 19 20:25:41.852 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2602 Up (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Sep 19 20:27:54.739 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.26.2 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Sep 19 20:27:54.739 : bgp[1050]: %ROUTING-BGP-3-NBR_NSR_DISABLED : NSR disabled on neighbor 172.31.26.2 due to Standby reset 

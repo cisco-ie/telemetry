@@ -1,0 +1,110 @@
+show tech-support ?
+  access-lists         Output show commands of interest for access-lists debugging(cisco-support)
+  alarm-logger         alarm-logger show tech commands(cisco-support)
+  alarm-mgr            Show alarm-mgr tech-support information for debugging(cisco-support)(cisco-support)
+  aps                  Output show commands of interest for APS debugging
+  arp                  Output show commands of interest for ARP debugging(cisco-support)
+  bcdl                 Output show commands of interest for bcdl debugging
+  bcdlv2               Output show commands of interest for bcdlv2 debugging(cisco-support)
+  bundles              Output show commands of interest for bundle debugging(cisco-support)
+  cef                  CEF tech-support information(cisco-support)
+  cef                  Output show commands of interest for CEF debugging
+  cfgmgr               cfgmgr tech-support information(cisco-support)
+  chkpt                Gather information requred to debug checkpoint(cisco-support)
+  correlator           correlator show tech commands(cisco-support)
+  crypto               CRYPTO show tech-support output
+  dhcp                 DHCP tech-support(cisco-support)
+  diameter             Output show commands of interest for diameter debugging(cisco-support)
+  driver               Collect Platform Driver related information and save to disk(cisco-support)
+  ds                   Spawn parallel show tech-support - use only if directed
+  eem                  Show eem information for tech-support
+  ema                  Output show commands of interest for ema debugging(cisco-support)
+  ethernet             Ethernet show tech commands(cisco-support)
+  file                 Specify a valid file name (e.g. disk0:tmp.log)
+  fpd                  fpd tech support information(cisco-support)
+  frequency            Collect frequency synchronization information and save to disk(cisco-support)
+  grpc                 Gather lots of information about the Grpc agent(cisco-support)
+  gsp                  gsp tech-support information
+  hsrp                 Output show commands of interest for HSRP debugging(cisco-support)
+  install              Gather all the information about Install for tech-support
+  iphc                 Output show commands of interest for iphc debugging
+  ipinfra              Output show commands of interest for ip-infra debugging(cisco-support)
+  ipsla                Output show commands of interest for ipsla debugging(cisco-support)
+  ipv6                 Collect ipv6 tech information
+  issu                 ISSU tech-support information(cisco-support)
+  json-rpc             Collect tech-support information for the JSON-RPC server feature.(cisco-support)
+  kim                  Gather lots of information about KIM(cisco-support)
+  l2rib                Output show commands for L2RIB debugging(cisco-support)
+  l2tp                 Output show commands for L2TP tech-support(cisco-support)
+  l2vpn                Output show commands for L2VPN debugging(cisco-support)
+  l3fib                Show L3FIB related diagnostics for Tech-support(cisco-support)
+  lisp                 Output show commands for lisp debugging
+  location             Specify a location(cisco-support)
+  lpts                 show tech-support output for LPTS
+  lwm                  Gather all the information about the Light Weight Messaging (LWM)
+  mgid                 Collect MGID related tech support information
+  mpls                 Output show commands of interest for MPLS debugging(cisco-support)
+  multicast            Show multicast related information
+  multilink            show tech-support output for multilink(cisco-support)
+  netconf              Gather lots of information about the Netconf agent(cisco-support)
+  netflow              Output show commands of interest for Netflow debugging(cisco-support)
+  nrs                  NRS tech-support information
+  nrsglobal            NRS tech-support information
+  ntp                  ntp show tech commands(cisco-support)
+  optics               optics tech-support(cisco-support)
+  otn-pi               Show otn pi controllers information for tech-support(cisco-support)
+  p2p-ipc              aipc show tech-support output
+  parser               Parser show tech-support output for debugging(cisco-support)
+  password             Include password in output(cisco-support)
+  pce                  Show PCE Information(cisco-support)
+  perfmgmt             Performance management show tech-support output(cisco-support)
+  pfi                  Collect PFI related information and save to disk(cisco-support)
+  placed               Gather all the information about the Placement Daemon (Placed)
+  pmengine             Collect PMENGINE related information and save to disk(cisco-support)
+  pool                 DAPS tech-support(cisco-support)
+  pos                  Output show commands of interest for pos debugging(cisco-support)
+  ppp                  Output show commands of interest for ppp debugging(cisco-support)
+  processmgr           Gather all the information about the Process Manager (ProcessMgr)
+  protection-notif     Collect fast traffic protection information and save to disk(cisco-support)
+  ptah                 Collect PTAH related information and save to disk(cisco-support)
+  qos                  Collect QOS related information and save to disk(cisco-support)
+  rack                 Specify a rack(cisco-support)
+  radius               Output show commands of interest for radius debugging(cisco-support)
+  raw                  RAW-IP supported trace and debugging
+  rdsfs                Gather lots of information about RDSFS(cisco-support)
+  redundancy-group     Show redundancy-group manager debug information
+  replicator           Gather information requred to debug replicator(cisco-support)
+  resmon               resmon show tech commands(cisco-support)
+  rib                  Show IP RIB related information(cisco-support)
+  routing              Routing show tech-support output
+  rsi                  show tech-support output for RSI (Router Space Infrastructure)(cisco-support)
+  sanitized            Sanitized configuration in output(cisco-support)
+  satellite-crashinfo  Collect Satellite crashinfo related information and save to disk(cisco-support)
+  sdac                 Collect XR Satellite related information and save to disk(cisco-support)
+  sdac-platform        Collect Satellite PD infra related information and save to disk(cisco-support)
+  sdr-invmgr           Spawn parallel show tech-support - use only if directed
+  sdr-mgbl-proxy       Spawn parallel show tech-support - use only if directed
+  serg                 Session redundancy group
+  serial               Output show commands of interest for serial debugging(cisco-support)
+  services             Show tech-support information relating to services(cisco-support)
+  shmwin               show tech-support shmwin output
+  snmp                 SNMP tech-support information(cisco-support)
+  spanning-tree        Collect spanning tree related tech-support information(cisco-support)
+  spio                 Collect SPIO information and save to disk(cisco-support)
+  spp                  Output show commands of interest for SPP debugging(cisco-support)
+  srlg                 show tech-support output for SRLG (Shared Risk Link Group)(cisco-support)
+  ssm                  Service State Monitoring (SSM) tech-support information
+  statsd               Output show commands of use for statistics debugging(cisco-support)
+  sysdb                System Database (SysDB) tech-support information(cisco-support)
+  syslog               syslog show tech commands(cisco-support)
+  tacacs               Output show commands of interest for tacacs debugging(cisco-support)
+  tcp                  TCP supported trace and debugging
+  telemetry            Show telemetry tech-support(cisco-support)
+  tunnel-ip            Output show commands of interest for GRE/IPinIP(cisco-support)
+  tunnel-template      Output show commands of interest for tunnel-template debugging
+  txlist               Gather all the information about the txlist
+  vkgpm                vkgpm show tech commands(cisco-support)
+  vrrp                 Output show commands of interest for VRRP debugging(cisco-support)
+  xml                  xml show tech commands(cisco-support)
+  xos                  Gather information about Cross-OS Services
+  ztp                  Gather lots of information about ZTP(cisco-support)
