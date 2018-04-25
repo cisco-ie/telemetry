@@ -1,0 +1,36 @@
+Last switch-over Wed Jul 12 19:42:46 2017: 3 weeks, 1 day, 15 hours, 10 minutes ago
+
+Fri Aug  4 10:53:34.756 PDT
+Syslog logging: enabled (0 messages dropped, 0 flushes, 0 overruns)
+    Console logging: level warnings, 0 messages logged
+    Monitor logging: level informational, 0 messages logged
+    Trap logging: level informational, 0 messages logged
+    Buffer logging: level debugging, 25 messages logged
+
+Log Buffer (2097152 bytes):
+
+RP/0/RP0/CPU0:Aug  4 10:24:44.111 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.0 Down - Peer closing down the session (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Aug  4 10:24:44.111 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.2 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Aug  4 10:24:44.110 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.26.0 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP1/CPU0:Aug  4 10:24:44.111 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.26.2 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP1/CPU0:Aug  4 10:24:44.119 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2602 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Aug  4 10:24:44.120 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2602 Down - Peer closing down the session (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Aug  4 10:24:44.120 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2600 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Aug  4 10:24:44.119 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2600 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Aug  4 10:25:20.577 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2602 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Aug  4 10:25:20.686 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.2 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Aug  4 10:25:23.924 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2600 Up (VRF: default) (AS: 65026) 
+RP/0/RP0/CPU0:Aug  4 10:25:24.096 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.26.0 Up (VRF: default) (AS: 65026) 
+RP/0/RP1/CPU0:Aug  4 10:35:25.813 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.28.0 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Aug  4 10:35:25.812 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.28.0 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65028) 
+RP/0/RP0/CPU0:Aug  4 10:35:25.812 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.28.2 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65028) 
+RP/0/RP1/CPU0:Aug  4 10:35:25.813 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 172.31.28.2 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Aug  4 10:35:25.820 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2800 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65028) 
+RP/0/RP1/CPU0:Aug  4 10:35:25.820 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2800 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Aug  4 10:35:25.820 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2802 Down - BGP Notification received, administrative reset (VRF: default) (AS: 65028) 
+RP/0/RP1/CPU0:Aug  4 10:35:25.821 : bgp[1050]: %ROUTING-BGP-5-NBR_NSR_DISABLED_STANDBY : NSR disabled on neighbor 2001:420:289:2000:0:1ab:fab0:2802 on standby RP due to BGP Notification received (VRF: default) 
+RP/0/RP0/CPU0:Aug  4 10:35:58.226 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2802 Up (VRF: default) (AS: 65028) 
+RP/0/RP0/CPU0:Aug  4 10:36:01.056 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.28.0 Up (VRF: default) (AS: 65028) 
+RP/0/RP0/CPU0:Aug  4 10:36:02.122 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 2001:420:289:2000:0:1ab:fab0:2800 Up (VRF: default) (AS: 65028) 
+RP/0/RP0/CPU0:Aug  4 10:36:08.505 : bgp[1050]: %ROUTING-BGP-5-ADJCHANGE : neighbor 172.31.28.2 Up (VRF: default) (AS: 65028) 
+LC/0/1/CPU0:Aug  4 10:49:01.994 : fia_driver[285]: %PLATFORM-CIH-5-ASIC_ERROR_SPECIAL_HANDLE : fia[5]: An oor-thresh-err error has occurred causing  packet drop transient. CMIC.CMIC_CMC0_IRQ_STAT4.EGQ_0.Interrupt_Register.DroppedUcDbInt   

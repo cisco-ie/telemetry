@@ -1,0 +1,74 @@
+[
+    {
+        "start_time": 1519090293609,
+        "end_time": 1519090301447,
+        "host_key": "leaf3",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519090901547,
+        "end_time": 1519090909227,
+        "host_key": "spine4",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519091509325,
+        "end_time": 1519091516577,
+        "host_key": "leaf4",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519092116677,
+        "end_time": 1519092124139,
+        "host_key": "leaf8",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519092724240,
+        "end_time": 1519092731714,
+        "host_key": "leaf5",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519093331801,
+        "end_time": 1519093339340,
+        "host_key": "spine2",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519093939437,
+        "end_time": 1519093946391,
+        "host_key": "leaf7",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519094546406,
+        "end_time": 1519094553561,
+        "host_key": "leaf1",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519095153640,
+        "end_time": 1519095160971,
+        "host_key": "leaf6",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519095761037,
+        "end_time": 1519095768545,
+        "host_key": "spine1",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519096368645,
+        "end_time": 1519096376363,
+        "host_key": "spine3",
+        "event_key": "clear_bgp"
+    },
+    {
+        "start_time": 1519096976463,
+        "end_time": 1519096983526,
+        "host_key": "leaf2",
+        "event_key": "clear_bgp"
+    }
+]

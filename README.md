@@ -21,15 +21,24 @@ Each datasets include the following:
 - **Case File:** Information reflecting the events, time of the events, and device(s) where event triggers are initiated
 
 ### Folders & Files
-- `/portflap` - Relevant datasets and log files
-- `/bgpclear` - Relevant dataset and log files
-- `/ground_truth_docs` - Information regarding the topology, all connections, cdp neighbors, and device types
+- `/topology_description_docs` - Information regarding the topology, all connections, cdp neighbors, and device types
     - `telemetry_topology_maps.pdf`
         - **Slide 1:** Logical topology map with links colored based on the numbe of ECMP links and speed
         - **Slide 2:** Actual connected topology
         - **Slide 3:** Device types in position
     - `CDP_ground_truth.pdf`: Device connections for the network under test
-- `baseline` - Baseline datasets containting no anomalies for initial modeling of the expected normal behavior of the network under test 
+
+- | # | Traffic load | No. Anomalies | Duration | Description |
+  | --- | --- | --- | --- | --- |
+  | 0 | 0 | 0 | 1h | Baseline (no amolies) |
+  | 1 | 500Gbps | 0 | 1h | Baseline (no anomalies) |
+  | 2 | 1Tbps | 11 | 1h | BGP Clear | 
+  | 3 | 1Tbps | 8 | 0.55h | BGP Clear | 
+  | 4 | 1Tbps | 5 | 0.72h | Port Flap | 
+  | 5 | 1Tbps | 12 | 2h | BGP Clear |
+  | 6 | 0 | 12 | 2h | BGP Clear |
+  | 7 | 0 | 130 | 72h | (VIRL) BGP Clear |
+  | 8 | 0 | 238 | 262h | (VIRL) BGP Clear |
 
 ## Road Map
 - Host/Application Metrics
