@@ -6,19 +6,26 @@
 machine learning, data science and research
 
 ## Objective
-Our goal is to start with datasets and documentation that are geared to supervised 
-learning that will allow for development of various models, test and train against 
-the data set. At some point, we will publish data sets that will carry the same types of anomalies and abnormal behavior that occur "at random" for unsupervised learning.  
+Our immediate goal is to share real-world datasets and documentation that are instrumental to develop, test and compare anomaly detection algorithms based on  machine learning (both supervised or unsupervised). 
 
-More complex datasets will also be provided where any number and differing type of 
-event occurrences, which drives towards more real-life situations and helps us move towards
-a greater capability for automation, remediation, and behavior pattern recognition.
+Our longer term goal is to systematically extend this collection with more complex datasets, event occurrences, which drives towards more real-life situations and helps the community move towards a greater capability for automation, remediation, and behavior pattern recognition.
+
+
+## Related repositories 
+The datasets released in this website are also instrumental to reproduce results that are published in  [ACM SIGCOMM BigDama'18] and that are demonstrated at [IEEE INFOCOM'18] (see the Reference section below)
+
+This repository only contains the dataset, whereas related repositories contain 
+- our generic  DenStream implementation   https://github.com/anrputina/OutlierDenStream
+- specific instruction and code to replicate the paper results   https://github.com/anrputina/OutlierDenStream-BigDama18
+
 
 ## Usage
 Each datasets include the following:
 - `.csv` Dataset
 - **Header Definition File:** Provides a definition of each header
 - **Case File:** Information reflecting the events, time of the events, and device(s) where event triggers are initiated
+
+
 
 ### Folders & Files
 - `/topology_description_docs` - Information regarding the topology, all connections, cdp neighbors, and device types
@@ -40,8 +47,11 @@ Each datasets include the following:
   | 7 | 0 | 130 | 72h | (VIRL) BGP Clear |
   | 8 | 0 | 238 | 262h | (VIRL) BGP Clear |
 
-## Road Map
-- Host/Application Metrics
+## References
+
+[ACM SIGCOMM BigDama'18] Putina, Andrian and Rossi, Dario and Bifet, Albert and Barth, Steven and Pletcher, Drew and Precup, Cristina and Nivaggioli, Patrice,  Telemetry-based stream-learning of BGP anomalies ACM SIGCOMM Workshop on Big Data Analytics and Machine Learning for Data Communication Networks (Big-DAMA’18) aug. 2018
+
+[IEEE INFOCOM'18] Putina, Andrian and Rossi, Dario and Bifet, Albert and Barth, Steven and Pletcher, Drew and Precup, Cristina and Nivaggioli, Patrice,  Unsupervised real-time detection of BGP anomalies leveraging high-rate and fine-grained telemetry data IEEE INFOCOM, Demo Session apr. 2018,
 
 ## License
 [Community Data License Agreementeative - Permissive, Version 1.0 ](LICENSE) &copy; [Cisco Innovation Edge](https://github.com/cisco-ie/telemetry/blob/master/LICENSE)
