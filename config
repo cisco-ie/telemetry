@@ -11,8 +11,11 @@
  pushurl = https://wwwin-github.cisco.com/spa-ie/telemetry
  pushurl = https://github.com/cisco-ie/telemetry.git
 [remote "github"]
-        url = https://github.com/cisco-ie/telemetry
-        fetch = +refs/heads/*:refs/remotes/origin/*
+ url = https://github.com/cisco-ie/telemetry
+ fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "cisco"
+ url = https://wwwin-github.cisco.com/spa-ie/telemetry
+ fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
  remote = origin
  merge = refs/heads/master
