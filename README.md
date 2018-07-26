@@ -46,6 +46,8 @@ Each datasets include the following:
   | 6 | 0 | 12 | 2h | BGP Clear |
   | 7 | 0 | 130 | 72h | (VIRL) BGP Clear |
   | 8 | 0 | 238 | 262h | (VIRL) BGP Clear |
+  | 9 | 2.9Tbps | 5 | .75h | Port Admin Shut |
+  | 10 | 2Tbps | 5 | .55h | Port Transceiver Pull and Reinsert |
 
 ## References
 
