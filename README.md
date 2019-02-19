@@ -56,4 +56,4 @@ Each datasets include the following:
 [IEEE INFOCOM'18] Putina, Andrian and Rossi, Dario and Bifet, Albert and Barth, Steven and Pletcher, Drew and Precup, Cristina and Nivaggioli, Patrice,  Unsupervised real-time detection of BGP anomalies leveraging high-rate and fine-grained telemetry data IEEE INFOCOM, Demo Session apr. 2018,
 
 ## License
-[Community Data License Agreement - Permissive 1.0 ](LICENSE) &copy; [Cisco Innovation Edge](https://github.com/cisco-ie/telemetry/blob/master/LICENSE)
+[Community Data License Agreement - Permissive 1.0 ](https://cdla.io/permissive-1-0/) &copy; [Cisco Innovation Edge](https://cdla.io/permissive-1-0/)
