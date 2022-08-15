@@ -1,0 +1,2366 @@
+[1558408583.769235] Exec args: ./netloop_dr0203_ifdown-delay.py --subscription-interval 5000
+[1558408583.794914] Loading event handler: YangCollector . priority=60
+[1558408583.796245] Loading event handler: IxChariotEventLogger . priority=60
+[1558408583.797574] Loading event handler: InfluxDbCollector . priority=60
+[1558408583.800400] Loading event handler: XEXMLCollector . priority=60
+[1558408583.803032] Loading event handler: XECLICollector . priority=60
+[1558408583.803058] Loading event handler: DeviceConfigBackup . priority=10
+[1558408583.803104] Loading test config UDP Route Loop Test
+[1558408584.056797] Netloop ticks: [1200, 2150, 6000, 6950, 10800, 11750]
+[1558408584.056840] Iface updown ticks: [3600, 4800, 8400, 9600, 13200, 14400]
+[1558408584.058193] Loading event handler: NetworkLoopDR0203 . priority=50
+[1558408584.061333] Loading event handler: ConfigChanger . priority=20
+[1558408584.062686] Loading event handler: SimpleInterfaceFlapper . priority=50
+[1558408584.065300] Loading event handler: TracerouteLoopedHost . priority=50
+[1558408584.067922] Loading event handler: CLICollector . priority=50
+[1558408584.070445] Loading event handler: CLICollector . priority=50
+[1558408584.072917] Loading event handler: CLICollector . priority=50
+[1558408584.075376] Loading event handler: CLICollector . priority=50
+[1558408584.077845] Loading event handler: CLICollector . priority=50
+[1558408584.080330] Loading event handler: CLICollector . priority=50
+[1558408584.099515] ConfigChanger will modify devices: ['dr02', 'dr03', 'leaf8', 'leaf7', 'spine3', 'spine4']. Enabling config auto-restore on finish
+[1558408584.099576] NetworkLoopDR0203 will modify devices: ['dr02', 'dr03']. Enabling config auto-restore on finish
+[1558408584.099601] SimpleInterfaceFlapper will modify devices: ['leaf7']. Enabling config auto-restore on finish
+[1558408584.099653] DeviceConfigBackup: saving current configs from devices: ['spine1', 'spine2', 'spine3', 'spine4', 'spine5', 'leaf7', 'leaf8', 'dr01', 'dr02', 'dr03', 'spine4-3464']
+[1558408591.150055] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine1.xml
+[1558408591.156680] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine2.xml
+[1558408591.162763] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine3.xml
+[1558408591.169161] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine4.xml
+[1558408591.174991] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine5.xml
+[1558408591.182397] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_leaf7.xml
+[1558408591.187229] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_leaf8.xml
+[1558408591.193380] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_dr01.xml
+[1558408591.200799] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_dr02.xml
+[1558408591.206177] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_dr03.xml
+[1558408591.210750] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine4-3464.xml
+[1558408591.236692] Device config hashes:
+[1558408591.238757] spine1: 0620bad
+[1558408591.240587] spine2: e3be552
+[1558408591.242501] spine3: cbbe8d0
+[1558408591.244267] spine4: 4bbbeb8
+[1558408591.246502] spine5: f9a7f21
+[1558408591.247957] leaf7: 0bce483
+[1558408591.249674] leaf8: e7599ed
+[1558408591.251871] dr01: e877ae4
+[1558408591.253650] dr02: f415cd9
+[1558408591.255118] dr03: 745f5bd
+[1558408591.267243] spine4-3464: d7c5397
+[1558408591.267267] DeviceConfigBackup: devices to restore on finish: ['dr02', 'dr03', 'leaf8', 'leaf7', 'spine3', 'spine4']
+[1558408595.110231] Applying config for devices ['dr02', 'dr03', 'leaf8', 'leaf7', 'spine3', 'spine4']. Edit subscriptions
+[1558408595.259320] Edit config - all OK
+[1558408598.997116] Commit - all OK
+[1558408598.997318] event: apply_device_configs {'comment': 'Edit subscriptions dr02,dr03,leaf8,leaf7,spine3,spine4'}
+[1558408608.779759] dr02 << conf t
+[1558408609.581616] dr02 >> 
+Mon May 20 20:16:48.985 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-000020e1-00000099     netconf    obt      Mon May 20 20:16:35 2019 
+[1558408609.581680] dr02 << router static
+[1558408609.982796] dr02 >> 
+[1558408609.982837] dr02 << address-family ipv4 unicast
+[1558408610.383857] dr02 >> 
+[1558408610.383894] dr02 << no 172.31.153.24/29
+[1558408610.785056] dr02 >> 
+[1558408610.785103] dr02 << no 172.31.153.0/24
+[1558408611.186229] dr02 >> 
+[1558408611.186275] dr02 << commit
+[1558408611.587460] dr02 >> 
+Mon May 20 20:16:51.391 PDT
+[1558408611.587503] dr02 << end
+[1558408611.988575] dr02 >> 
+[1558408611.988617] dr02 << show route static
+[1558408612.590037] dr02 >> 
+Mon May 20 20:16:52.198 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 2w3d, MgmtEth0/RP0/CPU0/0
+S    172.31.2.135/32 is directly connected, 2w3d, HundredGigE0/1/0/22
+S    172.31.2.137/32 is directly connected, 2w3d, HundredGigE0/1/0/23
+S    172.31.25.0/32 is directly connected, 1w5d, HundredGigE0/0/0/0
+S    172.31.25.2/32 is directly connected, 1w5d, HundredGigE0/0/0/1
+S    172.31.26.0/32 is directly connected, 2w3d, HundredGigE0/0/0/2
+S    172.31.26.2/32 is directly connected, 2w3d, HundredGigE0/0/0/3
+S    172.31.27.0/32 is directly connected, 2w3d, HundredGigE0/0/0/4
+S    172.31.27.2/32 is directly connected, 2w3d, HundredGigE0/0/0/5
+S    172.31.28.0/32 is directly connected, 2w3d, HundredGigE0/0/0/6
+S    172.31.28.2/32 is directly connected, 2w3d, HundredGigE0/0/0/7
+[1558408612.590170] event: remove_network_loop {'device': 'dr02'}
+[1558408612.590211] dr03 << conf t
+[1558408613.391943] dr03 >> 
+Mon May 20 20:16:52.852 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-00004abe-00000f0e     netconf    obt      Mon May 20 20:16:32 2019 
+[1558408613.391992] dr03 << router static
+[1558408613.793215] dr03 >> 
+[1558408613.793266] dr03 << address-family ipv4 unicast
+[1558408614.194333] dr03 >> 
+[1558408614.194374] dr03 << no 172.31.153.24/29
+[1558408614.595418] dr03 >> 
+[1558408614.595461] dr03 << no 172.31.153.0/24
+[1558408614.996572] dr03 >> 
+[1558408614.996615] dr03 << commit
+[1558408615.397691] dr03 >> 
+Mon May 20 20:16:55.256 PDT
+[1558408615.397731] dr03 << end
+[1558408615.798908] dr03 >> 
+[1558408615.798960] dr03 << show route static
+[1558408616.400635] dr03 >> 
+Mon May 20 20:16:56.064 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 21w5d, MgmtEth0/RP0/CPU0/0
+[1558408616.400755] event: remove_network_loop {'device': 'dr03'}
+[1558408664.315074] Starting the test TestCfgChanger
+[1558408664.330840] see https://gspie-ixchariot.cisco.com/sessions/25/stats
+[1558408677.505547] Starting proc: /home/antkisel/data/data_collection/getYANGdelay.py --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_collection_latency --delay 10 --cmd 'clear telemetry subscription all' spine1 spine2 spine3 spine4 leaf7 leaf8 dr02 dr03
+[1558408677.517349] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.589 ms  0.677 ms  0.803 ms
+ 2  172.31.3.2 (172.31.3.2)  1.754 ms  1.751 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.185 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.026 ms  1.162 ms  1.990 ms
+ 4  172.31.2.131 (172.31.2.131)  0.637 ms  0.809 ms  0.994 ms
+ 5  172.31.153.26 (172.31.153.26)  0.065 ms  0.067 ms  0.050 ms
+
+[1558408677.518914] event: clear_telemetry {'device': 'spine1'}
+[1558408677.518984] event: clear_telemetry {'device': 'spine2'}
+[1558408677.519059] event: clear_telemetry {'device': 'spine3'}
+[1558408677.519087] event: clear_telemetry {'device': 'spine4'}
+[1558408677.519113] event: clear_telemetry {'device': 'leaf7'}
+[1558408677.519139] event: clear_telemetry {'device': 'leaf8'}
+[1558408677.519164] event: clear_telemetry {'device': 'dr02'}
+[1558408677.519188] event: clear_telemetry {'device': 'dr03'}
+[1558408677.519261] event: ixchariot_traffic {'duration': 10800}
+[1558408677.520461] Waiting for test to finish...
+[1558408678.120029] csv: /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models/spine5/Cisco-show_interface.csv
+[1558408678.511494] csv: /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models/leaf7/Cisco-show_interface.csv
+[1558408678.539559] csv: /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models/spine4/Cisco-show_interface.csv
+[1558408678.561312] csv: /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models/spine4-3464/Cisco-show_interface.csv
+[1558408679.312352] csv: /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models/spine3/Cisco-show_interface.csv
+[1558408679.512381] csv: /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models/leaf8/Cisco-show_interface.csv
+[1558408687.656577]  Test Running 10/10800
+[1558408697.781448]  Test Running 20/10800
+[1558408707.887374]  Test Running 30/10800
+[1558408718.309139]  Test Running 41/10800
+[1558408728.415405]  Test Running 51/10800
+[1558408738.621038]  Test Running 61/10800
+[1558408749.197274]  Test Running 71/10800
+[1558408759.300121]  Test Running 82/10800
+[1558408769.403542]  Test Running 92/10800
+[1558408779.507758]  Test Running 102/10800
+[1558408789.617992]  Test Running 112/10800
+[1558408799.730851]  Test Running 122/10800
+[1558408810.613770]  Test Running 133/10800
+[1558408820.717169]  Test Running 143/10800
+[1558408830.826809]  Test Running 153/10800
+[1558408841.181552]  Test Running 163/10800
+[1558408851.288423]  Test Running 174/10800
+[1558408857.513819] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.651 ms  0.713 ms  0.866 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.166 ms 172.31.3.2 (172.31.3.2)  1.738 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.127 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.276 ms  1.260 ms  1.304 ms
+ 4  172.31.2.133 (172.31.2.133)  0.608 ms 172.31.2.137 (172.31.2.137)  0.701 ms  0.836 ms
+ 5  172.31.153.26 (172.31.153.26)  0.065 ms  0.063 ms  0.040 ms
+
+[1558408861.390772]  Test Running 184/10800
+[1558408871.497309]  Test Running 194/10800
+[1558408881.617191]  Test Running 204/10800
+[1558408892.474274]  Test Running 215/10800
+[1558408902.693104]  Test Running 225/10800
+[1558408912.803159]  Test Running 235/10800
+[1558408924.248452]  Test Running 246/10800
+[1558408935.033752]  Test Running 257/10800
+[1558408945.148283]  Test Running 267/10800
+[1558408955.973435]  Test Running 278/10800
+[1558408966.135968]  Test Running 288/10800
+[1558408976.328711]  Test Running 298/10800
+[1558408986.710784]  Test Running 309/10800
+[1558408996.891599]  Test Running 319/10800
+[1558409007.002483]  Test Running 329/10800
+[1558409017.188746]  Test Running 339/10800
+[1558409027.306357]  Test Running 350/10800
+[1558409037.433913]  Test Running 360/10800
+[1558409037.515117] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.673 ms  0.714 ms  0.833 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.376 ms  3.408 ms  3.535 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.049 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.033 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.135 ms
+ 4  172.31.2.135 (172.31.2.135)  0.431 ms 172.31.2.131 (172.31.2.131)  0.568 ms  0.703 ms
+ 5  172.31.153.26 (172.31.153.26)  0.084 ms  0.075 ms  0.068 ms
+
+[1558409048.979868]  Test Running 371/10800
+[1558409059.124672]  Test Running 381/10800
+[1558409069.711453]  Test Running 392/10800
+[1558409079.882533]  Test Running 402/10800
+[1558409090.046631]  Test Running 412/10800
+[1558409101.746538]  Test Running 424/10800
+[1558409111.870710]  Test Running 434/10800
+[1558409122.013504]  Test Running 444/10800
+[1558409132.122646]  Test Running 454/10800
+[1558409142.230256]  Test Running 464/10800
+[1558409152.367982]  Test Running 475/10800
+[1558409162.471077]  Test Running 485/10800
+[1558409172.598071]  Test Running 495/10800
+[1558409182.707516]  Test Running 505/10800
+[1558409192.845173]  Test Running 515/10800
+[1558409202.957487]  Test Running 525/10800
+[1558409213.130101]  Test Running 535/10800
+[1558409217.515378] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.681 ms  0.757 ms  0.886 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.046 ms  3.042 ms  3.136 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.124 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.091 ms  1.092 ms
+ 4  172.31.2.133 (172.31.2.133)  0.557 ms 172.31.2.131 (172.31.2.131)  0.659 ms 172.31.2.133 (172.31.2.133)  0.796 ms
+ 5  172.31.153.26 (172.31.153.26)  0.067 ms  0.053 ms  0.051 ms
+
+[1558409223.378655]  Test Running 546/10800
+[1558409233.963811]  Test Running 556/10800
+[1558409244.131323]  Test Running 566/10800
+[1558409254.792027]  Test Running 577/10800
+[1558409264.891552]  Test Running 587/10800
+[1558409274.992412]  Test Running 597/10800
+[1558409285.898462]  Test Running 608/10800
+[1558409295.997713]  Test Running 618/10800
+[1558409306.095436]  Test Running 628/10800
+[1558409316.221448]  Test Running 638/10800
+[1558409326.321997]  Test Running 649/10800
+[1558409336.450860]  Test Running 659/10800
+[1558409346.586126]  Test Running 669/10800
+[1558409356.684335]  Test Running 679/10800
+[1558409366.789403]  Test Running 689/10800
+[1558409376.911767]  Test Running 699/10800
+[1558409387.020722]  Test Running 709/10800
+[1558409397.132139]  Test Running 719/10800
+[1558409397.516318] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.541 ms  0.643 ms  0.764 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.044 ms 172.31.3.2 (172.31.3.2)  1.650 ms  1.632 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.950 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.160 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.924 ms
+ 4  172.31.2.135 (172.31.2.135)  0.509 ms 172.31.2.133 (172.31.2.133)  0.640 ms 172.31.2.137 (172.31.2.137)  0.779 ms
+ 5  172.31.153.26 (172.31.153.26)  0.071 ms  0.091 ms  0.076 ms
+
+[1558409408.865541]  Test Running 729/10800
+[1558409418.999308]  Test Running 741/10800
+[1558409429.106518]  Test Running 751/10800
+[1558409439.639642]  Test Running 762/10800
+[1558409449.744969]  Test Running 772/10800
+[1558409459.873737]  Test Running 782/10800
+[1558409469.988124]  Test Running 792/10800
+[1558409480.102792]  Test Running 802/10800
+[1558409490.737678]  Test Running 813/10800
+[1558409500.845102]  Test Running 823/10800
+[1558409510.946429]  Test Running 833/10800
+[1558409521.041134]  Test Running 843/10800
+[1558409531.192679]  Test Running 853/10800
+[1558409541.296992]  Test Running 863/10800
+[1558409551.396003]  Test Running 874/10800
+[1558409561.500772]  Test Running 884/10800
+[1558409571.631865]  Test Running 894/10800
+[1558409577.518138] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.642 ms  0.698 ms  0.827 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.918 ms 172.31.3.2 (172.31.3.2)  1.703 ms  1.690 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.943 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.134 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.114 ms
+ 4  172.31.2.137 (172.31.2.137)  0.600 ms 172.31.2.133 (172.31.2.133)  0.698 ms 172.31.2.137 (172.31.2.137)  0.847 ms
+ 5  172.31.153.26 (172.31.153.26)  0.072 ms  0.071 ms  0.051 ms
+
+[1558409581.847402]  Test Running 904/10800
+[1558409592.610843]  Test Running 915/10800
+[1558409602.806867]  Test Running 925/10800
+[1558409612.969939]  Test Running 935/10800
+[1558409623.076406]  Test Running 945/10800
+[1558409633.190792]  Test Running 955/10800
+[1558409643.932253]  Test Running 966/10800
+[1558409654.355543]  Test Running 976/10800
+[1558409664.453586]  Test Running 987/10800
+[1558409674.811432]  Test Running 997/10800
+[1558409684.923700]  Test Running 1007/10800
+[1558409695.039963]  Test Running 1017/10800
+[1558409705.138235]  Test Running 1027/10800
+[1558409715.264283]  Test Running 1037/10800
+[1558409725.478232]  Test Running 1048/10800
+[1558409735.829607]  Test Running 1058/10800
+[1558409745.930827]  Test Running 1068/10800
+[1558409756.080622]  Test Running 1078/10800
+[1558409757.516079] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.580 ms  0.686 ms  0.820 ms
+ 2  172.31.3.2 (172.31.3.2)  1.760 ms  1.739 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.317 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.906 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.897 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.315 ms
+ 4  172.31.2.137 (172.31.2.137)  0.541 ms 172.31.2.131 (172.31.2.131)  0.673 ms 172.31.2.137 (172.31.2.137)  0.796 ms
+ 5  172.31.153.26 (172.31.153.26)  0.086 ms  0.066 ms  0.061 ms
+
+[1558409766.204193]  Test Running 1088/10800
+[1558409776.306472]  Test Running 1098/10800
+[1558409786.420968]  Test Running 1109/10800
+[1558409797.194954]  Test Running 1119/10800
+[1558409807.310100]  Test Running 1129/10800
+[1558409817.410476]  Test Running 1140/10800
+[1558409827.606117]  Test Running 1150/10800
+[1558409837.759386]  Test Running 1160/10800
+[1558409847.884609]  Test Running 1170/10800
+[1558409858.141417]  Test Running 1180/10800
+[1558409868.296162]  Test Running 1190/10800
+[1558409878.441494]  Test Running 1200/10800
+[1558409887.271179] dr02 << conf t
+[1558409888.073013] dr02 >> 
+Mon May 20 20:38:07.478 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-000020e1-00000099     netconf    obt      Mon May 20 20:16:35 2019 
+[1558409888.073070] dr02 << router static
+[1558409888.474919] dr02 >> 
+[1558409888.475118] dr02 << address-family ipv4 unicast
+[1558409888.588174]  Test Running 1211/10800
+[1558409888.876801] dr02 >> 
+[1558409888.876911] dr02 << 172.31.153.24/29 172.31.2.1 1
+[1558409889.278020] dr02 >> 
+[1558409889.278058] dr02 << 172.31.153.24/29 172.31.2.3 1
+[1558409889.679217] dr02 >> 
+[1558409889.679267] dr02 << 172.31.153.24/29 172.31.2.5 1
+[1558409890.080575] dr02 >> 
+[1558409890.080651] dr02 << commit
+[1558409891.283335] dr02 >> 
+Mon May 20 20:38:10.286 PDT
+[1558409891.283394] dr02 << end
+[1558409891.684698] dr02 >> 
+[1558409891.684758] dr02 << show route static
+[1558409892.286535] dr02 >> 
+Mon May 20 20:38:11.894 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 2w3d, MgmtEth0/RP0/CPU0/0
+S    172.31.2.135/32 is directly connected, 2w3d, HundredGigE0/1/0/22
+S    172.31.2.137/32 is directly connected, 2w3d, HundredGigE0/1/0/23
+S    172.31.25.0/32 is directly connected, 1w5d, HundredGigE0/0/0/0
+S    172.31.25.2/32 is directly connected, 1w5d, HundredGigE0/0/0/1
+S    172.31.26.0/32 is directly connected, 2w3d, HundredGigE0/0/0/2
+S    172.31.26.2/32 is directly connected, 2w3d, HundredGigE0/0/0/3
+S    172.31.27.0/32 is directly connected, 2w3d, HundredGigE0/0/0/4
+S    172.31.27.2/32 is directly connected, 2w3d, HundredGigE0/0/0/5
+S    172.31.28.0/32 is directly connected, 2w3d, HundredGigE0/0/0/6
+S    172.31.28.2/32 is directly connected, 2w3d, HundredGigE0/0/0/7
+S    172.31.153.24/29 [1/0] via 172.31.2.5, 00:00:01
+                      [1/0] via 172.31.2.3, 00:00:01
+                      [1/0] via 172.31.2.1, 00:00:01
+[1558409892.286881] event: add_network_loop {'device': 'dr02'}
+[1558409892.286928] dr03 << conf t
+[1558409893.088851] dr03 >> 
+Mon May 20 20:38:12.546 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-00004abe-00000f0e     netconf    obt      Mon May 20 20:16:32 2019 
+00001000-00004abe-00000f11     netconf    obt      Mon May 20 20:17:37 2019 
+[1558409893.088904] dr03 << router static
+[1558409893.490014] dr03 >> 
+[1558409893.490056] dr03 << address-family ipv4 unicast
+[1558409893.891151] dr03 >> 
+[1558409893.891198] dr03 << 172.31.153.24/29 172.31.28.4 1
+[1558409894.292476] dr03 >> 
+[1558409894.292528] dr03 << commit
+[1558409895.094324] dr03 >> 
+Mon May 20 20:38:14.550 PDT
+[1558409895.094378] dr03 << end
+[1558409895.495503] dr03 >> 
+[1558409895.495543] dr03 << show route static
+[1558409896.096995] dr03 >> 
+Mon May 20 20:38:15.759 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 21w5d, MgmtEth0/RP0/CPU0/0
+S    172.31.153.24/29 [1/0] via 172.31.28.4, 00:00:01
+[1558409896.097117] event: add_network_loop {'device': 'dr03'}
+[1558409898.743150]  Test Running 1221/10800
+[1558409909.858746]  Test Running 1231/10800
+[1558409920.058855]  Test Running 1242/10800
+[1558409930.165090]  Test Running 1252/10800
+[1558409940.266191]  Test Running 1262/10800
+[1558409947.547481] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.636 ms  0.716 ms  0.848 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.733 ms  1.734 ms 172.31.3.2 (172.31.3.2)  3.228 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.965 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.953 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.090 ms
+ 5  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.055 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.222 ms  3.201 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.669 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.426 ms  1.493 ms
+ 8  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.729 ms  1.751 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.738 ms
+ 9  * * *
+10  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.805 ms  1.792 ms  1.936 ms
+11  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.736 ms  1.713 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.835 ms
+12  * * *
+13  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.908 ms  1.890 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.922 ms
+14  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.583 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.954 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.757 ms
+15  * * *
+16  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.841 ms  1.729 ms *
+17  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.298 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.251 ms  3.341 ms
+18  * * *
+19  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.207 ms  2.204 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.275 ms
+20  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.237 ms  3.234 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.378 ms
+21  * * *
+22  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.163 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.916 ms  1.873 ms
+23  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.161 ms  2.123 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.954 ms
+24  * * *
+25  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.744 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.165 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.015 ms
+26  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.940 ms  1.697 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.776 ms
+27  * * *
+28  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.874 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.834 ms  1.910 ms
+29  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.696 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.838 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.839 ms
+30  * * *
+
+[1558409951.175819]  Test Running 1273/10800
+[1558409961.433369]  Test Running 1284/10800
+[1558409971.546219]  Test Running 1294/10800
+[1558409981.650725]  Test Running 1304/10800
+[1558409991.755125]  Test Running 1314/10800
+[1558410002.104373]  Test Running 1324/10800
+[1558410012.288372]  Test Running 1334/10800
+[1558410022.415279]  Test Running 1344/10800
+[1558410032.601962]  Test Running 1355/10800
+[1558410042.705462]  Test Running 1365/10800
+[1558410052.808014]  Test Running 1375/10800
+[1558410062.908612]  Test Running 1385/10800
+[1558410073.510823]  Test Running 1396/10800
+[1558410083.624373]  Test Running 1406/10800
+[1558410093.850128]  Test Running 1416/10800
+[1558410104.182505]  Test Running 1426/10800
+[1558410114.295628]  Test Running 1436/10800
+[1558410125.234240]  Test Running 1447/10800
+[1558410127.551429] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.653 ms  0.710 ms  0.845 ms
+ 2  172.31.3.2 (172.31.3.2)  3.172 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.705 ms  1.685 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.316 ms  2.301 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.435 ms
+ 5  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  2.916 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.045 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.089 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.836 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.821 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.949 ms
+ 8  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.020 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.955 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.020 ms
+ 9  * * *
+10  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.809 ms  1.699 ms  1.786 ms
+11  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.805 ms  1.607 ms  1.681 ms
+12  * * *
+13  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.872 ms  1.792 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.816 ms
+14  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.684 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.147 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.111 ms
+15  * * *
+16  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.905 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.860 ms  1.772 ms
+17  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  2.079 ms  1.689 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.685 ms
+18  * * *
+19  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.505 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.507 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.614 ms
+20  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  4.228 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  4.301 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  4.350 ms
+21  * * *
+22  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.408 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.562 ms  2.547 ms
+23  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  4.262 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  4.318 ms  2.534 ms
+24  * * *
+25  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.905 ms  1.881 ms  1.842 ms
+26  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  2.149 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.140 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.193 ms
+27  * * *
+28  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.824 ms  2.121 ms  1.755 ms
+29  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.546 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  2.516 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.499 ms
+30  * * *
+
+[1558410135.338970]  Test Running 1457/10800
+[1558410145.462615]  Test Running 1468/10800
+[1558410155.621599]  Test Running 1478/10800
+[1558410165.782051]  Test Running 1488/10800
+[1558410175.956278]  Test Running 1498/10800
+[1558410186.216320]  Test Running 1508/10800
+[1558410196.431807]  Test Running 1518/10800
+[1558410206.645274]  Test Running 1529/10800
+[1558410216.752030]  Test Running 1539/10800
+[1558410226.898356]  Test Running 1549/10800
+[1558410237.092784]  Test Running 1559/10800
+[1558410247.216250]  Test Running 1569/10800
+[1558410257.322447]  Test Running 1579/10800
+[1558410267.425107]  Test Running 1589/10800
+[1558410277.531155]  Test Running 1600/10800
+[1558410287.642059]  Test Running 1610/10800
+[1558410297.750844]  Test Running 1620/10800
+[1558410307.549405] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.631 ms  0.722 ms  0.849 ms
+ 2  172.31.3.2 (172.31.3.2)  2.950 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.547 ms 172.31.3.2 (172.31.3.2)  2.910 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.181 ms  2.182 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.312 ms
+ 5  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.847 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.977 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.074 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.825 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.816 ms  1.823 ms
+ 8  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.816 ms  1.767 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.317 ms
+ 9  * * *
+10  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.620 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.687 ms  2.093 ms
+11  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.792 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.891 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.960 ms
+12  * * *
+13  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.647 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.622 ms  1.675 ms
+14  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.830 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.683 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.631 ms
+15  * * *
+16  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.594 ms  1.587 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.678 ms
+17  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.170 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.928 ms  1.880 ms
+18  * * *
+19  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.277 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.270 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.392 ms
+20  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.041 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.115 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.252 ms
+21  * * *
+22  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.274 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.360 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.431 ms
+23  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.065 ms  3.226 ms  1.783 ms
+24  * * *
+25  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.852 ms  1.836 ms  1.970 ms
+26  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.818 ms  1.681 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.786 ms
+27  * * *
+28  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.643 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.795 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.751 ms
+29  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.791 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.746 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.807 ms
+30  * * *
+
+[1558410308.660245]  Test Running 1631/10800
+[1558410318.924758]  Test Running 1641/10800
+[1558410331.522875]  Test Running 1651/10800
+[1558410341.698722]  Test Running 1664/10800
+[1558410351.902059]  Test Running 1674/10800
+[1558410362.006104]  Test Running 1684/10800
+[1558410372.716718]  Test Running 1695/10800
+[1558410382.825373]  Test Running 1705/10800
+[1558410393.290896]  Test Running 1715/10800
+[1558410403.390994]  Test Running 1725/10800
+[1558410413.491023]  Test Running 1735/10800
+[1558410424.279229]  Test Running 1746/10800
+[1558410434.548830]  Test Running 1757/10800
+[1558410444.715975]  Test Running 1767/10800
+[1558410454.868254]  Test Running 1777/10800
+[1558410464.980288]  Test Running 1787/10800
+[1558410475.086545]  Test Running 1797/10800
+[1558410485.150407]  Test Running 1807/10800
+[1558410487.543038] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.705 ms  1.308 ms  1.433 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.780 ms  1.763 ms  1.831 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.229 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.221 ms  2.341 ms
+ 5  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.779 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.895 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.881 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.723 ms  1.721 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.817 ms
+ 8  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.712 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.885 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.958 ms
+ 9  * * *
+10  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.864 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.708 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.667 ms
+11  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.658 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.747 ms  1.918 ms
+12  * * *
+13  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.683 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.641 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.724 ms
+14  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.519 ms  1.661 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.716 ms
+15  * * *
+16  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.670 ms  1.792 ms  1.749 ms
+17  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.777 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.676 ms *
+18  * * *
+19  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.548 ms  2.554 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.640 ms
+20  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.090 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.077 ms  3.236 ms
+21  * * *
+22  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.477 ms  2.641 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.697 ms
+23  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.074 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.913 ms  1.865 ms
+24  * * *
+25  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.913 ms  1.718 ms  1.814 ms
+26  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.749 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.803 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.737 ms
+27  * * *
+28  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.983 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.935 ms  1.958 ms
+29  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.664 ms  1.791 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.796 ms
+30  * * *
+
+[1558410495.257965]  Test Running 1817/10800
+[1558410505.438907]  Test Running 1827/10800
+[1558410515.537511]  Test Running 1838/10800
+[1558410525.692550]  Test Running 1848/10800
+[1558410535.841646]  Test Running 1858/10800
+[1558410546.426320]  Test Running 1868/10800
+[1558410556.529133]  Test Running 1879/10800
+[1558410566.645212]  Test Running 1889/10800
+[1558410576.747633]  Test Running 1899/10800
+[1558410586.855275]  Test Running 1909/10800
+[1558410596.959775]  Test Running 1919/10800
+[1558410607.446602]  Test Running 1929/10800
+[1558410617.550723]  Test Running 1940/10800
+[1558410627.684154]  Test Running 1950/10800
+[1558410637.796670]  Test Running 1960/10800
+[1558410647.996062]  Test Running 1970/10800
+[1558410658.093667]  Test Running 1980/10800
+[1558410667.548948] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.623 ms  0.684 ms  0.826 ms
+ 2  172.31.3.2 (172.31.3.2)  3.349 ms  3.347 ms  3.456 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.309 ms  2.311 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.420 ms
+ 5  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.276 ms  3.411 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.404 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.622 ms  1.630 ms  1.576 ms
+ 8  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.865 ms  1.948 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.977 ms
+ 9  * * *
+10  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.696 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.743 ms  1.835 ms
+11  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.782 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.737 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.588 ms
+12  * * *
+13  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.655 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.737 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.792 ms
+14  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.876 ms  1.593 ms  1.629 ms
+15  * * *
+16  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.729 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.592 ms  1.679 ms
+17  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.673 ms  1.799 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.734 ms
+18  * * *
+19  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.371 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.371 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.459 ms
+20  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.294 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.326 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.420 ms
+21  * * *
+22  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.260 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.393 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.378 ms
+23  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.309 ms  3.443 ms  1.969 ms
+24  * * *
+25  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.800 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.891 ms  1.781 ms
+26  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.757 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.801 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.703 ms
+27  * * *
+28  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.742 ms  1.697 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.670 ms
+29  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.690 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.752 ms  1.758 ms
+30  * * *
+
+[1558410668.944656]  Test Running 1991/10800
+[1558410679.075712]  Test Running 2001/10800
+[1558410690.010272]  Test Running 2012/10800
+[1558410700.156839]  Test Running 2022/10800
+[1558410710.261391]  Test Running 2032/10800
+[1558410720.364460]  Test Running 2042/10800
+[1558410730.573232]  Test Running 2053/10800
+[1558410740.838966]  Test Running 2063/10800
+[1558410751.042478]  Test Running 2073/10800
+[1558410761.262877]  Test Running 2083/10800
+[1558410771.360970]  Test Running 2093/10800
+[1558410781.458204]  Test Running 2103/10800
+[1558410791.588656]  Test Running 2114/10800
+[1558410801.687626]  Test Running 2124/10800
+[1558410812.255653]  Test Running 2134/10800
+[1558410822.365059]  Test Running 2144/10800
+[1558410832.467969]  Test Running 2154/10800
+[1558410837.297795] dr02 << conf t
+[1558410838.105603] dr02 >> 
+Mon May 20 20:53:57.509 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-000020e1-00000099     netconf    obt      Mon May 20 20:16:35 2019 
+[1558410838.105846] dr02 << router static
+[1558410838.510780] dr02 >> 
+[1558410838.510831] dr02 << address-family ipv4 unicast
+[1558410838.919601] dr02 >> 
+[1558410838.919647] dr02 << no 172.31.153.24/29
+[1558410839.320902] dr02 >> 
+[1558410839.321038] dr02 << no 172.31.153.0/24
+[1558410839.724536] dr02 >> 
+[1558410839.724584] dr02 << commit
+[1558410840.927005] dr02 >> 
+Mon May 20 20:53:59.929 PDT
+[1558410840.927060] dr02 << end
+[1558410841.328193] dr02 >> 
+[1558410841.328242] dr02 << show route static
+[1558410841.929755] dr02 >> 
+Mon May 20 20:54:01.538 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 2w3d, MgmtEth0/RP0/CPU0/0
+S    172.31.2.135/32 is directly connected, 2w3d, HundredGigE0/1/0/22
+S    172.31.2.137/32 is directly connected, 2w3d, HundredGigE0/1/0/23
+S    172.31.25.0/32 is directly connected, 1w5d, HundredGigE0/0/0/0
+S    172.31.25.2/32 is directly connected, 1w5d, HundredGigE0/0/0/1
+S    172.31.26.0/32 is directly connected, 2w3d, HundredGigE0/0/0/2
+S    172.31.26.2/32 is directly connected, 2w3d, HundredGigE0/0/0/3
+S    172.31.27.0/32 is directly connected, 2w3d, HundredGigE0/0/0/4
+S    172.31.27.2/32 is directly connected, 2w3d, HundredGigE0/0/0/5
+S    172.31.28.0/32 is directly connected, 2w3d, HundredGigE0/0/0/6
+S    172.31.28.2/32 is directly connected, 2w3d, HundredGigE0/0/0/7
+[1558410841.929918] event: remove_network_loop {'device': 'dr02'}
+[1558410841.929955] dr03 << conf t
+[1558410842.526572] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.685 ms  0.755 ms  0.884 ms
+ 2  172.31.3.2 (172.31.3.2)  3.161 ms  3.146 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.800 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.173 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.159 ms  2.265 ms
+ 5  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.103 ms  3.084 ms  3.254 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.920 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.986 ms  1.895 ms
+ 8  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.778 ms  1.744 ms  1.907 ms
+ 9  * * *
+10  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.641 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.631 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.780 ms
+11  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.074 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.142 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.183 ms
+12  * * *
+13  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.639 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.565 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.506 ms
+14  * dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.799 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.827 ms
+15  * * *
+16  172.31.153.26 (172.31.153.26)  0.104 ms  0.075 ms  0.058 ms
+
+[1558410842.609784]  Test Running 2165/10800
+[1558410842.731860] dr03 >> 
+Mon May 20 20:54:02.188 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-00004abe-00000f0e     netconf    obt      Mon May 20 20:16:32 2019 
+00001000-00004abe-00000f11     netconf    obt      Mon May 20 20:17:37 2019 
+[1558410842.731906] dr03 << router static
+[1558410843.133045] dr03 >> 
+[1558410843.133092] dr03 << address-family ipv4 unicast
+[1558410843.534303] dr03 >> 
+[1558410843.534368] dr03 << no 172.31.153.24/29
+[1558410843.935558] dr03 >> 
+[1558410843.935603] dr03 << no 172.31.153.0/24
+[1558410844.336663] dr03 >> 
+[1558410844.336703] dr03 << commit
+[1558410845.138403] dr03 >> 
+Mon May 20 20:54:04.594 PDT
+[1558410845.138449] dr03 << end
+[1558410845.539567] dr03 >> 
+[1558410845.539611] dr03 << show route static
+[1558410846.141094] dr03 >> 
+Mon May 20 20:54:05.804 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 21w5d, MgmtEth0/RP0/CPU0/0
+[1558410846.141213] event: remove_network_loop {'device': 'dr03'}
+[1558410852.721515]  Test Running 2175/10800
+[1558410862.893236]  Test Running 2185/10800
+[1558410873.044850]  Test Running 2195/10800
+[1558410883.151948]  Test Running 2205/10800
+[1558410893.257470]  Test Running 2215/10800
+[1558410903.447951]  Test Running 2225/10800
+[1558410913.545805]  Test Running 2235/10800
+[1558410923.637898]  Test Running 2246/10800
+[1558410934.277294]  Test Running 2256/10800
+[1558410944.383938]  Test Running 2266/10800
+[1558410954.486680]  Test Running 2276/10800
+[1558410964.915189]  Test Running 2287/10800
+[1558410975.173743]  Test Running 2297/10800
+[1558410985.274607]  Test Running 2307/10800
+[1558410995.842274]  Test Running 2318/10800
+[1558411005.951524]  Test Running 2328/10800
+[1558411016.047379]  Test Running 2338/10800
+[1558411017.518615] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.671 ms  0.722 ms  0.850 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.163 ms 172.31.3.2 (172.31.3.2)  1.646 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.119 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.150 ms  1.972 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.957 ms
+ 4  172.31.2.135 (172.31.2.135)  0.582 ms 172.31.2.133 (172.31.2.133)  0.682 ms 172.31.2.131 (172.31.2.131)  0.815 ms
+ 5  172.31.153.26 (172.31.153.26)  0.068 ms  0.069 ms  0.061 ms
+
+[1558411026.918038]  Test Running 2349/10800
+[1558411037.080133]  Test Running 2359/10800
+[1558411047.249750]  Test Running 2369/10800
+[1558411057.406643]  Test Running 2379/10800
+[1558411067.625772]  Test Running 2390/10800
+[1558411077.723278]  Test Running 2400/10800
+[1558411088.176963]  Test Running 2410/10800
+[1558411098.280609]  Test Running 2420/10800
+[1558411108.501653]  Test Running 2430/10800
+[1558411118.672512]  Test Running 2441/10800
+[1558411128.816513]  Test Running 2451/10800
+[1558411138.919431]  Test Running 2461/10800
+[1558411149.107754]  Test Running 2471/10800
+[1558411159.208332]  Test Running 2481/10800
+[1558411169.393111]  Test Running 2491/10800
+[1558411179.569393]  Test Running 2501/10800
+[1558411189.676717]  Test Running 2512/10800
+[1558411197.517692] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.640 ms  0.706 ms  0.829 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.100 ms 172.31.3.2 (172.31.3.2)  1.621 ms  1.745 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.100 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.972 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.970 ms
+ 4  172.31.2.135 (172.31.2.135)  0.466 ms 172.31.2.137 (172.31.2.137)  0.585 ms  0.774 ms
+ 5  172.31.153.26 (172.31.153.26)  0.067 ms  0.064 ms  0.044 ms
+
+[1558411199.931719]  Test Running 2522/10800
+[1558411210.668440]  Test Running 2533/10800
+[1558411220.830233]  Test Running 2543/10800
+[1558411231.491138]  Test Running 2553/10800
+[1558411241.590834]  Test Running 2563/10800
+[1558411251.949978]  Test Running 2574/10800
+[1558411262.051893]  Test Running 2584/10800
+[1558411272.524786]  Test Running 2594/10800
+[1558411282.622372]  Test Running 2604/10800
+[1558411292.736056]  Test Running 2615/10800
+[1558411302.861686]  Test Running 2625/10800
+[1558411312.959881]  Test Running 2635/10800
+[1558411323.059772]  Test Running 2645/10800
+[1558411333.167644]  Test Running 2655/10800
+[1558411343.272241]  Test Running 2665/10800
+[1558411353.384377]  Test Running 2675/10800
+[1558411363.497856]  Test Running 2685/10800
+[1558411373.610191]  Test Running 2695/10800
+[1558411377.517425] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.615 ms  0.697 ms  0.819 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.094 ms 172.31.3.2 (172.31.3.2)  1.731 ms  1.824 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.150 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.939 ms  1.915 ms
+ 4  172.31.2.135 (172.31.2.135)  0.481 ms 172.31.2.131 (172.31.2.131)  0.626 ms 172.31.2.133 (172.31.2.133)  0.757 ms
+ 5  172.31.153.26 (172.31.153.26)  0.069 ms  0.065 ms  0.050 ms
+
+[1558411383.655535]  Test Running 2706/10800
+[1558411394.096178]  Test Running 2716/10800
+[1558411404.260203]  Test Running 2726/10800
+[1558411414.296855]  Test Running 2736/10800
+[1558411424.459983]  Test Running 2746/10800
+[1558411434.604357]  Test Running 2756/10800
+[1558411444.956586]  Test Running 2767/10800
+[1558411455.057242]  Test Running 2777/10800
+[1558411465.269481]  Test Running 2787/10800
+[1558411475.393104]  Test Running 2797/10800
+[1558411485.498741]  Test Running 2807/10800
+[1558411495.610437]  Test Running 2817/10800
+[1558411505.977332]  Test Running 2828/10800
+[1558411516.131630]  Test Running 2838/10800
+[1558411526.437788]  Test Running 2848/10800
+[1558411536.537273]  Test Running 2858/10800
+[1558411546.655052]  Test Running 2868/10800
+[1558411556.793205]  Test Running 2879/10800
+[1558411557.518202] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.570 ms  0.712 ms  0.887 ms
+ 2  172.31.3.2 (172.31.3.2)  1.576 ms  1.568 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.171 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.195 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.040 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.143 ms
+ 4  172.31.2.133 (172.31.2.133)  0.675 ms 172.31.2.131 (172.31.2.131)  0.833 ms 172.31.2.137 (172.31.2.137)  1.040 ms
+ 5  172.31.153.26 (172.31.153.26)  0.069 ms  0.068 ms  0.072 ms
+
+[1558411567.162561]  Test Running 2889/10800
+[1558411577.270366]  Test Running 2899/10800
+[1558411587.480172]  Test Running 2909/10800
+[1558411597.717500]  Test Running 2920/10800
+[1558411607.867969]  Test Running 2930/10800
+[1558411618.081598]  Test Running 2940/10800
+[1558411628.447598]  Test Running 2950/10800
+[1558411638.601847]  Test Running 2960/10800
+[1558411650.619711]  Test Running 2971/10800
+[1558411660.772365]  Test Running 2983/10800
+[1558411670.871775]  Test Running 2993/10800
+[1558411682.652800]  Test Running 3004/10800
+[1558411692.811289]  Test Running 3015/10800
+[1558411702.970697]  Test Running 3025/10800
+[1558411713.129794]  Test Running 3035/10800
+[1558411723.296230]  Test Running 3045/10800
+[1558411733.448503]  Test Running 3055/10800
+[1558411737.517445] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.584 ms  0.650 ms  0.787 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.930 ms  2.916 ms  3.035 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.308 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.288 ms  2.039 ms
+ 4  172.31.2.133 (172.31.2.133)  0.546 ms 172.31.2.131 (172.31.2.131)  0.637 ms 172.31.2.135 (172.31.2.135)  0.778 ms
+ 5  172.31.153.26 (172.31.153.26)  0.078 ms  0.087 ms  0.061 ms
+
+[1558411743.549563]  Test Running 3065/10800
+[1558411753.656139]  Test Running 3075/10800
+[1558411763.807709]  Test Running 3086/10800
+[1558411773.974816]  Test Running 3096/10800
+[1558411784.076367]  Test Running 3106/10800
+[1558411794.191249]  Test Running 3116/10800
+[1558411804.412002]  Test Running 3126/10800
+[1558411814.848506]  Test Running 3137/10800
+[1558411824.948982]  Test Running 3147/10800
+[1558411835.051318]  Test Running 3157/10800
+[1558411845.158806]  Test Running 3167/10800
+[1558411855.392608]  Test Running 3178/10800
+[1558411865.814844]  Test Running 3189/10800
+[1558411875.909999]  Test Running 3199/10800
+[1558411886.007265]  Test Running 3209/10800
+[1558411896.105491]  Test Running 3219/10800
+[1558411906.211111]  Test Running 3229/10800
+[1558411916.310009]  Test Running 3239/10800
+[1558411917.517446] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.721 ms  0.775 ms  0.909 ms
+ 2  172.31.3.2 (172.31.3.2)  1.711 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.238 ms 172.31.3.2 (172.31.3.2)  1.666 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.128 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.108 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.242 ms
+ 4  172.31.2.133 (172.31.2.133)  0.477 ms  0.619 ms  0.756 ms
+ 5  172.31.153.26 (172.31.153.26)  0.064 ms  0.066 ms  0.061 ms
+
+[1558411926.417551]  Test Running 3249/10800
+[1558411936.581409]  Test Running 3259/10800
+[1558411946.713343]  Test Running 3269/10800
+[1558411956.913083]  Test Running 3280/10800
+[1558411967.095034]  Test Running 3290/10800
+[1558411977.200026]  Test Running 3300/10800
+[1558411987.378653]  Test Running 3310/10800
+[1558411997.480800]  Test Running 3320/10800
+[1558412007.580494]  Test Running 3330/10800
+[1558412017.687169]  Test Running 3340/10800
+[1558412027.827413]  Test Running 3351/10800
+[1558412037.931911]  Test Running 3361/10800
+[1558412048.737250]  Test Running 3371/10800
+[1558412058.838621]  Test Running 3382/10800
+[1558412068.947557]  Test Running 3392/10800
+[1558412079.767919]  Test Running 3403/10800
+[1558412089.870936]  Test Running 3413/10800
+[1558412097.515532] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.596 ms  0.666 ms  0.789 ms
+ 2  172.31.3.2 (172.31.3.2)  1.727 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.130 ms  3.123 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.106 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.086 ms  1.062 ms
+ 4  172.31.2.131 (172.31.2.131)  0.581 ms  0.693 ms  0.850 ms
+ 5  172.31.153.26 (172.31.153.26)  0.097 ms  0.097 ms  0.091 ms
+
+[1558412099.974526]  Test Running 3423/10800
+[1558412110.241958]  Test Running 3433/10800
+[1558412120.400237]  Test Running 3443/10800
+[1558412132.045320]  Test Running 3455/10800
+[1558412142.140638]  Test Running 3465/10800
+[1558412152.241938]  Test Running 3475/10800
+[1558412162.857054]  Test Running 3486/10800
+[1558412173.072572]  Test Running 3496/10800
+[1558412183.172941]  Test Running 3506/10800
+[1558412193.272673]  Test Running 3516/10800
+[1558412203.372867]  Test Running 3526/10800
+[1558412213.473366]  Test Running 3536/10800
+[1558412223.649341]  Test Running 3546/10800
+[1558412233.805869]  Test Running 3557/10800
+[1558412243.914944]  Test Running 3567/10800
+[1558412254.016196]  Test Running 3577/10800
+[1558412264.114605]  Test Running 3587/10800
+[1558412274.274574]  Test Running 3597/10800
+[1558412277.521592] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.697 ms  0.754 ms  0.881 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.929 ms  2.916 ms  3.039 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.149 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.178 ms  2.171 ms
+ 4  172.31.2.137 (172.31.2.137)  0.615 ms 172.31.2.133 (172.31.2.133)  0.710 ms  0.844 ms
+ 5  172.31.153.26 (172.31.153.26)  0.065 ms  0.063 ms  0.061 ms
+
+[1558412277.567753] event: shutdown_interface {'device': 'leaf7', 'interface': 'HundredGigE0/0/0/14'}
+[1558412284.375573]  Test Running 3607/10800
+[1558412295.175242]  Test Running 3618/10800
+[1558412305.309349]  Test Running 3628/10800
+[1558412315.419094]  Test Running 3638/10800
+[1558412325.654135]  Test Running 3648/10800
+[1558412335.850518]  Test Running 3659/10800
+[1558412345.978167]  Test Running 3669/10800
+[1558412356.077816]  Test Running 3679/10800
+[1558412366.264642]  Test Running 3689/10800
+[1558412376.691552]  Test Running 3699/10800
+[1558412386.936623]  Test Running 3710/10800
+[1558412397.037107]  Test Running 3720/10800
+[1558412407.348921]  Test Running 3730/10800
+[1558412417.451708]  Test Running 3740/10800
+[1558412427.558397]  Test Running 3750/10800
+[1558412437.775256]  Test Running 3760/10800
+[1558412448.055490]  Test Running 3771/10800
+[1558412457.516977] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.703 ms  0.754 ms  0.885 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.133 ms  3.226 ms  3.210 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.447 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.424 ms  1.402 ms
+ 4  172.31.2.131 (172.31.2.131)  0.603 ms 172.31.2.135 (172.31.2.135)  0.698 ms  0.836 ms
+ 5  172.31.153.26 (172.31.153.26)  0.072 ms  0.072 ms  0.073 ms
+
+[1558412458.168222]  Test Running 3781/10800
+[1558412468.277573]  Test Running 3791/10800
+[1558412478.397110]  Test Running 3801/10800
+[1558412488.546898]  Test Running 3811/10800
+[1558412498.726515]  Test Running 3821/10800
+[1558412508.895453]  Test Running 3832/10800
+[1558412519.006157]  Test Running 3842/10800
+[1558412529.910173]  Test Running 3853/10800
+[1558412540.008252]  Test Running 3863/10800
+[1558412550.125806]  Test Running 3873/10800
+[1558412560.244453]  Test Running 3883/10800
+[1558412570.346142]  Test Running 3893/10800
+[1558412580.452155]  Test Running 3903/10800
+[1558412590.891054]  Test Running 3914/10800
+[1558412600.990305]  Test Running 3924/10800
+[1558412611.094223]  Test Running 3934/10800
+[1558412621.220394]  Test Running 3944/10800
+[1558412631.320713]  Test Running 3954/10800
+[1558412637.518688] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.578 ms  0.662 ms  0.789 ms
+ 2  172.31.3.2 (172.31.3.2)  1.904 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.196 ms  3.188 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.078 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.024 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.048 ms
+ 4  172.31.2.137 (172.31.2.137)  0.488 ms 172.31.2.133 (172.31.2.133)  0.627 ms 172.31.2.137 (172.31.2.137)  0.761 ms
+ 5  172.31.153.26 (172.31.153.26)  0.079 ms  0.086 ms  0.095 ms
+
+[1558412641.457744]  Test Running 3964/10800
+[1558412651.591744]  Test Running 3974/10800
+[1558412661.793400]  Test Running 3984/10800
+[1558412671.997585]  Test Running 3995/10800
+[1558412682.092893]  Test Running 4005/10800
+[1558412692.191819]  Test Running 4015/10800
+[1558412704.177038]  Test Running 4027/10800
+[1558412714.564681]  Test Running 4037/10800
+[1558412724.744575]  Test Running 4047/10800
+[1558412734.761716]  Test Running 4057/10800
+[1558412744.869562]  Test Running 4068/10800
+[1558412755.079890]  Test Running 4078/10800
+[1558412765.181982]  Test Running 4088/10800
+[1558412775.415714]  Test Running 4098/10800
+[1558412785.562418]  Test Running 4108/10800
+[1558412796.291413]  Test Running 4119/10800
+[1558412806.393334]  Test Running 4129/10800
+[1558412816.513635]  Test Running 4139/10800
+[1558412817.522738] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.668 ms  0.942 ms  0.944 ms
+ 2  172.31.3.2 (172.31.3.2)  1.453 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.795 ms 172.31.3.2 (172.31.3.2)  1.589 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.207 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.192 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.170 ms
+ 4  172.31.2.131 (172.31.2.131)  0.538 ms 172.31.2.135 (172.31.2.135)  0.672 ms 172.31.2.133 (172.31.2.133)  0.805 ms
+ 5  172.31.153.26 (172.31.153.26)  0.072 ms  0.074 ms  0.056 ms
+
+[1558412826.678450]  Test Running 4149/10800
+[1558412837.053735]  Test Running 4160/10800
+[1558412847.152038]  Test Running 4170/10800
+[1558412857.252963]  Test Running 4180/10800
+[1558412867.361962]  Test Running 4190/10800
+[1558412877.470013]  Test Running 4200/10800
+[1558412888.206551]  Test Running 4211/10800
+[1558412898.345669]  Test Running 4221/10800
+[1558412908.448488]  Test Running 4231/10800
+[1558412918.563328]  Test Running 4241/10800
+[1558412928.669783]  Test Running 4251/10800
+[1558412938.813858]  Test Running 4261/10800
+[1558412949.231709]  Test Running 4272/10800
+[1558412958.064223] collector error: Traceback (most recent call last):
+  File "/home/antkisel/data/data_collection/cli_collector.py", line 65, in tick
+    res = self.conn.send_command(self.command)
+  File "/home/antkisel/py2/local/lib/python2.7/site-packages/netmiko/base_connection.py", line 1188, in send_command
+    search_pattern))
+IOError: Search pattern never detected in send_command_expect: RP\/0\/RP0\/CPU0\:leaf8\#
+
+[1558412959.340525]  Test Running 4282/10800
+[1558412969.445273]  Test Running 4292/10800
+[1558412979.569818]  Test Running 4302/10800
+[1558412989.671274]  Test Running 4312/10800
+[1558412997.519286] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.631 ms  0.702 ms  0.841 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.983 ms 172.31.3.2 (172.31.3.2)  1.561 ms  1.668 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.951 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.268 ms  1.247 ms
+ 4  172.31.2.135 (172.31.2.135)  0.560 ms  0.657 ms 172.31.2.137 (172.31.2.137)  0.795 ms
+ 5  172.31.153.26 (172.31.153.26)  0.080 ms  0.084 ms  0.093 ms
+
+[1558412999.782324]  Test Running 4322/10800
+[1558413009.880883]  Test Running 4332/10800
+[1558413020.037027]  Test Running 4343/10800
+[1558413030.192900]  Test Running 4353/10800
+[1558413040.496066]  Test Running 4363/10800
+[1558413050.667243]  Test Running 4373/10800
+[1558413060.786646]  Test Running 4383/10800
+[1558413070.960944]  Test Running 4394/10800
+[1558413081.139965]  Test Running 4404/10800
+[1558413091.989175]  Test Running 4415/10800
+[1558413102.098028]  Test Running 4425/10800
+[1558413112.259779]  Test Running 4435/10800
+[1558413122.367774]  Test Running 4445/10800
+[1558413132.420835]  Test Running 4455/10800
+[1558413142.586359]  Test Running 4465/10800
+[1558413152.836923]  Test Running 4475/10800
+[1558413162.936868]  Test Running 4486/10800
+[1558413173.029755]  Test Running 4496/10800
+[1558413177.517405] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.677 ms  0.730 ms  0.858 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.564 ms  2.544 ms  2.673 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.245 ms  2.230 ms  2.361 ms
+ 4  172.31.2.135 (172.31.2.135)  0.614 ms 172.31.2.133 (172.31.2.133)  0.714 ms 172.31.2.131 (172.31.2.131)  0.849 ms
+ 5  172.31.153.26 (172.31.153.26)  0.071 ms  0.073 ms  0.071 ms
+
+[1558413183.239668]  Test Running 4506/10800
+[1558413193.409977]  Test Running 4516/10800
+[1558413203.564420]  Test Running 4526/10800
+[1558413213.664068]  Test Running 4536/10800
+[1558413223.765077]  Test Running 4546/10800
+[1558413234.215169]  Test Running 4557/10800
+[1558413244.319021]  Test Running 4567/10800
+[1558413254.441814]  Test Running 4577/10800
+[1558413264.607609]  Test Running 4587/10800
+[1558413274.805840]  Test Running 4597/10800
+[1558413284.909445]  Test Running 4607/10800
+[1558413295.003522]  Test Running 4618/10800
+[1558413305.918953]  Test Running 4628/10800
+[1558413316.114981]  Test Running 4639/10800
+[1558413326.221128]  Test Running 4649/10800
+[1558413336.318572]  Test Running 4659/10800
+[1558413346.425339]  Test Running 4669/10800
+[1558413356.527866]  Test Running 4679/10800
+[1558413357.513328] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.621 ms  0.677 ms  0.835 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.219 ms 172.31.3.2 (172.31.3.2)  1.833 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.195 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.971 ms  1.969 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.178 ms
+ 4  172.31.2.137 (172.31.2.137)  0.576 ms 172.31.2.135 (172.31.2.135)  0.683 ms 172.31.2.137 (172.31.2.137)  0.851 ms
+ 5  172.31.153.26 (172.31.153.26)  0.071 ms  0.092 ms  0.081 ms
+
+[1558413366.707773]  Test Running 4689/10800
+[1558413376.828842]  Test Running 4699/10800
+[1558413387.182176]  Test Running 4710/10800
+[1558413397.614709]  Test Running 4720/10800
+[1558413407.831824]  Test Running 4730/10800
+[1558413417.933436]  Test Running 4740/10800
+[1558413428.034707]  Test Running 4751/10800
+[1558413438.240036]  Test Running 4761/10800
+[1558413448.455048]  Test Running 4771/10800
+[1558413458.659294]  Test Running 4781/10800
+[1558413468.800342]  Test Running 4791/10800
+[1558413477.603928] event: enable_interface {'device': 'leaf7', 'interface': 'HundredGigE0/0/0/14'}
+[1558413478.898762]  Test Running 4801/10800
+[1558413489.021628]  Test Running 4812/10800
+[1558413499.219472]  Test Running 4822/10800
+[1558413509.330607]  Test Running 4832/10800
+[1558413519.433220]  Test Running 4842/10800
+[1558413529.564105]  Test Running 4852/10800
+[1558413537.516340] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.632 ms  0.699 ms  0.829 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.038 ms  3.035 ms  3.152 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.104 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.832 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.056 ms
+ 4  172.31.2.137 (172.31.2.137)  0.477 ms  0.609 ms  0.764 ms
+ 5  172.31.153.26 (172.31.153.26)  0.082 ms  0.086 ms  0.095 ms
+
+[1558413539.672694]  Test Running 4862/10800
+[1558413550.046873]  Test Running 4873/10800
+[1558413560.229554]  Test Running 4883/10800
+[1558413571.088067]  Test Running 4894/10800
+[1558413581.197064]  Test Running 4904/10800
+[1558413591.306748]  Test Running 4914/10800
+[1558413601.450621]  Test Running 4924/10800
+[1558413611.837437]  Test Running 4934/10800
+[1558413621.960057]  Test Running 4944/10800
+[1558413632.810227]  Test Running 4955/10800
+[1558413642.909174]  Test Running 4965/10800
+[1558413653.022759]  Test Running 4976/10800
+[1558413663.120912]  Test Running 4986/10800
+[1558413673.235778]  Test Running 4996/10800
+[1558413683.352749]  Test Running 5006/10800
+[1558413694.179178]  Test Running 5017/10800
+[1558413704.279031]  Test Running 5027/10800
+[1558413714.390809]  Test Running 5037/10800
+[1558413717.518794] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.588 ms  0.666 ms  1.236 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.571 ms 172.31.3.2 (172.31.3.2)  1.228 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.541 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.957 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.220 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.901 ms
+ 4  172.31.2.131 (172.31.2.131)  1.805 ms 172.31.2.135 (172.31.2.135)  1.933 ms 172.31.2.133 (172.31.2.133)  2.063 ms
+ 5  172.31.153.26 (172.31.153.26)  0.070 ms  0.067 ms  0.046 ms
+
+[1558413724.605327]  Test Running 5047/10800
+[1558413734.967415]  Test Running 5057/10800
+[1558413745.061023]  Test Running 5068/10800
+[1558413755.506676]  Test Running 5078/10800
+[1558413765.616977]  Test Running 5088/10800
+[1558413775.763764]  Test Running 5098/10800
+[1558413785.870044]  Test Running 5108/10800
+[1558413796.010890]  Test Running 5118/10800
+[1558413806.117762]  Test Running 5129/10800
+[1558413816.223898]  Test Running 5139/10800
+[1558413826.326196]  Test Running 5149/10800
+[1558413836.470470]  Test Running 5159/10800
+[1558413846.500090]  Test Running 5169/10800
+[1558413856.628489]  Test Running 5179/10800
+[1558413866.767524]  Test Running 5189/10800
+[1558413876.865357]  Test Running 5199/10800
+[1558413887.116797]  Test Running 5210/10800
+[1558413897.257903]  Test Running 5220/10800
+[1558413897.517745] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.698 ms  0.771 ms  0.898 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.132 ms 172.31.3.2 (172.31.3.2)  1.721 ms  1.787 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.223 ms  1.201 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.178 ms
+ 4  172.31.2.135 (172.31.2.135)  0.452 ms 172.31.2.131 (172.31.2.131)  0.585 ms  0.721 ms
+ 5  172.31.153.26 (172.31.153.26)  0.068 ms  0.066 ms  0.044 ms
+
+[1558413908.079465]  Test Running 5231/10800
+[1558413918.196811]  Test Running 5241/10800
+[1558413928.301229]  Test Running 5251/10800
+[1558413938.474600]  Test Running 5261/10800
+[1558413948.579872]  Test Running 5271/10800
+[1558413958.770327]  Test Running 5281/10800
+[1558413968.874241]  Test Running 5291/10800
+[1558413979.021195]  Test Running 5301/10800
+[1558413989.151093]  Test Running 5312/10800
+[1558413999.643993]  Test Running 5322/10800
+[1558414009.786449]  Test Running 5332/10800
+[1558414019.926606]  Test Running 5342/10800
+[1558414030.901957]  Test Running 5353/10800
+[1558414041.004877]  Test Running 5363/10800
+[1558414051.761591]  Test Running 5374/10800
+[1558414061.875325]  Test Running 5384/10800
+[1558414071.973173]  Test Running 5394/10800
+[1558414077.515795] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.639 ms  0.703 ms  1.285 ms
+ 2  172.31.3.2 (172.31.3.2)  1.228 ms  1.221 ms  1.204 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.013 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.042 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.021 ms
+ 4  172.31.2.135 (172.31.2.135)  0.583 ms 172.31.2.131 (172.31.2.131)  0.679 ms 172.31.2.135 (172.31.2.135)  0.823 ms
+ 5  172.31.153.26 (172.31.153.26)  0.067 ms  0.064 ms  0.056 ms
+
+[1558414082.073272]  Test Running 5405/10800
+[1558414092.381235]  Test Running 5415/10800
+[1558414102.487053]  Test Running 5425/10800
+[1558414112.606373]  Test Running 5435/10800
+[1558414122.707408]  Test Running 5445/10800
+[1558414132.817598]  Test Running 5455/10800
+[1558414144.963189]  Test Running 5467/10800
+[1558414155.066502]  Test Running 5478/10800
+[1558414165.169150]  Test Running 5488/10800
+[1558414175.278201]  Test Running 5498/10800
+[1558414185.382456]  Test Running 5508/10800
+[1558414195.487363]  Test Running 5518/10800
+[1558414205.915925]  Test Running 5528/10800
+[1558414216.013961]  Test Running 5538/10800
+[1558414226.115698]  Test Running 5549/10800
+[1558414236.219775]  Test Running 5559/10800
+[1558414246.320006]  Test Running 5569/10800
+[1558414256.426488]  Test Running 5579/10800
+[1558414257.512769] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.640 ms  0.700 ms  0.849 ms
+ 2  172.31.3.2 (172.31.3.2)  1.912 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.331 ms 172.31.3.2 (172.31.3.2)  2.000 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.214 ms  1.184 ms  1.296 ms
+ 4  172.31.2.137 (172.31.2.137)  0.608 ms 172.31.2.135 (172.31.2.135)  0.718 ms 172.31.2.131 (172.31.2.131)  0.843 ms
+ 5  172.31.153.26 (172.31.153.26)  0.086 ms  0.071 ms  0.079 ms
+
+[1558414266.864892]  Test Running 5589/10800
+[1558414276.965590]  Test Running 5599/10800
+[1558414287.161294]  Test Running 5610/10800
+[1558414297.347383]  Test Running 5620/10800
+[1558414307.497972]  Test Running 5630/10800
+[1558414317.723999]  Test Running 5640/10800
+[1558414327.945292]  Test Running 5650/10800
+[1558414338.073268]  Test Running 5660/10800
+[1558414348.226854]  Test Running 5671/10800
+[1558414358.334539]  Test Running 5681/10800
+[1558414368.451044]  Test Running 5691/10800
+[1558414378.565451]  Test Running 5701/10800
+[1558414388.974786]  Test Running 5711/10800
+[1558414399.332648]  Test Running 5722/10800
+[1558414409.557253]  Test Running 5732/10800
+[1558414419.671895]  Test Running 5742/10800
+[1558414429.796793]  Test Running 5752/10800
+[1558414437.517359] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.669 ms  0.731 ms  0.862 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.020 ms  3.012 ms  3.130 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.273 ms  2.264 ms  2.361 ms
+ 4  172.31.2.135 (172.31.2.135)  0.604 ms 172.31.2.131 (172.31.2.131)  0.707 ms  0.846 ms
+ 5  172.31.153.26 (172.31.153.26)  0.070 ms  0.074 ms  0.053 ms
+
+[1558414439.902624]  Test Running 5762/10800
+[1558414450.013871]  Test Running 5772/10800
+[1558414460.213221]  Test Running 5783/10800
+[1558414470.374419]  Test Running 5793/10800
+[1558414480.484734]  Test Running 5803/10800
+[1558414490.585071]  Test Running 5813/10800
+[1558414500.789899]  Test Running 5823/10800
+[1558414510.935000]  Test Running 5833/10800
+[1558414521.028760]  Test Running 5843/10800
+[1558414531.166187]  Test Running 5854/10800
+[1558414542.000226]  Test Running 5864/10800
+[1558414552.102756]  Test Running 5874/10800
+[1558414562.199209]  Test Running 5885/10800
+[1558414572.629104]  Test Running 5895/10800
+[1558414582.735976]  Test Running 5905/10800
+[1558414592.846949]  Test Running 5915/10800
+[1558414602.980334]  Test Running 5925/10800
+[1558414613.251336]  Test Running 5936/10800
+[1558414617.516578] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.621 ms  0.699 ms  0.829 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.036 ms  3.025 ms  3.155 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.158 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.851 ms  1.841 ms
+ 4  172.31.2.131 (172.31.2.131)  0.480 ms  0.608 ms  0.743 ms
+ 5  172.31.153.26 (172.31.153.26)  0.070 ms  0.072 ms  0.070 ms
+
+[1558414623.362680]  Test Running 5946/10800
+[1558414633.544905]  Test Running 5956/10800
+[1558414643.714873]  Test Running 5966/10800
+[1558414654.582323]  Test Running 5977/10800
+[1558414664.728168]  Test Running 5987/10800
+[1558414674.874961]  Test Running 5997/10800
+[1558414684.980525]  Test Running 6007/10800
+[1558414687.364592] dr02 << conf t
+[1558414688.166454] dr02 >> 
+Mon May 20 21:58:07.571 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-000020e1-00000099     netconf    obt      Mon May 20 20:16:35 2019 
+[1558414688.166824] dr02 << router static
+[1558414688.568339] dr02 >> 
+[1558414688.568419] dr02 << address-family ipv4 unicast
+[1558414688.969755] dr02 >> 
+[1558414688.969799] dr02 << 172.31.153.24/29 172.31.2.1 1
+[1558414689.370994] dr02 >> 
+[1558414689.371046] dr02 << 172.31.153.24/29 172.31.2.3 1
+[1558414689.772281] dr02 >> 
+[1558414689.772355] dr02 << 172.31.153.24/29 172.31.2.5 1
+[1558414690.173438] dr02 >> 
+[1558414690.173478] dr02 << commit
+[1558414691.375820] dr02 >> 
+Mon May 20 21:58:10.379 PDT
+[1558414691.375876] dr02 << end
+[1558414691.777077] dr02 >> 
+[1558414691.777126] dr02 << show route static
+[1558414692.378628] dr02 >> 
+Mon May 20 21:58:11.988 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 2w3d, MgmtEth0/RP0/CPU0/0
+S    172.31.2.135/32 is directly connected, 2w3d, HundredGigE0/1/0/22
+S    172.31.2.137/32 is directly connected, 2w3d, HundredGigE0/1/0/23
+S    172.31.25.0/32 is directly connected, 1w6d, HundredGigE0/0/0/0
+S    172.31.25.2/32 is directly connected, 1w6d, HundredGigE0/0/0/1
+S    172.31.26.0/32 is directly connected, 2w3d, HundredGigE0/0/0/2
+S    172.31.26.2/32 is directly connected, 2w3d, HundredGigE0/0/0/3
+S    172.31.27.0/32 is directly connected, 2w3d, HundredGigE0/0/0/4
+S    172.31.27.2/32 is directly connected, 2w3d, HundredGigE0/0/0/5
+S    172.31.28.0/32 is directly connected, 2w3d, HundredGigE0/0/0/6
+S    172.31.28.2/32 is directly connected, 2w3d, HundredGigE0/0/0/7
+S    172.31.153.24/29 [1/0] via 172.31.2.5, 00:00:01
+                      [1/0] via 172.31.2.3, 00:00:01
+                      [1/0] via 172.31.2.1, 00:00:01
+[1558414692.378813] event: add_network_loop {'device': 'dr02'}
+[1558414692.378849] dr03 << conf t
+[1558414693.180716] dr03 >> 
+Mon May 20 21:58:12.639 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-00004abe-00000f0e     netconf    obt      Mon May 20 20:16:32 2019 
+00001000-00004abe-00000f11     netconf    obt      Mon May 20 20:17:37 2019 
+[1558414693.180829] dr03 << router static
+[1558414693.582105] dr03 >> 
+[1558414693.582144] dr03 << address-family ipv4 unicast
+[1558414693.983219] dr03 >> 
+[1558414693.983264] dr03 << 172.31.153.24/29 172.31.28.4 1
+[1558414694.384444] dr03 >> 
+[1558414694.384497] dr03 << commit
+[1558414695.081157]  Test Running 6017/10800
+[1558414695.186320] dr03 >> 
+Mon May 20 21:58:14.643 PDT
+[1558414695.186359] dr03 << end
+[1558414695.587466] dr03 >> 
+[1558414695.587513] dr03 << show route static
+[1558414696.189135] dr03 >> 
+Mon May 20 21:58:15.852 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 21w5d, MgmtEth0/RP0/CPU0/0
+S    172.31.153.24/29 [1/0] via 172.31.28.4, 00:00:01
+[1558414696.189279] event: add_network_loop {'device': 'dr03'}
+[1558414705.238493]  Test Running 6028/10800
+[1558414715.345390]  Test Running 6038/10800
+[1558414725.455187]  Test Running 6048/10800
+[1558414735.563907]  Test Running 6058/10800
+[1558414746.206265]  Test Running 6069/10800
+[1558414756.328706]  Test Running 6079/10800
+[1558414766.430950]  Test Running 6089/10800
+[1558414776.530878]  Test Running 6099/10800
+[1558414786.634707]  Test Running 6109/10800
+[1558414796.735971]  Test Running 6119/10800
+[1558414807.553462] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.660 ms  0.710 ms  0.834 ms
+ 2  172.31.3.2 (172.31.3.2)  2.920 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.843 ms 172.31.3.2 (172.31.3.2)  2.873 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.129 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.122 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.255 ms
+ 5  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.819 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.875 ms  2.929 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.061 ms  1.931 ms  1.969 ms
+ 8  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.770 ms  1.724 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.271 ms
+ 9  * * *
+10  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.816 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.784 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.922 ms
+11  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.887 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.938 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.002 ms
+12  * * *
+13  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.719 ms  1.626 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.672 ms
+14  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.633 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.737 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.722 ms
+15  * * *
+16  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.670 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.816 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.765 ms
+17  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.771 ms  1.781 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.856 ms
+18  * * *
+19  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.205 ms  2.203 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.346 ms
+20  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.035 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.019 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.163 ms
+21  * * *
+22  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.166 ms  2.299 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.283 ms
+23  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.093 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.241 ms  1.841 ms
+24  * * *
+25  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.700 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.679 ms  1.694 ms
+26  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.023 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.905 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.961 ms
+27  * * *
+28  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.717 ms  1.752 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.772 ms
+29  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.845 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.829 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.823 ms
+30  * * *
+
+[1558414807.701849]  Test Running 6130/10800
+[1558414817.831072]  Test Running 6140/10800
+[1558414827.936875]  Test Running 6150/10800
+[1558414838.624175]  Test Running 6161/10800
+[1558414848.740510]  Test Running 6171/10800
+[1558414858.854203]  Test Running 6181/10800
+[1558414868.954407]  Test Running 6191/10800
+[1558414879.058949]  Test Running 6201/10800
+[1558414889.193757]  Test Running 6212/10800
+[1558414899.566720]  Test Running 6222/10800
+[1558414909.665723]  Test Running 6232/10800
+[1558414919.799476]  Test Running 6242/10800
+[1558414929.908800]  Test Running 6252/10800
+[1558414940.009843]  Test Running 6262/10800
+[1558414951.610653]  Test Running 6274/10800
+[1558414961.749439]  Test Running 6284/10800
+[1558414971.854400]  Test Running 6294/10800
+[1558414981.962838]  Test Running 6304/10800
+[1558414987.549578] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.666 ms  0.726 ms  0.856 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.892 ms 172.31.3.2 (172.31.3.2)  3.319 ms  3.303 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.254 ms  2.246 ms  2.343 ms
+ 5  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.267 ms  3.320 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.428 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.812 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.785 ms  1.989 ms
+ 8  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.925 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.964 ms  2.172 ms
+ 9  * * *
+10  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.721 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.706 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.814 ms
+11  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.869 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.934 ms  1.994 ms
+12  * * *
+13  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.893 ms  1.803 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.868 ms
+14  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.761 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.688 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.774 ms
+15  * * *
+16  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.679 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.698 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.891 ms
+17  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.721 ms  1.623 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.595 ms
+18  * * *
+19  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.659 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.659 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.801 ms
+20  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.015 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  2.998 ms  3.163 ms
+21  * * *
+22  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.638 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.787 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.771 ms
+23  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.124 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.110 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.944 ms
+24  * * *
+25  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.967 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.940 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.047 ms
+26  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.864 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.764 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.797 ms
+27  * * *
+28  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.183 ms  2.175 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.140 ms
+29  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.775 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.760 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.597 ms
+30  * * *
+
+[1558414992.439098]  Test Running 6315/10800
+[1558415002.595021]  Test Running 6325/10800
+[1558415012.697952]  Test Running 6335/10800
+[1558415022.863481]  Test Running 6345/10800
+[1558415033.050380]  Test Running 6355/10800
+[1558415043.300425]  Test Running 6366/10800
+[1558415053.481735]  Test Running 6376/10800
+[1558415063.675348]  Test Running 6386/10800
+[1558415073.773363]  Test Running 6396/10800
+[1558415083.893929]  Test Running 6406/10800
+[1558415094.043388]  Test Running 6416/10800
+[1558415106.812841]  Test Running 6426/10800
+[1558415117.004725]  Test Running 6439/10800
+[1558415127.094597]  Test Running 6449/10800
+[1558415137.806164]  Test Running 6460/10800
+[1558415148.320880]  Test Running 6471/10800
+[1558415158.419323]  Test Running 6481/10800
+[1558415167.541602] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.618 ms  0.684 ms  0.833 ms
+ 2  172.31.3.2 (172.31.3.2)  3.446 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.960 ms 172.31.3.2 (172.31.3.2)  3.403 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.258 ms  2.246 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.348 ms
+ 5  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.224 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.350 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.380 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.960 ms  2.145 ms  1.842 ms
+ 8  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.876 ms  1.806 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.839 ms
+ 9  * * *
+10  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.698 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.750 ms  1.818 ms
+11  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.674 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.754 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.784 ms
+12  * * *
+13  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.737 ms  1.747 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.820 ms
+14  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.633 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.656 ms *
+15  * * *
+16  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  3.200 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  3.172 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  3.235 ms
+17  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.126 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.200 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.191 ms
+18  * * *
+19  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  3.067 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  3.216 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  3.201 ms
+20  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.171 ms  3.152 ms  3.298 ms
+21  * * *
+22  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.962 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.838 ms  1.901 ms
+23  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.752 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.822 ms  1.915 ms
+24  * * *
+25  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.810 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.129 ms  2.094 ms
+26  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.708 ms  1.715 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.767 ms
+27  * * *
+28  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.166 ms  2.155 ms  2.141 ms
+29  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.976 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.921 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.944 ms
+30  * * *
+
+[1558415168.556135]  Test Running 6491/10800
+[1558415178.659647]  Test Running 6501/10800
+[1558415188.775583]  Test Running 6511/10800
+[1558415198.840519]  Test Running 6521/10800
+[1558415208.993027]  Test Running 6531/10800
+[1558415219.134717]  Test Running 6541/10800
+[1558415229.962688]  Test Running 6552/10800
+[1558415240.051856]  Test Running 6562/10800
+[1558415250.155552]  Test Running 6572/10800
+[1558415260.254820]  Test Running 6583/10800
+[1558415270.351013]  Test Running 6593/10800
+[1558415280.444529]  Test Running 6603/10800
+[1558415290.804184]  Test Running 6613/10800
+[1558415300.972824]  Test Running 6623/10800
+[1558415311.619910]  Test Running 6633/10800
+[1558415321.814433]  Test Running 6644/10800
+[1558415331.914406]  Test Running 6654/10800
+[1558415343.916021]  Test Running 6666/10800
+[1558415347.543479] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.677 ms  0.756 ms  0.890 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.611 ms  1.664 ms 172.31.3.2 (172.31.3.2)  3.265 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.156 ms  2.145 ms  2.270 ms
+ 5  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.079 ms  3.106 ms  3.219 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.793 ms  1.776 ms  1.924 ms
+ 8  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.612 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.694 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.588 ms
+ 9  * * *
+10  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.122 ms  2.105 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.223 ms
+11  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.650 ms  1.641 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.771 ms
+12  * * *
+13  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.048 ms  1.830 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.801 ms
+14  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.627 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.610 ms  1.571 ms
+15  * * *
+16  * dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.443 ms  2.403 ms
+17  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.357 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.348 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.326 ms
+18  * * *
+19  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.364 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.341 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.460 ms
+20  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.134 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.262 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.244 ms
+21  * * *
+22  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.094 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.063 ms  2.169 ms
+23  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.932 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.891 ms  1.838 ms
+24  * * *
+25  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.897 ms  1.891 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.855 ms
+26  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.941 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.903 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.943 ms
+27  * * *
+28  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.962 ms  1.922 ms  1.959 ms
+29  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.769 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.772 ms  1.735 ms
+30  * * *
+
+[1558415354.033468]  Test Running 6676/10800
+[1558415364.144214]  Test Running 6686/10800
+[1558415374.245930]  Test Running 6697/10800
+[1558415384.463530]  Test Running 6707/10800
+[1558415394.596663]  Test Running 6717/10800
+[1558415405.512648]  Test Running 6728/10800
+[1558415415.677769]  Test Running 6738/10800
+[1558415425.820108]  Test Running 6748/10800
+[1558415436.185124]  Test Running 6758/10800
+[1558415446.284498]  Test Running 6769/10800
+[1558415456.390452]  Test Running 6779/10800
+[1558415466.700337]  Test Running 6789/10800
+[1558415476.804563]  Test Running 6799/10800
+[1558415486.943468]  Test Running 6809/10800
+[1558415497.038729]  Test Running 6819/10800
+[1558415507.146740]  Test Running 6829/10800
+[1558415517.245979]  Test Running 6840/10800
+[1558415527.547312] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.698 ms  0.763 ms  0.894 ms
+ 2  172.31.3.2 (172.31.3.2)  3.098 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  1.731 ms 172.31.3.2 (172.31.3.2)  3.157 ms
+ 3  * * *
+ 4  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.196 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.197 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.309 ms
+ 5  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  3.076 ms  3.190 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.171 ms
+ 6  * * *
+ 7  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.656 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.799 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.936 ms
+ 8  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.450 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.523 ms  1.728 ms
+ 9  * * *
+10  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.836 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.827 ms  1.934 ms
+11  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.522 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.673 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.563 ms
+12  * * *
+13  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.879 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.891 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.886 ms
+14  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.595 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  1.988 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  1.956 ms
+15  * * *
+16  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.609 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.751 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.741 ms
+17  dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.142 ms *  3.340 ms
+18  * * *
+19  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.648 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.660 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.746 ms
+20  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  3.112 ms  3.231 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  3.216 ms
+21  * * *
+22  dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  2.562 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.705 ms  2.693 ms
+23  dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  2.172 ms  2.132 ms  2.199 ms
+24  * * *
+25  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.873 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.839 ms  1.914 ms
+26  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  2.150 ms dr03-hu0-1-0-32.gspie.lab (172.31.2.1)  2.041 ms dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.996 ms
+27  * * *
+28  dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  2.053 ms dr02-hu0-0-0-6.gspie.lab (172.31.28.1)  1.814 ms dr02-hu0-0-0-7.gspie.lab (172.31.28.3)  1.894 ms
+29  dr03-hu0-1-0-33.gspie.lab (172.31.2.3)  1.871 ms  1.736 ms dr03-hu0-1-0-34.gspie.lab (172.31.2.5)  2.176 ms
+30  * * *
+
+[1558415528.168091]  Test Running 6850/10800
+[1558415538.267540]  Test Running 6861/10800
+[1558415548.367106]  Test Running 6871/10800
+[1558415558.468258]  Test Running 6881/10800
+[1558415568.657700]  Test Running 6891/10800
+[1558415578.796745]  Test Running 6901/10800
+[1558415589.481368]  Test Running 6912/10800
+[1558415599.588078]  Test Running 6922/10800
+[1558415609.739554]  Test Running 6932/10800
+[1558415619.865249]  Test Running 6942/10800
+[1558415629.963015]  Test Running 6952/10800
+[1558415637.317765] dr02 << conf t
+[1558415638.119882] dr02 >> 
+Mon May 20 22:13:57.525 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-000020e1-00000099     netconf    obt      Mon May 20 20:16:35 2019 
+[1558415638.119992] dr02 << router static
+[1558415638.545116] dr02 >> 
+[1558415638.546121] dr02 << address-family ipv4 unicast
+[1558415638.948468] dr02 >> 
+[1558415638.948504] dr02 << no 172.31.153.24/29
+[1558415639.349686] dr02 >> 
+[1558415639.349779] dr02 << no 172.31.153.0/24
+[1558415639.751056] dr02 >> 
+[1558415639.751112] dr02 << commit
+[1558415640.239310]  Test Running 6962/10800
+[1558415640.953680] dr02 >> 
+Mon May 20 22:13:59.957 PDT
+[1558415640.953744] dr02 << end
+[1558415641.354967] dr02 >> 
+[1558415641.355022] dr02 << show route static
+[1558415641.956839] dr02 >> 
+Mon May 20 22:14:01.566 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 2w3d, MgmtEth0/RP0/CPU0/0
+S    172.31.2.135/32 is directly connected, 2w3d, HundredGigE0/1/0/22
+S    172.31.2.137/32 is directly connected, 2w3d, HundredGigE0/1/0/23
+S    172.31.25.0/32 is directly connected, 1w6d, HundredGigE0/0/0/0
+S    172.31.25.2/32 is directly connected, 1w6d, HundredGigE0/0/0/1
+S    172.31.26.0/32 is directly connected, 2w3d, HundredGigE0/0/0/2
+S    172.31.26.2/32 is directly connected, 2w3d, HundredGigE0/0/0/3
+S    172.31.27.0/32 is directly connected, 2w3d, HundredGigE0/0/0/4
+S    172.31.27.2/32 is directly connected, 2w3d, HundredGigE0/0/0/5
+S    172.31.28.0/32 is directly connected, 2w3d, HundredGigE0/0/0/6
+S    172.31.28.2/32 is directly connected, 2w3d, HundredGigE0/0/0/7
+[1558415641.956954] event: remove_network_loop {'device': 'dr02'}
+[1558415641.956980] dr03 << conf t
+[1558415642.758850] dr03 >> 
+Mon May 20 22:14:02.218 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-00004abe-00000f0e     netconf    obt      Mon May 20 20:16:32 2019 
+00001000-00004abe-00000f11     netconf    obt      Mon May 20 20:17:37 2019 
+[1558415642.758913] dr03 << router static
+[1558415643.160153] dr03 >> 
+[1558415643.160210] dr03 << address-family ipv4 unicast
+[1558415643.561330] dr03 >> 
+[1558415643.561372] dr03 << no 172.31.153.24/29
+[1558415643.962415] dr03 >> 
+[1558415643.962451] dr03 << no 172.31.153.0/24
+[1558415644.363475] dr03 >> 
+[1558415644.363512] dr03 << commit
+[1558415645.165260] dr03 >> 
+Mon May 20 22:14:04.622 PDT
+[1558415645.165315] dr03 << end
+[1558415645.566419] dr03 >> 
+[1558415645.566458] dr03 << show route static
+[1558415646.167931] dr03 >> 
+Mon May 20 22:14:05.828 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 21w5d, MgmtEth0/RP0/CPU0/0
+[1558415646.168048] event: remove_network_loop {'device': 'dr03'}
+[1558415651.008484]  Test Running 6973/10800
+[1558415661.194270]  Test Running 6983/10800
+[1558415671.296897]  Test Running 6994/10800
+[1558415681.392679]  Test Running 7004/10800
+[1558415691.494771]  Test Running 7014/10800
+[1558415697.516574] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.568 ms  0.647 ms  0.793 ms
+ 2  172.31.3.2 (172.31.3.2)  1.223 ms  1.198 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.649 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.207 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.033 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.150 ms
+ 4  172.31.2.137 (172.31.2.137)  0.512 ms  0.637 ms 172.31.2.131 (172.31.2.131)  0.782 ms
+ 5  172.31.153.26 (172.31.153.26)  0.074 ms  0.067 ms  0.061 ms
+
+[1558415701.617640]  Test Running 7024/10800
+[1558415711.890773]  Test Running 7034/10800
+[1558415721.987413]  Test Running 7044/10800
+[1558415732.086842]  Test Running 7054/10800
+[1558415742.206257]  Test Running 7064/10800
+[1558415752.303085]  Test Running 7075/10800
+[1558415762.455015]  Test Running 7085/10800
+[1558415772.583834]  Test Running 7095/10800
+[1558415782.684937]  Test Running 7105/10800
+[1558415793.005407]  Test Running 7115/10800
+[1558415803.110010]  Test Running 7125/10800
+[1558415813.297661]  Test Running 7136/10800
+[1558415825.242594]  Test Running 7147/10800
+[1558415835.341249]  Test Running 7158/10800
+[1558415845.441210]  Test Running 7168/10800
+[1558415855.541201]  Test Running 7178/10800
+[1558415865.708775]  Test Running 7188/10800
+[1558415875.948551]  Test Running 7198/10800
+[1558415877.520971] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.644 ms  0.707 ms  0.856 ms
+ 2  172.31.3.2 (172.31.3.2)  1.686 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.690 ms 172.31.3.2 (172.31.3.2)  1.811 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.154 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.801 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.106 ms
+ 4  172.31.2.131 (172.31.2.131)  0.539 ms 172.31.2.133 (172.31.2.133)  0.664 ms  0.805 ms
+ 5  172.31.153.26 (172.31.153.26)  0.072 ms  0.070 ms  0.049 ms
+
+[1558415886.044964]  Test Running 7208/10800
+[1558415896.287345]  Test Running 7218/10800
+[1558415906.393247]  Test Running 7229/10800
+[1558415916.493012]  Test Running 7239/10800
+[1558415926.715554]  Test Running 7249/10800
+[1558415936.847784]  Test Running 7259/10800
+[1558415946.960459]  Test Running 7269/10800
+[1558415957.082198]  Test Running 7279/10800
+[1558415967.240200]  Test Running 7289/10800
+[1558415977.343717]  Test Running 7300/10800
+[1558415987.448635]  Test Running 7310/10800
+[1558415997.549938]  Test Running 7320/10800
+[1558416009.074548]  Test Running 7331/10800
+[1558416019.172070]  Test Running 7341/10800
+[1558416029.397343]  Test Running 7352/10800
+[1558416039.565320]  Test Running 7362/10800
+[1558416049.673720]  Test Running 7372/10800
+[1558416057.514533] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.596 ms  0.677 ms  0.826 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.101 ms  3.108 ms  3.199 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.171 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.160 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.164 ms
+ 4  172.31.2.133 (172.31.2.133)  0.478 ms 172.31.2.135 (172.31.2.135)  0.610 ms 172.31.2.133 (172.31.2.133)  0.759 ms
+ 5  172.31.153.26 (172.31.153.26)  0.059 ms  0.075 ms  0.065 ms
+
+[1558416059.813770]  Test Running 7382/10800
+[1558416069.929423]  Test Running 7392/10800
+[1558416080.038440]  Test Running 7402/10800
+[1558416090.147142]  Test Running 7412/10800
+[1558416100.250022]  Test Running 7422/10800
+[1558416110.473021]  Test Running 7433/10800
+[1558416120.676925]  Test Running 7443/10800
+[1558416130.852357]  Test Running 7453/10800
+[1558416141.037443]  Test Running 7463/10800
+[1558416151.984633]  Test Running 7473/10800
+[1558416162.800468]  Test Running 7485/10800
+[1558416172.907131]  Test Running 7495/10800
+[1558416184.693028]  Test Running 7505/10800
+[1558416194.821731]  Test Running 7517/10800
+[1558416204.993607]  Test Running 7527/10800
+[1558416215.105606]  Test Running 7537/10800
+[1558416225.207294]  Test Running 7547/10800
+[1558416235.310218]  Test Running 7557/10800
+[1558416237.515950] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.663 ms  0.722 ms  0.854 ms
+ 2  172.31.3.2 (172.31.3.2)  1.827 ms  1.805 ms  1.936 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.244 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.234 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.283 ms
+ 4  172.31.2.135 (172.31.2.135)  0.525 ms  0.641 ms 172.31.2.137 (172.31.2.137)  0.778 ms
+ 5  172.31.153.26 (172.31.153.26)  0.073 ms  0.073 ms  0.054 ms
+
+[1558416246.203896]  Test Running 7568/10800
+[1558416256.485234]  Test Running 7579/10800
+[1558416266.675431]  Test Running 7589/10800
+[1558416277.094642]  Test Running 7599/10800
+[1558416287.207927]  Test Running 7609/10800
+[1558416297.354881]  Test Running 7619/10800
+[1558416307.742452]  Test Running 7630/10800
+[1558416317.925953]  Test Running 7640/10800
+[1558416328.079616]  Test Running 7650/10800
+[1558416338.209406]  Test Running 7660/10800
+[1558416348.351771]  Test Running 7670/10800
+[1558416358.455344]  Test Running 7681/10800
+[1558416368.569056]  Test Running 7691/10800
+[1558416378.679824]  Test Running 7701/10800
+[1558416388.783683]  Test Running 7711/10800
+[1558416398.888328]  Test Running 7721/10800
+[1558416409.023907]  Test Running 7731/10800
+[1558416417.517109] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.635 ms  0.731 ms  0.859 ms
+ 2  172.31.3.2 (172.31.3.2)  1.753 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.250 ms 172.31.3.2 (172.31.3.2)  1.849 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.250 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.039 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.201 ms
+ 4  172.31.2.131 (172.31.2.131)  0.491 ms 172.31.2.137 (172.31.2.137)  0.613 ms  0.759 ms
+ 5  172.31.153.26 (172.31.153.26)  0.070 ms  0.066 ms  0.044 ms
+
+[1558416419.135237]  Test Running 7741/10800
+[1558416429.246799]  Test Running 7751/10800
+[1558416439.459468]  Test Running 7761/10800
+[1558416449.557965]  Test Running 7772/10800
+[1558416460.025319]  Test Running 7782/10800
+[1558416470.183473]  Test Running 7792/10800
+[1558416480.411904]  Test Running 7803/10800
+[1558416490.511243]  Test Running 7813/10800
+[1558416500.618759]  Test Running 7823/10800
+[1558416510.723229]  Test Running 7833/10800
+[1558416518.063519] collector error: Traceback (most recent call last):
+  File "/home/antkisel/data/data_collection/cli_collector.py", line 65, in tick
+    res = self.conn.send_command(self.command)
+  File "/home/antkisel/py2/local/lib/python2.7/site-packages/netmiko/base_connection.py", line 1188, in send_command
+    search_pattern))
+IOError: Search pattern never detected in send_command_expect: RP\/0\/RP0\/CPU0\:spine3\#
+
+[1558416520.857904]  Test Running 7843/10800
+[1558416530.956566]  Test Running 7853/10800
+[1558416541.108987]  Test Running 7863/10800
+[1558416551.249029]  Test Running 7873/10800
+[1558416561.384644]  Test Running 7883/10800
+[1558416568.061284] collector error: Traceback (most recent call last):
+  File "/home/antkisel/data/data_collection/cli_collector.py", line 65, in tick
+    res = self.conn.send_command(self.command)
+  File "/home/antkisel/py2/local/lib/python2.7/site-packages/netmiko/base_connection.py", line 1188, in send_command
+    search_pattern))
+IOError: Search pattern never detected in send_command_expect: RP\/0\/RP0\/CPU0\:leaf7\#
+
+[1558416571.480965]  Test Running 7894/10800
+[1558416581.588244]  Test Running 7904/10800
+[1558416591.721776]  Test Running 7914/10800
+[1558416597.517662] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.629 ms  0.695 ms  0.811 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.238 ms  3.231 ms  3.348 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.081 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.970 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.952 ms
+ 4  172.31.2.133 (172.31.2.133)  0.587 ms 172.31.2.137 (172.31.2.137)  0.677 ms 172.31.2.133 (172.31.2.133)  0.807 ms
+ 5  172.31.153.26 (172.31.153.26)  0.073 ms  0.071 ms  0.047 ms
+
+[1558416601.821776]  Test Running 7924/10800
+[1558416612.705169]  Test Running 7935/10800
+[1558416622.810714]  Test Running 7945/10800
+[1558416632.970776]  Test Running 7955/10800
+[1558416643.069064]  Test Running 7965/10800
+[1558416653.247447]  Test Running 7975/10800
+[1558416663.390511]  Test Running 7985/10800
+[1558416673.606796]  Test Running 7996/10800
+[1558416683.704638]  Test Running 8006/10800
+[1558416693.877956]  Test Running 8016/10800
+[1558416703.976046]  Test Running 8026/10800
+[1558416714.148493]  Test Running 8036/10800
+[1558416724.351188]  Test Running 8046/10800
+[1558416734.457245]  Test Running 8057/10800
+[1558416744.561818]  Test Running 8067/10800
+[1558416754.675840]  Test Running 8077/10800
+[1558416764.801963]  Test Running 8087/10800
+[1558416774.908201]  Test Running 8097/10800
+[1558416777.515520] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.637 ms  0.712 ms  0.844 ms
+ 2  172.31.3.2 (172.31.3.2)  1.906 ms  1.893 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.402 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.894 ms  1.205 ms  1.855 ms
+ 4  172.31.2.131 (172.31.2.131)  0.558 ms 172.31.2.137 (172.31.2.137)  0.684 ms 172.31.2.133 (172.31.2.133)  0.828 ms
+ 5  172.31.153.26 (172.31.153.26)  0.067 ms  0.081 ms  0.063 ms
+
+[1558416785.008676]  Test Running 8107/10800
+[1558416795.105046]  Test Running 8117/10800
+[1558416798.068918] collector error: Traceback (most recent call last):
+  File "/home/antkisel/data/data_collection/cli_collector.py", line 65, in tick
+    res = self.conn.send_command(self.command)
+  File "/home/antkisel/py2/local/lib/python2.7/site-packages/netmiko/base_connection.py", line 1188, in send_command
+    search_pattern))
+IOError: Search pattern never detected in send_command_expect: RP\/0\/RP0\/CPU0\:spine3\#
+
+[1558416805.404026]  Test Running 8127/10800
+[1558416815.568281]  Test Running 8138/10800
+[1558416825.664737]  Test Running 8148/10800
+[1558416835.762039]  Test Running 8158/10800
+[1558416845.976016]  Test Running 8168/10800
+[1558416856.083894]  Test Running 8178/10800
+[1558416866.193388]  Test Running 8188/10800
+[1558416877.196646]  Test Running 8199/10800
+[1558416887.298104]  Test Running 8209/10800
+[1558416897.460434]  Test Running 8219/10800
+[1558416907.828242]  Test Running 8230/10800
+[1558416917.992921]  Test Running 8240/10800
+[1558416928.096547]  Test Running 8250/10800
+[1558416938.328058]  Test Running 8260/10800
+[1558416948.455069]  Test Running 8271/10800
+[1558416957.518327] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.648 ms  0.710 ms  0.853 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.011 ms  3.000 ms  3.124 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.040 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.114 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.008 ms
+ 4  172.31.2.131 (172.31.2.131)  0.544 ms 172.31.2.137 (172.31.2.137)  0.645 ms 172.31.2.131 (172.31.2.131)  0.791 ms
+ 5  172.31.153.26 (172.31.153.26)  0.069 ms  0.069 ms  0.051 ms
+
+[1558416958.568628]  Test Running 8281/10800
+[1558416969.250261]  Test Running 8291/10800
+[1558416979.361495]  Test Running 8301/10800
+[1558416989.457746]  Test Running 8312/10800
+[1558417000.445202]  Test Running 8322/10800
+[1558417010.552206]  Test Running 8333/10800
+[1558417020.651964]  Test Running 8343/10800
+[1558417031.415764]  Test Running 8353/10800
+[1558417041.567391]  Test Running 8364/10800
+[1558417052.242324]  Test Running 8374/10800
+[1558417062.381798]  Test Running 8384/10800
+[1558417072.481647]  Test Running 8395/10800
+[1558417077.607160] event: shutdown_interface {'device': 'leaf7', 'interface': 'HundredGigE0/0/0/15'}
+[1558417082.585910]  Test Running 8405/10800
+[1558417093.219626]  Test Running 8415/10800
+[1558417103.350632]  Test Running 8425/10800
+[1558417113.465832]  Test Running 8435/10800
+[1558417123.589894]  Test Running 8446/10800
+[1558417133.716030]  Test Running 8456/10800
+[1558417137.515599] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.666 ms  0.739 ms  0.862 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.265 ms  3.257 ms 172.31.3.2 (172.31.3.2)  1.653 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.866 ms  1.127 ms  1.826 ms
+ 4  172.31.2.137 (172.31.2.137)  0.509 ms 172.31.2.133 (172.31.2.133)  0.622 ms 172.31.2.135 (172.31.2.135)  0.761 ms
+ 5  172.31.153.26 (172.31.153.26)  0.069 ms  0.071 ms  0.069 ms
+
+[1558417145.296598]  Test Running 8467/10800
+[1558417155.783691]  Test Running 8478/10800
+[1558417165.900164]  Test Running 8488/10800
+[1558417175.995868]  Test Running 8498/10800
+[1558417186.092907]  Test Running 8508/10800
+[1558417196.197205]  Test Running 8518/10800
+[1558417206.416754]  Test Running 8528/10800
+[1558417216.520173]  Test Running 8539/10800
+[1558417226.627976]  Test Running 8549/10800
+[1558417236.998131]  Test Running 8559/10800
+[1558417247.143975]  Test Running 8569/10800
+[1558417257.300267]  Test Running 8579/10800
+[1558417267.553007]  Test Running 8590/10800
+[1558417277.654132]  Test Running 8600/10800
+[1558417287.756188]  Test Running 8610/10800
+[1558417297.906861]  Test Running 8620/10800
+[1558417308.006532]  Test Running 8630/10800
+[1558417308.058836] collector error: Traceback (most recent call last):
+  File "/home/antkisel/data/data_collection/cli_collector.py", line 65, in tick
+    res = self.conn.send_command(self.command)
+  File "/home/antkisel/py2/local/lib/python2.7/site-packages/netmiko/base_connection.py", line 1188, in send_command
+    search_pattern))
+IOError: Search pattern never detected in send_command_expect: RP\/0\/RP0\/CPU0\:leaf8\#
+
+[1558417317.516689] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.639 ms  0.702 ms  0.849 ms
+ 2  172.31.3.2 (172.31.3.2)  1.566 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.935 ms 172.31.3.2 (172.31.3.2)  1.680 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.157 ms  1.136 ms  1.286 ms
+ 4  172.31.2.135 (172.31.2.135)  0.518 ms 172.31.2.133 (172.31.2.133)  0.634 ms  0.757 ms
+ 5  172.31.153.26 (172.31.153.26)  0.069 ms  0.066 ms  0.062 ms
+
+[1558417318.332570]  Test Running 8640/10800
+[1558417328.433659]  Test Running 8650/10800
+[1558417338.568810]  Test Running 8661/10800
+[1558417348.667554]  Test Running 8671/10800
+[1558417359.581107]  Test Running 8682/10800
+[1558417369.683542]  Test Running 8692/10800
+[1558417379.842873]  Test Running 8702/10800
+[1558417390.353393]  Test Running 8712/10800
+[1558417400.543105]  Test Running 8722/10800
+[1558417410.652956]  Test Running 8733/10800
+[1558417421.306034]  Test Running 8743/10800
+[1558417431.405454]  Test Running 8753/10800
+[1558417441.506705]  Test Running 8763/10800
+[1558417452.039487]  Test Running 8774/10800
+[1558417462.673457]  Test Running 8785/10800
+[1558417472.856518]  Test Running 8795/10800
+[1558417483.009057]  Test Running 8805/10800
+[1558417493.164898]  Test Running 8815/10800
+[1558417497.511377] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.682 ms  0.747 ms  0.887 ms
+ 2  172.31.3.2 (172.31.3.2)  1.752 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.088 ms 172.31.3.2 (172.31.3.2)  1.875 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.941 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.060 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.047 ms
+ 4  172.31.2.131 (172.31.2.131)  0.532 ms 172.31.2.133 (172.31.2.133)  0.662 ms  0.801 ms
+ 5  172.31.153.26 (172.31.153.26)  0.066 ms  0.066 ms  0.058 ms
+
+[1558417504.919206]  Test Running 8827/10800
+[1558417515.009730]  Test Running 8837/10800
+[1558417525.108269]  Test Running 8847/10800
+[1558417535.289647]  Test Running 8857/10800
+[1558417545.452100]  Test Running 8867/10800
+[1558417555.556456]  Test Running 8878/10800
+[1558417558.053679] collector error: Traceback (most recent call last):
+  File "/home/antkisel/data/data_collection/cli_collector.py", line 65, in tick
+    res = self.conn.send_command(self.command)
+  File "/home/antkisel/py2/local/lib/python2.7/site-packages/netmiko/base_connection.py", line 1188, in send_command
+    search_pattern))
+IOError: Search pattern never detected in send_command_expect: RP\/0\/RP0\/CPU0\:leaf8\#
+
+[1558417565.654850]  Test Running 8888/10800
+[1558417575.761925]  Test Running 8898/10800
+[1558417585.867708]  Test Running 8908/10800
+[1558417596.449455]  Test Running 8918/10800
+[1558417606.562821]  Test Running 8928/10800
+[1558417616.662801]  Test Running 8939/10800
+[1558417627.294213]  Test Running 8949/10800
+[1558417637.401553]  Test Running 8959/10800
+[1558417647.649109]  Test Running 8970/10800
+[1558417657.795454]  Test Running 8980/10800
+[1558417667.906370]  Test Running 8990/10800
+[1558417677.516464] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.580 ms  0.663 ms  0.792 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.171 ms  3.159 ms 172.31.3.2 (172.31.3.2)  1.871 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.059 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.038 ms  2.003 ms
+ 4  172.31.2.131 (172.31.2.131)  0.521 ms 172.31.2.135 (172.31.2.135)  0.733 ms 172.31.2.131 (172.31.2.131)  0.948 ms
+ 5  172.31.153.26 (172.31.153.26)  0.072 ms  0.083 ms  0.060 ms
+
+[1558417678.007199]  Test Running 9000/10800
+[1558417688.314255]  Test Running 9010/10800
+[1558417698.422129]  Test Running 9020/10800
+[1558417708.586669]  Test Running 9031/10800
+[1558417719.334359]  Test Running 9041/10800
+[1558417729.433958]  Test Running 9051/10800
+[1558417739.628397]  Test Running 9062/10800
+[1558417749.761092]  Test Running 9072/10800
+[1558417759.861085]  Test Running 9082/10800
+[1558417769.964474]  Test Running 9092/10800
+[1558417780.703914]  Test Running 9103/10800
+[1558417790.862027]  Test Running 9113/10800
+[1558417800.968894]  Test Running 9123/10800
+[1558417811.683242]  Test Running 9134/10800
+[1558417821.845704]  Test Running 9145/10800
+[1558417832.051800]  Test Running 9155/10800
+[1558417842.163637]  Test Running 9165/10800
+[1558417852.313121]  Test Running 9175/10800
+[1558417857.517638] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.605 ms  0.682 ms  1.280 ms
+ 2  172.31.3.2 (172.31.3.2)  1.673 ms  1.656 ms  1.824 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.952 ms  1.938 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.084 ms
+ 4  172.31.2.131 (172.31.2.131)  0.563 ms 172.31.2.133 (172.31.2.133)  0.674 ms 172.31.2.137 (172.31.2.137)  0.800 ms
+ 5  172.31.153.26 (172.31.153.26)  0.081 ms  0.081 ms  0.059 ms
+
+[1558417862.414066]  Test Running 9185/10800
+[1558417872.520449]  Test Running 9195/10800
+[1558417882.629764]  Test Running 9205/10800
+[1558417892.756393]  Test Running 9216/10800
+[1558417902.880181]  Test Running 9226/10800
+[1558417913.031827]  Test Running 9236/10800
+[1558417923.142116]  Test Running 9246/10800
+[1558417933.244233]  Test Running 9256/10800
+[1558417943.424829]  Test Running 9266/10800
+[1558417953.525831]  Test Running 9276/10800
+[1558417963.629393]  Test Running 9286/10800
+[1558417973.739563]  Test Running 9296/10800
+[1558417983.867555]  Test Running 9307/10800
+[1558417993.964782]  Test Running 9317/10800
+[1558418004.067711]  Test Running 9327/10800
+[1558418014.170588]  Test Running 9337/10800
+[1558418024.473828]  Test Running 9347/10800
+[1558418034.659137]  Test Running 9357/10800
+[1558418037.517392] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.682 ms  0.724 ms  0.852 ms
+ 2  172.31.3.2 (172.31.3.2)  1.741 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.168 ms 172.31.3.2 (172.31.3.2)  1.844 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.050 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.021 ms  2.148 ms
+ 4  172.31.2.133 (172.31.2.133)  0.550 ms 172.31.2.137 (172.31.2.137)  0.657 ms  0.787 ms
+ 5  172.31.153.26 (172.31.153.26)  0.073 ms  0.070 ms  0.067 ms
+
+[1558418044.790649]  Test Running 9368/10800
+[1558418054.928644]  Test Running 9378/10800
+[1558418065.077556]  Test Running 9388/10800
+[1558418075.601753]  Test Running 9398/10800
+[1558418085.806051]  Test Running 9409/10800
+[1558418095.902360]  Test Running 9419/10800
+[1558418106.104232]  Test Running 9429/10800
+[1558418116.217521]  Test Running 9439/10800
+[1558418126.415049]  Test Running 9449/10800
+[1558418136.606039]  Test Running 9459/10800
+[1558418146.705442]  Test Running 9469/10800
+[1558418156.806146]  Test Running 9480/10800
+[1558418167.130764]  Test Running 9490/10800
+[1558418177.230525]  Test Running 9500/10800
+[1558418187.334051]  Test Running 9510/10800
+[1558418197.432547]  Test Running 9520/10800
+[1558418207.532052]  Test Running 9530/10800
+[1558418217.519119] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.591 ms  0.663 ms  0.799 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.013 ms  3.009 ms 172.31.3.2 (172.31.3.2)  1.641 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.088 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.076 ms  1.056 ms
+ 4  172.31.2.137 (172.31.2.137)  0.597 ms 172.31.2.135 (172.31.2.135)  0.699 ms 172.31.2.133 (172.31.2.133)  0.837 ms
+ 5  172.31.153.26 (172.31.153.26)  0.066 ms  0.068 ms  0.066 ms
+
+[1558418217.634223]  Test Running 9540/10800
+[1558418227.797838]  Test Running 9551/10800
+[1558418237.961775]  Test Running 9561/10800
+[1558418248.114133]  Test Running 9571/10800
+[1558418258.334292]  Test Running 9581/10800
+[1558418268.539162]  Test Running 9591/10800
+[1558418277.604160] event: enable_interface {'device': 'leaf7', 'interface': 'HundredGigE0/0/0/15'}
+[1558418278.652280]  Test Running 9601/10800
+[1558418289.397646]  Test Running 9612/10800
+[1558418299.659705]  Test Running 9622/10800
+[1558418309.757231]  Test Running 9632/10800
+[1558418319.858722]  Test Running 9643/10800
+[1558418329.984418]  Test Running 9653/10800
+[1558418340.085694]  Test Running 9663/10800
+[1558418350.180483]  Test Running 9673/10800
+[1558418360.285207]  Test Running 9683/10800
+[1558418370.389018]  Test Running 9693/10800
+[1558418380.487577]  Test Running 9703/10800
+[1558418390.646320]  Test Running 9713/10800
+[1558418397.516875] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.635 ms  0.708 ms  0.841 ms
+ 2  172.31.3.2 (172.31.3.2)  1.576 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.060 ms 172.31.3.2 (172.31.3.2)  1.697 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.875 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.854 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.109 ms
+ 4  172.31.2.137 (172.31.2.137)  0.488 ms 172.31.2.133 (172.31.2.133)  0.603 ms 172.31.2.131 (172.31.2.131)  0.741 ms
+ 5  172.31.153.26 (172.31.153.26)  0.071 ms  0.070 ms  0.050 ms
+
+[1558418400.750031]  Test Running 9723/10800
+[1558418410.879868]  Test Running 9734/10800
+[1558418421.022880]  Test Running 9744/10800
+[1558418431.127196]  Test Running 9754/10800
+[1558418441.355146]  Test Running 9764/10800
+[1558418451.464990]  Test Running 9774/10800
+[1558418461.630442]  Test Running 9784/10800
+[1558418471.781498]  Test Running 9794/10800
+[1558418481.871701]  Test Running 9805/10800
+[1558418491.980414]  Test Running 9815/10800
+[1558418502.081222]  Test Running 9825/10800
+[1558418512.199984]  Test Running 9835/10800
+[1558418522.301559]  Test Running 9845/10800
+[1558418532.449026]  Test Running 9855/10800
+[1558418542.657293]  Test Running 9865/10800
+[1558418552.893776]  Test Running 9876/10800
+[1558418562.989819]  Test Running 9886/10800
+[1558418573.089880]  Test Running 9896/10800
+[1558418577.519725] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.650 ms  0.712 ms  0.838 ms
+ 2  172.31.3.2 (172.31.3.2)  1.730 ms  1.709 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  4.219 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.068 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.321 ms  1.282 ms
+ 4  172.31.2.131 (172.31.2.131)  0.570 ms 172.31.2.135 (172.31.2.135)  0.689 ms 172.31.2.131 (172.31.2.131)  0.829 ms
+ 5  172.31.153.26 (172.31.153.26)  0.070 ms  0.066 ms  0.059 ms
+
+[1558418583.200135]  Test Running 9906/10800
+[1558418593.562603]  Test Running 9916/10800
+[1558418603.729387]  Test Running 9926/10800
+[1558418614.576478]  Test Running 9937/10800
+[1558418624.683541]  Test Running 9947/10800
+[1558418634.793009]  Test Running 9957/10800
+[1558418645.431581]  Test Running 9968/10800
+[1558418655.603450]  Test Running 9978/10800
+[1558418665.715805]  Test Running 9988/10800
+[1558418675.829445]  Test Running 9998/10800
+[1558418686.005944]  Test Running 10009/10800
+[1558418696.110641]  Test Running 10019/10800
+[1558418706.219912]  Test Running 10029/10800
+[1558418716.328894]  Test Running 10039/10800
+[1558418726.427383]  Test Running 10049/10800
+[1558418736.526370]  Test Running 10059/10800
+[1558418746.702161]  Test Running 10069/10800
+[1558418756.844901]  Test Running 10079/10800
+[1558418757.519413] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.646 ms  0.729 ms  0.852 ms
+ 2  172.31.3.2 (172.31.3.2)  1.564 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.797 ms  2.786 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.140 ms  1.118 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.993 ms
+ 4  172.31.2.131 (172.31.2.131)  0.447 ms  0.616 ms 172.31.2.137 (172.31.2.137)  0.715 ms
+ 5  172.31.153.26 (172.31.153.26)  0.069 ms  0.066 ms  0.067 ms
+
+[1558418767.311255]  Test Running 10090/10800
+[1558418777.454863]  Test Running 10100/10800
+[1558418787.559491]  Test Running 10110/10800
+[1558418798.141132]  Test Running 10121/10800
+[1558418808.245343]  Test Running 10131/10800
+[1558418818.343618]  Test Running 10141/10800
+[1558418828.698706]  Test Running 10151/10800
+[1558418839.028867]  Test Running 10162/10800
+[1558418849.138289]  Test Running 10172/10800
+[1558418859.335562]  Test Running 10182/10800
+[1558418869.448010]  Test Running 10192/10800
+[1558418879.560952]  Test Running 10202/10800
+[1558418889.927347]  Test Running 10213/10800
+[1558418900.024209]  Test Running 10223/10800
+[1558418910.136172]  Test Running 10233/10800
+[1558418920.323775]  Test Running 10243/10800
+[1558418930.437572]  Test Running 10253/10800
+[1558418937.517849] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.665 ms  0.759 ms  0.879 ms
+ 2  172.31.3.2 (172.31.3.2)  1.520 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.458 ms  3.459 ms
+ 3  dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.056 ms  2.042 ms  1.095 ms
+ 4  172.31.2.137 (172.31.2.137)  0.522 ms 172.31.2.133 (172.31.2.133)  0.627 ms 172.31.2.135 (172.31.2.135)  0.766 ms
+ 5  172.31.153.26 (172.31.153.26)  0.066 ms  0.066 ms  0.048 ms
+
+[1558418940.598768]  Test Running 10263/10800
+[1558418950.702719]  Test Running 10273/10800
+[1558418960.825978]  Test Running 10283/10800
+[1558418970.940360]  Test Running 10294/10800
+[1558418981.036669]  Test Running 10304/10800
+[1558418991.194413]  Test Running 10314/10800
+[1558419001.294646]  Test Running 10324/10800
+[1558419011.396252]  Test Running 10334/10800
+[1558419021.493793]  Test Running 10344/10800
+[1558419031.597903]  Test Running 10354/10800
+[1558419041.706276]  Test Running 10364/10800
+[1558419051.876790]  Test Running 10374/10800
+[1558419062.020828]  Test Running 10385/10800
+[1558419072.147207]  Test Running 10395/10800
+[1558419082.247661]  Test Running 10405/10800
+[1558419092.351747]  Test Running 10415/10800
+[1558419102.451009]  Test Running 10425/10800
+[1558419112.606674]  Test Running 10435/10800
+[1558419117.518046] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.671 ms  0.723 ms  0.850 ms
+ 2  dr03-bundle-ether1.gspie.lab (172.31.3.0)  2.954 ms  2.945 ms 172.31.3.2 (172.31.3.2)  1.599 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.090 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  1.923 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  1.037 ms
+ 4  172.31.2.137 (172.31.2.137)  0.567 ms 172.31.2.131 (172.31.2.131)  0.669 ms 172.31.2.137 (172.31.2.137)  0.804 ms
+ 5  172.31.153.26 (172.31.153.26)  0.071 ms  0.073 ms  0.051 ms
+
+[1558419122.785474]  Test Running 10445/10800
+[1558419132.936371]  Test Running 10456/10800
+[1558419143.186754]  Test Running 10466/10800
+[1558419153.284870]  Test Running 10476/10800
+[1558419163.379968]  Test Running 10486/10800
+[1558419173.575916]  Test Running 10496/10800
+[1558419183.677531]  Test Running 10506/10800
+[1558419194.080318]  Test Running 10517/10800
+[1558419204.205688]  Test Running 10527/10800
+[1558419214.393404]  Test Running 10537/10800
+[1558419224.557958]  Test Running 10547/10800
+[1558419234.655652]  Test Running 10557/10800
+[1558419244.753863]  Test Running 10567/10800
+[1558419254.981518]  Test Running 10578/10800
+[1558419265.142323]  Test Running 10588/10800
+[1558419275.385082]  Test Running 10598/10800
+[1558419285.483666]  Test Running 10608/10800
+[1558419295.665087]  Test Running 10618/10800
+[1558419297.513776] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.653 ms  0.728 ms  0.866 ms
+ 2  172.31.3.2 (172.31.3.2)  1.699 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.113 ms 172.31.3.2 (172.31.3.2)  1.658 ms
+ 3  dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.124 ms dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.196 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.085 ms
+ 4  172.31.2.135 (172.31.2.135)  0.469 ms 172.31.2.137 (172.31.2.137)  0.603 ms 172.31.2.133 (172.31.2.133)  0.745 ms
+ 5  172.31.153.26 (172.31.153.26)  0.065 ms  0.067 ms  0.059 ms
+
+[1558419305.774438]  Test Running 10628/10800
+[1558419316.475333]  Test Running 10639/10800
+[1558419326.622532]  Test Running 10649/10800
+[1558419336.832968]  Test Running 10659/10800
+[1558419347.061718]  Test Running 10670/10800
+[1558419357.160940]  Test Running 10680/10800
+[1558419367.772248]  Test Running 10690/10800
+[1558419377.876103]  Test Running 10700/10800
+[1558419387.986123]  Test Running 10711/10800
+[1558419398.096186]  Test Running 10721/10800
+[1558419408.195395]  Test Running 10731/10800
+[1558419418.328289]  Test Running 10741/10800
+[1558419428.571333]  Test Running 10751/10800
+[1558419438.682045]  Test Running 10761/10800
+[1558419448.794879]  Test Running 10771/10800
+[1558419458.911669]  Test Running 10781/10800
+[1558419469.010331]  Test Running 10792/10800
+[1558419477.516446] traceroute of host behind loop: 
+traceroute to 172.31.153.26 (172.31.153.26), 30 hops max, 60 byte packets
+ 1  172.31.96.1 (172.31.96.1)  0.678 ms  0.753 ms  0.876 ms
+ 2  172.31.3.2 (172.31.3.2)  1.545 ms dr03-bundle-ether1.gspie.lab (172.31.3.0)  3.076 ms  3.068 ms
+ 3  dr02-hu0-1-0-2.gspie.lab (172.31.2.4)  1.251 ms dr02-hu0-1-0-1.gspie.lab (172.31.2.2)  2.150 ms dr02-hu0-1-0-0.gspie.lab (172.31.2.0)  2.135 ms
+ 4  172.31.2.133 (172.31.2.133)  0.493 ms 172.31.2.135 (172.31.2.135)  0.611 ms 172.31.2.133 (172.31.2.133)  0.750 ms
+ 5  172.31.153.26 (172.31.153.26)  0.125 ms  0.128 ms  0.109 ms
+
+[1558419479.146492]  Test Running 10800/10800
+[1558419483.251800] Stopping XECLICollector
+[1558419483.251906] Stopping XEXMLCollector
+[1558419483.251947] Stopping InfluxDbCollector
+[1558419483.252068] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device spine1
+[1558419483.270024] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device spine2
+[1558419483.283758] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device spine3
+[1558419483.299551] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device spine4
+[1558419483.317067] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device spine5
+[1558419483.334567] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device leaf7
+[1558419483.351207] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device leaf8
+[1558419483.366088] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device dr02
+[1558419483.379092] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1558408677519000000 --end-time 1558419483251000000 --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_models --device dr03
+[1558419483.393156] Stopping IxChariotEventLogger
+[1558419483.393370] event: ixchariot_traffic_stopped {}
+[1558419483.393420] Stopping YangCollector
+[1558419487.459906] dr02 << conf t
+[1558419488.293933] dr02 >> 
+Mon May 20 23:18:07.674 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-000020e1-00000099     netconf    obt      Mon May 20 20:16:35 2019 
+[1558419488.298626] dr02 << router static
+[1558419488.716977] dr02 >> 
+[1558419488.717025] dr02 << address-family ipv4 unicast
+[1558419489.130301] dr02 >> 
+[1558419489.130567] dr02 << 172.31.153.24/29 172.31.2.1 1
+[1558419489.554852] dr02 >> 
+[1558419489.563028] dr02 << 172.31.153.24/29 172.31.2.3 1
+[1558419489.992853] dr02 >> 
+[1558419489.993043] dr02 << 172.31.153.24/29 172.31.2.5 1
+[1558419490.407972] dr02 >> 
+[1558419490.410595] dr02 << commit
+[1558419491.673663] dr02 >> 
+Mon May 20 23:18:10.638 PDT
+[1558419491.676203] dr02 << end
+[1558419492.119809] dr02 >> 
+[1558419492.121680] dr02 << show route static
+[1558419492.766996] dr02 >> 
+Mon May 20 23:18:12.351 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 2w3d, MgmtEth0/RP0/CPU0/0
+S    172.31.2.135/32 is directly connected, 2w3d, HundredGigE0/1/0/22
+S    172.31.2.137/32 is directly connected, 2w3d, HundredGigE0/1/0/23
+S    172.31.25.0/32 is directly connected, 1w6d, HundredGigE0/0/0/0
+S    172.31.25.2/32 is directly connected, 1w6d, HundredGigE0/0/0/1
+S    172.31.26.0/32 is directly connected, 2w3d, HundredGigE0/0/0/2
+S    172.31.26.2/32 is directly connected, 2w3d, HundredGigE0/0/0/3
+S    172.31.27.0/32 is directly connected, 2w3d, HundredGigE0/0/0/4
+S    172.31.27.2/32 is directly connected, 2w3d, HundredGigE0/0/0/5
+S    172.31.28.0/32 is directly connected, 2w3d, HundredGigE0/0/0/6
+S    172.31.28.2/32 is directly connected, 2w3d, HundredGigE0/0/0/7
+S    172.31.153.24/29 [1/0] via 172.31.2.5, 00:00:01
+                      [1/0] via 172.31.2.3, 00:00:01
+                      [1/0] via 172.31.2.1, 00:00:01
+[1558419492.771249] event: add_network_loop {'device': 'dr02'}
+[1558419492.777993] dr03 << conf t
+[1558419493.680879] dr03 >> 
+Mon May 20 23:18:13.057 PDT
+Current Configuration Session  Line       User     Date                     Lock
+00001000-00004abe-00000f0e     netconf    obt      Mon May 20 20:16:32 2019 
+00001000-00004abe-00000f11     netconf    obt      Mon May 20 20:17:37 2019 
+[1558419493.686193] dr03 << router static
+[1558419494.112731] dr03 >> 
+[1558419494.112782] dr03 << address-family ipv4 unicast
+[1558419494.535675] dr03 >> 
+[1558419494.535715] dr03 << 172.31.153.24/29 172.31.28.4 1
+[1558419494.964110] dr03 >> 
+[1558419494.964161] dr03 << commit
+[1558419495.809192] dr03 >> 
+Mon May 20 23:18:15.233 PDT
+[1558419495.813478] dr03 << end
+[1558419496.248169] dr03 >> 
+[1558419496.248422] dr03 << show route static
+[1558419496.871696] dr03 >> 
+Mon May 20 23:18:16.523 PDT
+
+S*   0.0.0.0/0 [1/0] via 10.200.96.1, 21w5d, MgmtEth0/RP0/CPU0/0
+S    172.31.153.24/29 [1/0] via 172.31.28.4, 00:00:01
+[1558419496.872194] event: add_network_loop {'device': 'dr03'}
+[1558419532.147012] Starting proc: /home/antkisel/data/data_collection/getYANGdelay.py --out /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/yang_collection_latency --delay 10  spine1 spine2 spine3 spine4 leaf7 leaf8 dr02 dr03
+[1558419532.169367] event: collect_telemetry {'device': 'spine1'}
+[1558419532.169441] event: collect_telemetry {'device': 'spine2'}
+[1558419532.169463] event: collect_telemetry {'device': 'spine3'}
+[1558419532.169488] event: collect_telemetry {'device': 'spine4'}
+[1558419532.169505] event: collect_telemetry {'device': 'leaf7'}
+[1558419532.169527] event: collect_telemetry {'device': 'leaf8'}
+[1558419532.169552] event: collect_telemetry {'device': 'dr02'}
+[1558419532.169569] event: collect_telemetry {'device': 'dr03'}
+[1558419532.212186] Stopping CLICollector
+[1558419532.212361] Stopping CLICollector
+[1558419532.213339] Stopping CLICollector
+[1558419532.213408] Stopping CLICollector
+[1558419532.213580] Stopping CLICollector
+[1558419532.213612] Stopping CLICollector
+[1558419532.213642] Stopping TracerouteLoopedHost
+[1558419532.213679] Stopping SimpleInterfaceFlapper
+[1558419532.213725] Stopping NetworkLoopDR0203
+[1558419532.213761] Stopping ConfigChanger
+[1558419532.213782] Stopping DeviceConfigBackup
+[1558419735.325489] Stopping the session 25...
+[1558419735.674313] Deleting the session 25...
+[1558419735.680224] Finalizing XECLICollector
+[1558419735.680276] Finalizing XEXMLCollector
+[1558419735.714312] Finalizing InfluxDbCollector
+[1558419735.714372] Finalizing IxChariotEventLogger
+[1558419735.714391] Finalizing YangCollector
+[1558419735.714413] Finalizing CLICollector
+[1558419735.714434] Finalizing CLICollector
+[1558419735.714447] Finalizing CLICollector
+[1558419735.714471] Finalizing CLICollector
+[1558419735.714490] Finalizing CLICollector
+[1558419735.714505] Finalizing CLICollector
+[1558419735.714525] Finalizing TracerouteLoopedHost
+[1558419735.714545] Finalizing SimpleInterfaceFlapper
+[1558419735.714583] Finalizing NetworkLoopDR0203
+[1558419735.714606] Finalizing ConfigChanger
+[1558419735.714621] Finalizing DeviceConfigBackup
+[1558419735.714644] Restoring config on devices ['dr02', 'dr03', 'leaf8', 'leaf7', 'spine3', 'spine4']
+[1558419743.151162] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine1_after.xml
+[1558419743.169975] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine2_after.xml
+[1558419743.175273] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine3_after.xml
+[1558419743.181157] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine4_after.xml
+[1558419743.186717] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine5_after.xml
+[1558419743.193715] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_leaf7_after.xml
+[1558419743.198605] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_leaf8_after.xml
+[1558419743.203926] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_dr01_after.xml
+[1558419743.209729] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_dr02_after.xml
+[1558419743.215392] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_dr03_after.xml
+[1558419743.219650] DeviceConfigBackup: Saved config to /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay/running_config_spine4-3464_after.xml
+[1558419743.242795] Device config hashes:
+[1558419743.244821] spine1: 0620bad
+[1558419743.246583] spine2: e3be552
+[1558419743.248448] spine3: 4d29676
+[1558419743.250273] spine4: 982067f
+[1558419743.252559] spine5: f9a7f21
+[1558419743.254201] leaf7: 0d788f6
+[1558419743.256058] leaf8: 7aed298
+[1558419743.259060] dr01: e877ae4
+[1558419743.262967] dr02: 2aabbca
+[1558419743.265276] dr03: f2e456e
+[1558419743.280955] spine4-3464: d7c5397
+[1558419750.855423] Restored config on devices ['dr02', 'dr03', 'leaf8', 'leaf7', 'spine3', 'spine4']
+[1558419751.577033] DONE. Test results are available at /home/antkisel/datasets/result_190521_0316_netloop_dr0203_ifdown-delay
