@@ -1,0 +1,315 @@
+[1579593816.261929] Exec args: ./ixchariot_test.py --input -
+[1579593816.263067] Loading event handler: EcmpHash priority=50
+[1579593816.263107] Loading test config wadjet_appmix_demo
+[1579593816.505929] Loading event handler: DeviceInfoCollector priority=60
+[1579593816.506437] Loading event handler: InfluxDbCollector priority=60
+[1579593816.506473] Loading event handler: DeviceConfigBackup priority=10
+[1579593816.996029] EcmpHash will modify devices: ['spine3']. Enabling config auto-restore on finish
+[1579593816.996085] DeviceConfigBackup: saving current configs from devices: ['spine1', 'spine2', 'spine3', 'spine5', 'leaf4', 'leaf7', 'leaf8', 'dr01', 'dr02', 'dr03', 'spine4-3464']
+[1579593863.441209] DeviceConfigBackup: Saved spine1 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine1.xml hash: 6b31db7
+[1579593863.451825] DeviceConfigBackup: Saved spine2 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine2.xml hash: b80f94e
+[1579593863.461367] DeviceConfigBackup: Saved spine3 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine3.xml hash: 87908a8
+[1579593863.470908] DeviceConfigBackup: Saved spine5 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine5.xml hash: b62a440
+[1579593863.481232] DeviceConfigBackup: Saved leaf4 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_leaf4.xml hash: dcbeb70
+[1579593863.489546] DeviceConfigBackup: Saved leaf7 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_leaf7.xml hash: fb840a8
+[1579593863.496360] DeviceConfigBackup: Saved leaf8 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_leaf8.xml hash: 78c4390
+[1579593863.509464] DeviceConfigBackup: Saved dr01 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_dr01.xml hash: 5f2de76
+[1579593863.519551] DeviceConfigBackup: Saved dr02 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_dr02.xml hash: 147e38e
+[1579593863.525204] DeviceConfigBackup: Saved dr03 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_dr03.xml hash: f70e73e
+[1579593863.547755] DeviceConfigBackup: Saved spine4-3464 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine4-3464.xml hash: 17a0f66
+[1579593863.555898] DeviceConfigBackup: devices to restore on finish: ['spine3']
+[1579593863.560440] Starting the test IxchariotTest
+[1579593863.572073] see https://gspie-ixchariot.cisco.com/sessions/137/stats
+[1579593905.961151] event: {'timestamp': '1579593905.961129', 'event': 'ixchariot_traffic', 'duration': 3600, 'comment': 'ecmp'}
+[1579593906.021770] Starting proc: /home/antkisel/data/data_collection/getYANGdelay.py --cmd 'clear telemetry subscription all' spine1 spine2 spine3 leaf4 leaf7 leaf8 dr02 dr03
+[1579593906.030486] event: {'timestamp': '1579593906.030443', 'event': 'clear_telemetry', 'device': 'spine1'}
+[1579593906.121811] event: {'timestamp': '1579593906.121795', 'event': 'clear_telemetry', 'device': 'spine2'}
+[1579593906.188597] event: {'timestamp': '1579593906.188582', 'event': 'clear_telemetry', 'device': 'spine3'}
+[1579593906.230271] event: {'timestamp': '1579593906.230257', 'event': 'clear_telemetry', 'device': 'leaf4'}
+[1579593906.297276] event: {'timestamp': '1579593906.297258', 'event': 'clear_telemetry', 'device': 'leaf7'}
+[1579593906.339258] event: {'timestamp': '1579593906.339244', 'event': 'clear_telemetry', 'device': 'leaf8'}
+[1579593906.380508] event: {'timestamp': '1579593906.380495', 'event': 'clear_telemetry', 'device': 'dr02'}
+[1579593906.422303] event: {'timestamp': '1579593906.422292', 'event': 'clear_telemetry', 'device': 'dr03'}
+[1579593906.463999] ERROR!: start took too long on DeviceInfoCollector - 442ms. make it async
+[1579593906.464046] Waiting for test to finish...
+[1579593911.352313] spine3 << sh run int loopback 0
+[1579593911.953485] spine3 >> 
+Tue Jan 21 00:05:11.561 PST
+interface Loopback0
+ ipv4 address 2.2.2.2 255.255.255.255
+!
+
+[1579593911.953869] spine3 << conf t
+[1579593912.555075] spine3 >> 
+Tue Jan 21 00:05:12.160 PST
+[1579593912.555110] spine3 << interface loopback 0
+[1579593912.956083] spine3 << no ip address
+[1579593913.357200] spine3 << ipv4 address 10.10.10.249/32
+[1579593913.758312] spine3 << commit
+[1579593915.160797] spine3 >> 
+Tue Jan 21 00:05:13.990 PST
+[1579593917.114093]  Test Running 11/3600
+[1579593917.568218] event: {'timestamp': '1579593917.568196', 'event': 'set_loopback', 'device': 'spine3', 'interface': 'loopback 0', 'comment': '10.10.10.249/32'}
+[1579593927.530314]  Test Running 21/3600
+[1579593937.833891]  Test Running 32/3600
+[1579593948.030713]  Test Running 42/3600
+[1579593958.116583]  Test Running 52/3600
+[1579593968.223529]  Test Running 62/3600
+[1579593978.348013]  Test Running 72/3600
+[1579593989.100148]  Test Running 83/3600
+[1579593999.191647]  Test Running 93/3600
+[1579594009.641260]  Test Running 103/3600
+[1579594020.074235]  Test Running 114/3600
+[1579594030.170230]  Test Running 124/3600
+[1579594040.266331]  Test Running 134/3600
+[1579594050.916969]  Test Running 144/3600
+[1579594061.017497]  Test Running 155/3600
+[1579594071.672030]  Test Running 165/3600
+[1579594081.827630]  Test Running 175/3600
+[1579594091.967659]  Test Running 185/3600
+[1579594102.070312]  Test Running 196/3600
+[1579594112.195323]  Test Running 206/3600
+[1579594122.432242]  Test Running 216/3600
+[1579594132.532416]  Test Running 226/3600
+[1579594142.639973]  Test Running 236/3600
+[1579594152.770290]  Test Running 246/3600
+[1579594163.031109]  Test Running 257/3600
+[1579594173.403539]  Test Running 267/3600
+[1579594183.505371]  Test Running 277/3600
+[1579594193.931673]  Test Running 287/3600
+[1579594204.024471]  Test Running 298/3600
+[1579594214.117099]  Test Running 308/3600
+[1579594224.643970]  Test Running 318/3600
+[1579594234.740872]  Test Running 328/3600
+[1579594244.840563]  Test Running 338/3600
+[1579594255.128479]  Test Running 349/3600
+[1579594265.261327]  Test Running 359/3600
+[1579594275.352763]  Test Running 369/3600
+[1579594286.094028]  Test Running 380/3600
+[1579594296.182016]  Test Running 390/3600
+[1579594306.387572]  Test Running 400/3600
+[1579594316.641879]  Test Running 410/3600
+[1579594326.753304]  Test Running 420/3600
+[1579594336.849558]  Test Running 430/3600
+[1579594347.224637]  Test Running 441/3600
+[1579594357.316748]  Test Running 451/3600
+[1579594367.415052]  Test Running 461/3600
+[1579594377.534575]  Test Running 471/3600
+[1579594387.626233]  Test Running 481/3600
+[1579594397.760379]  Test Running 491/3600
+[1579594408.461552]  Test Running 502/3600
+[1579594418.552389]  Test Running 512/3600
+[1579594428.670413]  Test Running 522/3600
+[1579594438.761965]  Test Running 532/3600
+[1579594448.857868]  Test Running 542/3600
+[1579594458.951076]  Test Running 552/3600
+[1579594469.768864]  Test Running 563/3600
+[1579594479.861332]  Test Running 573/3600
+[1579594489.956498]  Test Running 583/3600
+[1579594500.052444]  Test Running 593/3600
+[1579594510.151106]  Test Running 604/3600
+[1579594520.244818]  Test Running 614/3600
+[1579594531.181843]  Test Running 625/3600
+[1579594541.274692]  Test Running 635/3600
+[1579594551.963991]  Test Running 645/3600
+[1579594562.085750]  Test Running 656/3600
+[1579594572.191342]  Test Running 666/3600
+[1579594582.237488]  Test Running 676/3600
+[1579594592.338765]  Test Running 686/3600
+[1579594602.444901]  Test Running 696/3600
+[1579594612.579453]  Test Running 706/3600
+[1579594622.665120]  Test Running 716/3600
+[1579594632.768508]  Test Running 726/3600
+[1579594643.484293]  Test Running 737/3600
+[1579594653.974324]  Test Running 747/3600
+[1579594664.075881]  Test Running 757/3600
+[1579594674.282795]  Test Running 768/3600
+[1579594684.389618]  Test Running 778/3600
+[1579594694.493581]  Test Running 788/3600
+[1579594704.593563]  Test Running 798/3600
+[1579594714.696248]  Test Running 808/3600
+[1579594724.830922]  Test Running 818/3600
+[1579594729.490654] spine3 << sh run int loopback 0
+[1579594730.091714] spine3 >> 
+Tue Jan 21 00:18:49.699 PST
+interface Loopback0
+ ipv4 address 10.10.10.249 255.255.255.255
+!
+
+[1579594730.091800] spine3 << conf t
+[1579594730.692784] spine3 >> 
+Tue Jan 21 00:18:50.298 PST
+[1579594730.692813] spine3 << interface loopback 0
+[1579594731.093670] spine3 << no ip address
+[1579594731.494469] spine3 << ipv4 address 14.32.97.18/32
+[1579594731.895378] spine3 << commit
+[1579594733.097109] spine3 >> 
+Tue Jan 21 00:18:52.101 PST
+[1579594734.938617]  Test Running 828/3600
+[1579594735.504222] event: {'timestamp': '1579594735.504205', 'event': 'set_loopback', 'device': 'spine3', 'interface': 'loopback 0', 'comment': '14.32.97.18/32'}
+[1579594745.042665]  Test Running 838/3600
+[1579594755.697415]  Test Running 849/3600
+[1579594765.822583]  Test Running 859/3600
+[1579594775.956568]  Test Running 869/3600
+[1579594786.048808]  Test Running 879/3600
+[1579594796.174175]  Test Running 890/3600
+[1579594806.540582]  Test Running 900/3600
+[1579594816.676274]  Test Running 910/3600
+[1579594826.958386]  Test Running 920/3600
+[1579594837.067526]  Test Running 930/3600
+[1579594847.162560]  Test Running 941/3600
+[1579594857.492898]  Test Running 951/3600
+[1579594867.596992]  Test Running 961/3600
+[1579594877.707511]  Test Running 971/3600
+[1579594887.774892]  Test Running 981/3600
+[1579594897.901726]  Test Running 991/3600
+[1579594908.002846]  Test Running 1001/3600
+[1579594918.182346]  Test Running 1012/3600
+[1579594928.284062]  Test Running 1022/3600
+[1579594938.384707]  Test Running 1032/3600
+[1579594949.290500]  Test Running 1043/3600
+[1579594959.797078]  Test Running 1053/3600
+[1579594969.891303]  Test Running 1063/3600
+[1579594980.021023]  Test Running 1073/3600
+[1579594990.144043]  Test Running 1083/3600
+[1579595000.241517]  Test Running 1094/3600
+[1579595010.387792]  Test Running 1104/3600
+[1579595020.492034]  Test Running 1114/3600
+[1579595031.756824]  Test Running 1125/3600
+[1579595041.855721]  Test Running 1135/3600
+[1579595052.007832]  Test Running 1145/3600
+[1579595062.029908]  Test Running 1155/3600
+[1579595072.121734]  Test Running 1165/3600
+[1579595082.212302]  Test Running 1176/3600
+[1579595092.312026]  Test Running 1186/3600
+[1579595102.459700]  Test Running 1196/3600
+[1579595112.549715]  Test Running 1206/3600
+[1579595122.948517]  Test Running 1216/3600
+[1579595133.033581]  Test Running 1226/3600
+[1579595143.136720]  Test Running 1236/3600
+[1579595155.181441]  Test Running 1249/3600
+[1579595165.357504]  Test Running 1259/3600
+[1579595175.464443]  Test Running 1269/3600
+[1579595186.276519]  Test Running 1280/3600
+[1579595196.374014]  Test Running 1290/3600
+[1579595206.482228]  Test Running 1300/3600
+[1579595216.572200]  Test Running 1310/3600
+[1579595226.670242]  Test Running 1320/3600
+[1579595236.818839]  Test Running 1330/3600
+[1579595246.916753]  Test Running 1340/3600
+[1579595257.012282]  Test Running 1350/3600
+[1579595267.123057]  Test Running 1360/3600
+[1579595277.393756]  Test Running 1371/3600
+[1579595287.554996]  Test Running 1381/3600
+[1579595297.666776]  Test Running 1391/3600
+[1579595307.773844]  Test Running 1401/3600
+[1579595317.862632]  Test Running 1411/3600
+[1579595327.968340]  Test Running 1421/3600
+[1579595338.220584]  Test Running 1432/3600
+[1579595348.312406]  Test Running 1442/3600
+[1579595358.411859]  Test Running 1452/3600
+[1579595368.805409]  Test Running 1462/3600
+[1579595378.961721]  Test Running 1472/3600
+[1579595389.054344]  Test Running 1482/3600
+[1579595399.611982]  Test Running 1493/3600
+[1579595409.699299]  Test Running 1503/3600
+[1579595419.791591]  Test Running 1513/3600
+[1579595429.891416]  Test Running 1523/3600
+[1579595440.007970]  Test Running 1533/3600
+[1579595450.102570]  Test Running 1543/3600
+[1579595460.370747]  Test Running 1554/3600
+[1579595470.469751]  Test Running 1564/3600
+[1579595480.567588]  Test Running 1574/3600
+[1579595491.554534]  Test Running 1585/3600
+[1579595501.645215]  Test Running 1595/3600
+[1579595508.442054] spine3 << sh run int loopback 0
+[1579595509.043270] spine3 >> 
+Tue Jan 21 00:31:48.651 PST
+interface Loopback0
+ ipv4 address 14.32.97.18 255.255.255.255
+!
+
+[1579595509.043339] spine3 << conf t
+[1579595509.644574] spine3 >> 
+Tue Jan 21 00:31:49.250 PST
+[1579595509.644613] spine3 << interface loopback 0
+[1579595510.045551] spine3 << no ip address
+[1579595510.446527] spine3 << ipv4 address 2.2.2.2/32
+[1579595510.847516] spine3 << commit
+[1579595511.740300]  Test Running 1605/3600
+[1579595512.049428] spine3 >> 
+Tue Jan 21 00:31:51.054 PST
+[1579595514.456768] event: {'timestamp': '1579595514.456732', 'event': 'set_loopback', 'device': 'spine3', 'interface': 'loopback 0', 'comment': '2.2.2.2/32'}
+[1579595521.838340]  Test Running 1615/3600
+[1579595531.930685]  Test Running 1625/3600
+[1579595542.623585]  Test Running 1636/3600
+[1579595552.715064]  Test Running 1646/3600
+[1579595562.817655]  Test Running 1656/3600
+[1579595574.010189]  Test Running 1667/3600
+[1579595584.107442]  Test Running 1677/3600
+[1579595594.195659]  Test Running 1687/3600
+[1579595604.911870]  Test Running 1698/3600
+[1579595615.047424]  Test Running 1708/3600
+[1579595625.148750]  Test Running 1718/3600
+[1579595635.250728]  Test Running 1728/3600
+[1579595645.349907]  Test Running 1739/3600
+[1579595655.494076]  Test Running 1749/3600
+[1579595665.629628]  Test Running 1759/3600
+[1579595675.796906]  Test Running 1769/3600
+[1579595685.929437]  Test Running 1779/3600
+[1579595696.040558]  Test Running 1789/3600
+[1579595706.142360]  Test Running 1799/3600
+[1579595710.204015] Error: The test failed with the following error(s): ['User 818 (Bandwidth Raw) : \'tg080\' (172.31.155.81) to \'tg022\' (172.31.53.23)<br><br>The error was detected at runtime.<br>The error was detected by the Endpoint 1.<br><br>CHR0225: The TCP address is unreachable, the endpoint or phone is unavailable,<br>or the endpoint does not support the requested function.<br>The log message was:<br>CHR0211: <br>           Partner address: 172.31.53.23<br>           Service Quality: <br>       Partner port number: 53572<br>      Communications errno: 113<br>                      Call: connect<br><br><br><a href="/docs/IxChariotErrorMsgs/Default.htm#CHR0225.htm" target="_blank">Help for error CHR0225</a><br>', 'The IxChariot worker process crashed. Please report it to the Ixia Customer Support.']
+[1579595710.205258] event: {'timestamp': '1579595710.205238', 'event': 'ixchariot_traffic_stopped'}
+[1579595710.246755] Stopping InfluxDbCollector
+[1579595710.246924] Starting proc: /home/antkisel/data/data_collection/dump_influx_event_log.py --start-time 1579593816506000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp
+[1579595710.253402] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1579593906464000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp/yang_models --device spine1
+[1579595710.258840] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1579593906464000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp/yang_models --device spine2
+[1579595710.263671] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1579593906464000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp/yang_models --device spine3
+[1579595710.268465] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1579593906464000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp/yang_models --device leaf4
+[1579595710.273108] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1579593906464000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp/yang_models --device leaf7
+[1579595710.277588] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1579593906464000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp/yang_models --device leaf8
+[1579595710.282878] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1579593906464000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp/yang_models --device dr02
+[1579595710.288771] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1579593906464000000 --end-time 1579595710246000000 --out /home/antkisel/datasets/200121_0803_ecmp/yang_models --device dr03
+[1579595710.294990] Stopping DeviceInfoCollector
+[1579595711.501697] Retrieving device info: operational
+[1579595714.882661] Retrieving device info: version
+[1579595715.044443] event: {'timestamp': '1579595715.044415', 'event': 'collect_telemetry', 'device': 'spine1'}
+[1579595715.122336] event: {'timestamp': '1579595715.122317', 'event': 'collect_telemetry', 'device': 'spine2'}
+[1579595715.205695] event: {'timestamp': '1579595715.205677', 'event': 'collect_telemetry', 'device': 'spine3'}
+[1579595715.272457] event: {'timestamp': '1579595715.272444', 'event': 'collect_telemetry', 'device': 'leaf4'}
+[1579595715.314156] event: {'timestamp': '1579595715.314142', 'event': 'collect_telemetry', 'device': 'leaf7'}
+[1579595715.355844] event: {'timestamp': '1579595715.355832', 'event': 'collect_telemetry', 'device': 'leaf8'}
+[1579595715.397664] event: {'timestamp': '1579595715.397651', 'event': 'collect_telemetry', 'device': 'dr02'}
+[1579595715.439521] event: {'timestamp': '1579595715.439506', 'event': 'collect_telemetry', 'device': 'dr03'}
+[1579595715.481297] Retrieving CDP info
+[1579595719.303390] Stopping EcmpHash
+[1579595719.303762] Stopping DeviceConfigBackup
+[1579595719.303939] Waiting for process to finish: 10
+[1579595719.307862] Stopping the session 137...
+[1579595719.533927] Deleting the session 137...
+[1579595719.537781] Finalizing InfluxDbCollector
+[1579595719.537824] Finalizing DeviceInfoCollector
+[1579595719.537839] Finalizing EcmpHash
+[1579595725.067063] spine3 << sh run int loopback 0
+[1579595725.668370] spine3 >> 
+Tue Jan 21 00:35:25.277 PST
+interface Loopback0
+ ipv4 address 2.2.2.2 255.255.255.255
+!
+
+[1579595725.771070] Finalizing DeviceConfigBackup
+[1579595725.771148] Restoring config on devices ['spine3']
+[1579595770.560355] DeviceConfigBackup: Saved spine1 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine1_after.xml hash: 6b31db7
+[1579595770.570382] DeviceConfigBackup: Saved spine2 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine2_after.xml hash: b80f94e
+[1579595770.580380] DeviceConfigBackup: Saved spine3 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine3_after.xml hash: 87908a8
+[1579595770.590891] DeviceConfigBackup: Saved spine5 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine5_after.xml hash: b62a440
+[1579595770.602522] DeviceConfigBackup: Saved leaf4 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_leaf4_after.xml hash: dcbeb70
+[1579595770.610376] DeviceConfigBackup: Saved leaf7 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_leaf7_after.xml hash: fb840a8
+[1579595770.616718] DeviceConfigBackup: Saved leaf8 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_leaf8_after.xml hash: 78c4390
+[1579595770.625879] DeviceConfigBackup: Saved dr01 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_dr01_after.xml hash: 5f2de76
+[1579595770.635061] DeviceConfigBackup: Saved dr02 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_dr02_after.xml hash: 147e38e
+[1579595770.643337] DeviceConfigBackup: Saved dr03 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_dr03_after.xml hash: f70e73e
+[1579595770.671632] DeviceConfigBackup: Saved spine4-3464 config to /home/antkisel/datasets/200121_0803_ecmp/running_config_spine4-3464_after.xml hash: 17a0f66
+[1579595773.005613] Restored config on devices ['spine3']
+[1579595773.009744] DONE. Test results are available at /home/antkisel/datasets/200121_0803_ecmp

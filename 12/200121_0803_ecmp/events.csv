@@ -1,0 +1,22 @@
+timestamp,event,duration,device,interface,comment
+1579593905.961129,ixchariot_traffic,3600,,,ecmp
+1579593906.030443,clear_telemetry,,spine1,,
+1579593906.121795,clear_telemetry,,spine2,,
+1579593906.188582,clear_telemetry,,spine3,,
+1579593906.230257,clear_telemetry,,leaf4,,
+1579593906.297258,clear_telemetry,,leaf7,,
+1579593906.339244,clear_telemetry,,leaf8,,
+1579593906.380495,clear_telemetry,,dr02,,
+1579593906.422292,clear_telemetry,,dr03,,
+1579593917.568196,set_loopback,,spine3,loopback 0,10.10.10.249/32
+1579594735.504205,set_loopback,,spine3,loopback 0,14.32.97.18/32
+1579595514.456732,set_loopback,,spine3,loopback 0,2.2.2.2/32
+1579595710.205238,ixchariot_traffic_stopped,,,,
+1579595715.044415,collect_telemetry,,spine1,,
+1579595715.122317,collect_telemetry,,spine2,,
+1579595715.205677,collect_telemetry,,spine3,,
+1579595715.272444,collect_telemetry,,leaf4,,
+1579595715.314142,collect_telemetry,,leaf7,,
+1579595715.355832,collect_telemetry,,leaf8,,
+1579595715.397651,collect_telemetry,,dr02,,
+1579595715.439506,collect_telemetry,,dr03,,
