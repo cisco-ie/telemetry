@@ -1,0 +1,4 @@
+timestamp,event,duration,device,interface,comment
+1580672681.347014,ixchariot_traffic,,,,
+1580673369.713315,enable_bfd,,spine4-3464,eth1/41,
+1580673581.347014,ixchariot_traffic_stopped,,,,
