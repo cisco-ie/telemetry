@@ -1,0 +1,373 @@
+[1580866709.400700] Exec args: ./base_test_mdt.py --input -
+[1580866709.400968] Received JSON configuration:
+{
+    "args": {
+        "duration": 7200,
+        "tscale": 2,
+        "name": "evtmix",
+        "config": "wadjet_appmix_demo"
+    },
+    "evt_gen": [
+        {
+            "cls": "SimpleInterfaceFlapper",
+            "params": {
+                "device": "leaf7",
+                "randomize_interface": "always",
+                "ticks": [
+                    600,
+                    1200,
+                    2800,
+                    3800,
+                    4200,
+                    5000,
+                    6600
+                ]
+            }
+        },
+        {
+            "cls": "EcmpHash",
+            "params": {
+                "ticks": [
+                    1800,
+                    2400,
+                    3200,
+                    6000
+                ]
+            }
+        },
+        {
+            "cls": "Blackhole",
+            "params": {
+                "ticks": [
+                    5600,
+                    7000
+                ]
+            }
+        }
+    ],
+    "comment": ""
+}
+
+[1580866709.401708] Loading event handler: SimpleInterfaceFlapper priority=50
+[1580866709.402287] Loading event handler: EcmpHash priority=50
+[1580866709.402853] Loading event handler: Blackhole priority=50
+[1580866709.402889] Loading test config wadjet_appmix_demo
+[1580866709.757308] Loading event handler: DeviceInfoCollector priority=60
+[1580866709.757857] Loading event handler: InfluxDbCollector priority=60
+[1580866709.757894] Loading event handler: DeviceConfigBackup priority=10
+[1580866709.771875] Loading event handler: ConfigChanger priority=20
+[1580866709.784488] Loading event handler: ConfigChanger priority=20
+[1580866710.312922] ConfigChanger will modify devices: ['dr03', 'leaf8']. Enabling config auto-restore on finish
+[1580866710.312979] ConfigChanger will modify devices: ['dr02', 'leaf4', 'leaf5', 'leaf7', 'spine3']. Enabling config auto-restore on finish
+[1580866710.313007] SimpleInterfaceFlapper will modify devices: ['leaf7']. Enabling config auto-restore on finish
+[1580866710.313025] EcmpHash will modify devices: ['spine3']. Enabling config auto-restore on finish
+[1580866710.313052] DeviceConfigBackup: saving current configs from devices: ['spine1', 'spine2', 'spine3', 'spine5', 'leaf4', 'leaf5', 'leaf7', 'leaf8', 'dr01', 'dr02', 'dr03', 'spine4-3464']
+[1580866755.929814] DeviceConfigBackup: Saved spine1 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine1.xml hash: 6b31db7
+[1580866755.940701] DeviceConfigBackup: Saved spine2 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine2.xml hash: b80f94e
+[1580866755.950042] DeviceConfigBackup: Saved spine3 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine3.xml hash: 87908a8
+[1580866755.959240] DeviceConfigBackup: Saved spine5 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine5.xml hash: b62a440
+[1580866755.969566] DeviceConfigBackup: Saved leaf4 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_leaf4.xml hash: 315c77f
+[1580866755.978096] DeviceConfigBackup: Saved leaf5 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_leaf5.xml hash: 94a7045
+[1580866755.985064] DeviceConfigBackup: Saved leaf7 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_leaf7.xml hash: b64fc92
+[1580866755.991657] DeviceConfigBackup: Saved leaf8 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_leaf8.xml hash: 4715a1e
+[1580866756.000622] DeviceConfigBackup: Saved dr01 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_dr01.xml hash: 2b3047a
+[1580866756.008780] DeviceConfigBackup: Saved dr02 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_dr02.xml hash: 59078bc
+[1580866756.014250] DeviceConfigBackup: Saved dr03 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_dr03.xml hash: ed283f2
+[1580866756.033580] DeviceConfigBackup: Saved spine4-3464 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine4-3464.xml hash: 17a0f66
+[1580866756.042346] DeviceConfigBackup: devices to restore on finish: ['dr03', 'leaf8', 'dr02', 'leaf4', 'leaf5', 'leaf7', 'spine3']
+[1580866757.057611] Applying config for devices ['dr03', 'leaf8']. Edit subscriptions
+[1580866759.328774] event: {'timestamp': '1580866759.328752', 'event': 'apply_device_configs', 'comment': 'Edit subscriptions dr03,leaf8'}
+[1580866760.461229] Applying config for devices ['dr02', 'leaf4', 'leaf5', 'leaf7', 'spine3']. Edit subscriptions
+[1580866761.900378] event: {'timestamp': '1580866761.900354', 'event': 'apply_device_configs', 'comment': 'Edit subscriptions dr02,leaf4,leaf5,leaf7,spine3'}
+[1580866764.179758] Starting the test TestCfgChanger
+[1580866764.191093] see https://gspie-ixchariot.cisco.com/sessions/15107/stats
+[1580866828.695175] event: {'timestamp': '1580866828.695159', 'event': 'ixchariot_traffic', 'duration': 7200, 'comment': 'evtmix'}
+[1580866828.721249] Starting proc: /home/antkisel/data/data_collection/getYANGdelay.py --cmd 'clear telemetry subscription all' spine1 spine2 spine3 leaf4 leaf5 leaf7 leaf8 dr02 dr03
+[1580866828.729196] event: {'timestamp': '1580866828.729153', 'event': 'clear_telemetry', 'device': 'spine1'}
+[1580866828.748830] event: {'timestamp': '1580866828.748812', 'event': 'clear_telemetry', 'device': 'spine2'}
+[1580866828.775173] event: {'timestamp': '1580866828.775160', 'event': 'clear_telemetry', 'device': 'spine3'}
+[1580866828.786708] event: {'timestamp': '1580866828.786696', 'event': 'clear_telemetry', 'device': 'leaf4'}
+[1580866828.798305] event: {'timestamp': '1580866828.798290', 'event': 'clear_telemetry', 'device': 'leaf5'}
+[1580866828.809817] event: {'timestamp': '1580866828.809802', 'event': 'clear_telemetry', 'device': 'leaf7'}
+[1580866828.822567] event: {'timestamp': '1580866828.822553', 'event': 'clear_telemetry', 'device': 'leaf8'}
+[1580866828.845565] event: {'timestamp': '1580866828.845549', 'event': 'clear_telemetry', 'device': 'dr02'}
+[1580866828.868582] event: {'timestamp': '1580866828.868566', 'event': 'clear_telemetry', 'device': 'dr03'}
+[1580866828.891706] ERROR!: start took too long on DeviceInfoCollector - 170ms. make it async
+[1580866828.891831] Waiting for test to finish...
+[1580866839.725177]  Test Running 11/7200
+[1580866850.484832]  Test Running 22/7200
+[1580866860.814055]  Test Running 32/7200
+[1580866870.932625]  Test Running 42/7200
+[1580866881.123438]  Test Running 52/7200
+[1580866891.238107]  Test Running 62/7200
+[1580866901.554501]  Test Running 73/7200
+[1580866911.649775]  Test Running 83/7200
+[1580866921.740079]  Test Running 93/7200
+[1580866931.964008]  Test Running 103/7200
+[1580866942.076613]  Test Running 113/7200
+[1580866952.322036]  Test Running 123/7200
+[1580866962.959718]  Test Running 134/7200
+[1580866973.069067]  Test Running 144/7200
+[1580866983.694304]  Test Running 155/7200
+[1580866993.961438]  Test Running 165/7200
+[1580867004.066535]  Test Running 175/7200
+[1580867014.225575]  Test Running 185/7200
+[1580867024.418570]  Test Running 195/7200
+[1580867034.563646]  Test Running 206/7200
+[1580867044.692665]  Test Running 216/7200
+[1580867054.886024]  Test Running 226/7200
+[1580867065.183363]  Test Running 236/7200
+[1580867077.625638]  Test Running 249/7200
+[1580867087.722806]  Test Running 259/7200
+[1580867097.823049]  Test Running 269/7200
+[1580867107.908534]  Test Running 279/7200
+[1580867118.001433]  Test Running 289/7200
+[1580867128.116153]  Test Running 299/7200
+[1580867138.553855]  Test Running 310/7200
+[1580867148.658967]  Test Running 320/7200
+[1580867159.293535]  Test Running 330/7200
+[1580867169.390237]  Test Running 340/7200
+[1580867179.492101]  Test Running 350/7200
+[1580867189.594876]  Test Running 361/7200
+[1580867199.981705]  Test Running 371/7200
+[1580867210.128191]  Test Running 381/7200
+[1580867220.752362]  Test Running 392/7200
+[1580867230.849472]  Test Running 402/7200
+[1580867240.944102]  Test Running 412/7200
+[1580867251.035348]  Test Running 422/7200
+[1580867261.118438]  Test Running 432/7200
+[1580867271.296447]  Test Running 442/7200
+[1580867281.420797]  Test Running 452/7200
+[1580867291.615000]  Test Running 463/7200
+[1580867301.718035]  Test Running 473/7200
+[1580867311.813109]  Test Running 483/7200
+[1580867322.113776]  Test Running 493/7200
+[1580867332.217331]  Test Running 503/7200
+[1580867343.137707]  Test Running 514/7200
+[1580867353.290078]  Test Running 524/7200
+[1580867363.407169]  Test Running 534/7200
+[1580867373.499727]  Test Running 544/7200
+[1580867384.475554]  Test Running 555/7200
+[1580867394.581437]  Test Running 566/7200
+[1580867404.686065]  Test Running 576/7200
+[1580867414.787352]  Test Running 586/7200
+[1580867424.924425]  Test Running 596/7200
+[1580867428.743424] event: {'timestamp': '1580867428.743362', 'event': 'shutdown_interface', 'device': 'leaf7', 'interface': 'HundredGigE0/0/0/18'}
+[1580867435.025313]  Test Running 606/7200
+[1580867445.070578]  Test Running 616/7200
+[1580867456.259602]  Test Running 627/7200
+[1580867466.385635]  Test Running 637/7200
+[1580867476.503445]  Test Running 647/7200
+[1580867486.610477]  Test Running 658/7200
+[1580867497.336126]  Test Running 668/7200
+[1580867512.702679]  Test Running 684/7200
+[1580867522.952892]  Test Running 694/7200
+[1580867533.094299]  Test Running 704/7200
+[1580867543.181217]  Test Running 714/7200
+[1580867553.350504]  Test Running 724/7200
+[1580867563.497777]  Test Running 734/7200
+[1580867573.585648]  Test Running 745/7200
+[1580867583.679432]  Test Running 755/7200
+[1580867594.228998]  Test Running 765/7200
+[1580867604.496282]  Test Running 775/7200
+[1580867614.588863]  Test Running 786/7200
+[1580867625.070437]  Test Running 796/7200
+[1580867635.209203]  Test Running 806/7200
+[1580867645.313393]  Test Running 816/7200
+[1580867655.435585]  Test Running 826/7200
+[1580867665.526650]  Test Running 836/7200
+[1580867677.150955]  Test Running 848/7200
+[1580867687.247810]  Test Running 858/7200
+[1580867698.125511]  Test Running 869/7200
+[1580867708.214040]  Test Running 879/7200
+[1580867718.308383]  Test Running 889/7200
+[1580867728.444723]  Test Running 899/7200
+[1580867739.417415]  Test Running 910/7200
+[1580867749.546010]  Test Running 920/7200
+[1580867759.664049]  Test Running 931/7200
+[1580867769.821084]  Test Running 941/7200
+[1580867779.921670]  Test Running 951/7200
+[1580867790.028161]  Test Running 961/7200
+[1580867800.134675]  Test Running 971/7200
+[1580867810.239089]  Test Running 981/7200
+[1580867820.349972]  Test Running 991/7200
+[1580867830.591765]  Test Running 1001/7200
+[1580867840.787442]  Test Running 1012/7200
+[1580867850.896690]  Test Running 1022/7200
+[1580867860.998208]  Test Running 1032/7200
+[1580867871.095912]  Test Running 1042/7200
+[1580867881.413841]  Test Running 1052/7200
+[1580867891.508599]  Test Running 1062/7200
+[1580867901.609367]  Test Running 1072/7200
+[1580867911.706616]  Test Running 1083/7200
+[1580867921.837535]  Test Running 1093/7200
+[1580867931.936127]  Test Running 1103/7200
+[1580867942.074035]  Test Running 1113/7200
+[1580867952.166705]  Test Running 1123/7200
+[1580867962.259473]  Test Running 1133/7200
+[1580867972.353483]  Test Running 1143/7200
+[1580867982.443841]  Test Running 1153/7200
+[1580867992.577910]  Test Running 1163/7200
+[1580868002.728743]  Test Running 1174/7200
+[1580868012.856535]  Test Running 1184/7200
+[1580868022.959944]  Test Running 1194/7200
+[1580868028.759770] event: {'timestamp': '1580868028.759731', 'event': 'enable_interface', 'device': 'leaf7', 'interface': 'HundredGigE0/0/0/18'}
+[1580868033.095284]  Test Running 1204/7200
+[1580868043.506228]  Test Running 1214/7200
+[1580868054.223698]  Test Running 1225/7200
+[1580868064.986537]  Test Running 1236/7200
+[1580868075.085654]  Test Running 1246/7200
+[1580868085.177820]  Test Running 1256/7200
+[1580868096.509421]  Test Running 1267/7200
+[1580868107.755056]  Test Running 1279/7200
+[1580868117.851321]  Test Running 1289/7200
+[1580868127.955524]  Test Running 1299/7200
+[1580868138.056980]  Test Running 1309/7200
+[1580868148.567686]  Test Running 1319/7200
+[1580868159.188028]  Test Running 1330/7200
+[1580868169.365091]  Test Running 1340/7200
+[1580868180.172874]  Test Running 1351/7200
+[1580868190.258227]  Test Running 1361/7200
+[1580868200.346897]  Test Running 1371/7200
+[1580868210.521911]  Test Running 1381/7200
+[1580868220.904837]  Test Running 1392/7200
+[1580868231.045866]  Test Running 1402/7200
+[1580868241.177041]  Test Running 1412/7200
+[1580868251.749728]  Test Running 1423/7200
+[1580868261.842477]  Test Running 1433/7200
+[1580868271.948620]  Test Running 1443/7200
+[1580868282.498476]  Test Running 1453/7200
+[1580868292.662724]  Test Running 1463/7200
+[1580868302.789994]  Test Running 1474/7200
+[1580868312.893244]  Test Running 1484/7200
+[1580868323.018459]  Test Running 1494/7200
+[1580868333.116554]  Test Running 1504/7200
+[1580868343.215913]  Test Running 1514/7200
+[1580868353.374382]  Test Running 1524/7200
+[1580868363.522474]  Test Running 1534/7200
+[1580868373.648065]  Test Running 1544/7200
+[1580868383.792279]  Test Running 1555/7200
+[1580868393.900660]  Test Running 1565/7200
+[1580868404.541156]  Test Running 1575/7200
+[1580868414.644810]  Test Running 1585/7200
+[1580868425.335644]  Test Running 1596/7200
+[1580868435.435722]  Test Running 1606/7200
+[1580868445.542458]  Test Running 1616/7200
+[1580868456.792275]  Test Running 1628/7200
+[1580868466.890687]  Test Running 1638/7200
+[1580868476.995206]  Test Running 1648/7200
+[1580868487.091852]  Test Running 1658/7200
+[1580868497.202904]  Test Running 1668/7200
+[1580868507.302330]  Test Running 1678/7200
+[1580868517.320127]  Test Running 1688/7200
+[1580868527.432912]  Test Running 1698/7200
+[1580868538.182389]  Test Running 1709/7200
+[1580868548.285814]  Test Running 1719/7200
+[1580868558.386402]  Test Running 1729/7200
+[1580868568.534503]  Test Running 1739/7200
+[1580868578.638371]  Test Running 1749/7200
+[1580868588.785241]  Test Running 1760/7200
+[1580868598.983964]  Test Running 1770/7200
+[1580868609.113369]  Test Running 1780/7200
+[1580868619.209371]  Test Running 1790/7200
+[1580868629.371098]  Test Running 1800/7200
+[1580868634.058708] spine3 << sh run int loopback 0
+[1580868634.464817] Error: The test failed with the following error(s): ['User 728 (BitTorrent Cisco EMIX) : \'tg080\' (172.31.155.81) to \'tg022\' (172.31.53.23)<br><br>The error was detected at runtime.<br>The error was detected by the Endpoint 1.<br><br>CHR0225: The TCP address is unreachable, the endpoint or phone is unavailable,<br>or the endpoint does not support the requested function.<br>The log message was:<br>CHR0211: <br>           Partner address: 172.31.53.23<br>           Service Quality: <br>       Partner port number: 56881<br>      Communications errno: 113<br>                      Call: connect<br><br><br><a href="/docs/IxChariotErrorMsgs/Default.htm#CHR0225.htm" target="_blank">Help for error CHR0225</a><br>', 'The IxChariot worker process crashed. Please report it to the Ixia Customer Support.']
+[1580868634.466329] event: {'timestamp': '1580868634.466309', 'event': 'ixchariot_traffic_stopped'}
+[1580868634.481492] Stopping InfluxDbCollector
+[1580868634.481642] Starting proc: /home/antkisel/data/data_collection/dump_influx_event_log.py --start-time 1580866709757000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix
+[1580868634.490304] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device spine1
+[1580868634.497912] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device spine2
+[1580868634.507977] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device spine3
+[1580868634.515296] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device leaf4
+[1580868634.524631] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device leaf5
+[1580868634.531981] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device leaf7
+[1580868634.538833] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device leaf8
+[1580868634.545719] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device dr02
+[1580868634.552986] Starting proc: /home/antkisel/data/data_collection/InfluxDBCollector.py --start-time 1580866828891000000 --end-time 1580868634481000000 --out /home/antkisel/datasets/200205_0138_evtmix/yang_models --device dr03
+[1580868634.559481] Stopping DeviceInfoCollector
+[1580868634.660606] spine3 >> 
+Tue Feb  4 18:10:34.268 PST
+interface Loopback0
+ ipv4 address 2.2.2.2 255.255.255.255
+!
+
+[1580868634.661274] spine3 << conf t
+[1580868635.462939] spine3 >> 
+Tue Feb  4 18:10:34.868 PST
+Current Configuration Session  Line       User     Date                     Lock
+00001000-00001c9d-00000111     netconf    obt      Tue Feb  4 17:39:20 2020 
+[1580868635.462978] spine3 << interface loopback 0
+[1580868635.773819] Retrieving device info: operational
+[1580868635.864108] spine3 << no ip address
+[1580868636.265969] spine3 << ipv4 address 10.10.10.249/32
+[1580868636.667108] spine3 << commit
+[1580868637.870546] spine3 >> 
+Tue Feb  4 18:10:36.876 PST
+[1580868640.280866] event: {'timestamp': '1580868640.280841', 'event': 'set_loopback', 'device': 'spine3', 'interface': 'loopback 0', 'comment': '10.10.10.249/32'}
+[1580868647.440293] Retrieving device info: version
+[1580868647.597676] event: {'timestamp': '1580868647.597655', 'event': 'collect_telemetry', 'device': 'spine1'}
+[1580868647.616578] event: {'timestamp': '1580868647.616562', 'event': 'collect_telemetry', 'device': 'spine2'}
+[1580868647.635836] event: {'timestamp': '1580868647.635820', 'event': 'collect_telemetry', 'device': 'spine3'}
+[1580868647.652660] event: {'timestamp': '1580868647.652649', 'event': 'collect_telemetry', 'device': 'leaf4'}
+[1580868647.670436] event: {'timestamp': '1580868647.670418', 'event': 'collect_telemetry', 'device': 'leaf5'}
+[1580868647.687579] event: {'timestamp': '1580868647.687563', 'event': 'collect_telemetry', 'device': 'leaf7'}
+[1580868647.706766] event: {'timestamp': '1580868647.706752', 'event': 'collect_telemetry', 'device': 'leaf8'}
+[1580868647.723911] event: {'timestamp': '1580868647.723898', 'event': 'collect_telemetry', 'device': 'dr02'}
+[1580868647.741508] event: {'timestamp': '1580868647.741486', 'event': 'collect_telemetry', 'device': 'dr03'}
+[1580868647.758214] Retrieving CDP info
+[1580868651.072883] Stopping Blackhole
+[1580868651.073006] Stopping EcmpHash
+[1580868651.073066] Stopping SimpleInterfaceFlapper
+[1580868651.073097] Stopping ConfigChanger
+[1580868651.073122] Stopping ConfigChanger
+[1580868651.073144] Stopping DeviceConfigBackup
+[1580868651.073231] Waiting for process to finish: 11
+[1580868669.096300] Stopping the session 15107...
+[1580868669.439330] Deleting the session 15107...
+[1580868669.444116] Finalizing InfluxDbCollector
+[1580868669.444149] Finalizing DeviceInfoCollector
+[1580868669.444163] Finalizing Blackhole
+[1580868675.819415] leaf3 << clear bgp *
+[1580868676.220491] leaf3 >> 
+Tue Feb  4 18:11:16.031 PST
+[1580868676.220722] event: {'timestamp': '1580868676.220683', 'event': 'clear_bgp', 'device': 'leaf3'}
+[1580868676.350174] Finalizing EcmpHash
+[1580868681.686416] spine3 << sh run int loopback 0
+[1580868682.288094] spine3 >> 
+Tue Feb  4 18:11:21.896 PST
+interface Loopback0
+ ipv4 address 10.10.10.249 255.255.255.255
+!
+
+[1580868682.288214] spine3 << conf t
+[1580868683.089995] spine3 >> 
+Tue Feb  4 18:11:22.495 PST
+Current Configuration Session  Line       User     Date                     Lock
+00001000-00001c9d-00000111     netconf    obt      Tue Feb  4 17:39:20 2020 
+[1580868683.090059] spine3 << interface loopback 0
+[1580868683.491174] spine3 << no ip address
+[1580868683.892460] spine3 << ipv4 address 2.2.2.2/32
+[1580868684.293737] spine3 << commit
+[1580868685.496239] spine3 >> 
+Tue Feb  4 18:11:24.500 PST
+[1580868687.904015] event: {'timestamp': '1580868687.903995', 'event': 'set_loopback', 'device': 'spine3', 'interface': 'loopback 0', 'comment': '2.2.2.2/32'}
+[1580868687.923347] Finalizing SimpleInterfaceFlapper
+[1580868687.923388] Finalizing ConfigChanger
+[1580868687.923416] Finalizing ConfigChanger
+[1580868687.923427] Finalizing DeviceConfigBackup
+[1580868687.923474] Restoring config on devices ['dr03', 'leaf8', 'dr02', 'leaf4', 'leaf5', 'leaf7', 'spine3']
+[1580868733.093907] DeviceConfigBackup: Saved spine1 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine1_after.xml hash: 6b31db7
+[1580868733.103248] DeviceConfigBackup: Saved spine2 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine2_after.xml hash: b80f94e
+[1580868733.111835] DeviceConfigBackup: Saved spine3 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine3_after.xml hash: b93dfb5
+[1580868733.120549] DeviceConfigBackup: Saved spine5 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine5_after.xml hash: b62a440
+[1580868733.130093] DeviceConfigBackup: Saved leaf4 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_leaf4_after.xml hash: 5ed7a9a
+[1580868733.138727] DeviceConfigBackup: Saved leaf5 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_leaf5_after.xml hash: 7859df8
+[1580868733.145948] DeviceConfigBackup: Saved leaf7 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_leaf7_after.xml hash: 100e939
+[1580868733.152429] DeviceConfigBackup: Saved leaf8 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_leaf8_after.xml hash: eda577a
+[1580868733.161800] DeviceConfigBackup: Saved dr01 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_dr01_after.xml hash: 2b3047a
+[1580868733.170125] DeviceConfigBackup: Saved dr02 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_dr02_after.xml hash: 1fe31a5
+[1580868733.175602] DeviceConfigBackup: Saved dr03 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_dr03_after.xml hash: d130915
+[1580868733.195051] DeviceConfigBackup: Saved spine4-3464 config to /home/antkisel/datasets/200205_0138_evtmix/running_config_spine4-3464_after.xml hash: 17a0f66
+[1580868740.830882] Restored config on devices ['dr03', 'leaf8', 'dr02', 'leaf4', 'leaf5', 'leaf7', 'spine3']
+[1580868740.836681] DONE. Test results are available at /home/antkisel/datasets/200205_0138_evtmix

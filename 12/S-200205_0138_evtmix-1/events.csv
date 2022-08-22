@@ -1,0 +1,28 @@
+timestamp,event,duration,device,interface,comment
+1580866759.328752,apply_device_configs,,,,"Edit subscriptions dr03,leaf8"
+1580866761.900354,apply_device_configs,,,,"Edit subscriptions dr02,leaf4,leaf5,leaf7,spine3"
+1580866828.695159,ixchariot_traffic,7200,,,evtmix
+1580866828.729153,clear_telemetry,,spine1,,
+1580866828.748812,clear_telemetry,,spine2,,
+1580866828.775160,clear_telemetry,,spine3,,
+1580866828.786696,clear_telemetry,,leaf4,,
+1580866828.798290,clear_telemetry,,leaf5,,
+1580866828.809802,clear_telemetry,,leaf7,,
+1580866828.822553,clear_telemetry,,leaf8,,
+1580866828.845549,clear_telemetry,,dr02,,
+1580866828.868566,clear_telemetry,,dr03,,
+1580867428.743362,shutdown_interface,,leaf7,HundredGigE0/0/0/18,
+1580868028.759731,enable_interface,,leaf7,HundredGigE0/0/0/18,
+1580868634.466309,ixchariot_traffic_stopped,,,,
+1580868640.280841,set_loopback,,spine3,loopback 0,10.10.10.249/32
+1580868647.597655,collect_telemetry,,spine1,,
+1580868647.616562,collect_telemetry,,spine2,,
+1580868647.635820,collect_telemetry,,spine3,,
+1580868647.652649,collect_telemetry,,leaf4,,
+1580868647.670418,collect_telemetry,,leaf5,,
+1580868647.687563,collect_telemetry,,leaf7,,
+1580868647.706752,collect_telemetry,,leaf8,,
+1580868647.723898,collect_telemetry,,dr02,,
+1580868647.741486,collect_telemetry,,dr03,,
+1580868676.220683,clear_bgp,,leaf3,,
+1580868687.903995,set_loopback,,spine3,loopback 0,2.2.2.2/32
