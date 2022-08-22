@@ -1,0 +1,2083 @@
+{
+  "devices": {
+    "dr01": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "cdp",
+        "target_addr": "172.31.21.0",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.21.2",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "cdp",
+        "target_addr": "172.31.22.0",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "cdp",
+        "target_addr": "172.31.1.52",
+        "target_device": "rswA5",
+        "target_port": "Ethernet1/13"
+      },
+      "HundredGigE0/0/0/23": {
+        "data_source": "cdp",
+        "target_addr": "172.31.1.54",
+        "target_device": "rswA5",
+        "target_port": "Ethernet1/14"
+      },
+      "HundredGigE0/0/0/3": {
+        "data_source": "cdp",
+        "target_addr": "172.31.22.2",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "cdp",
+        "target_addr": "172.31.23.0",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.23.2",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/1/0/22": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA5",
+        "target_port": "Ethernet1/15"
+      },
+      "HundredGigE0/1/0/23": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA5",
+        "target_port": "Ethernet1/16"
+      },
+      "HundredGigE0/1/0/32": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr03",
+        "target_port": "Hu0/1/0/0"
+      },
+      "HundredGigE0/1/0/33": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr03",
+        "target_port": "Hu0/1/0/1"
+      },
+      "HundredGigE0/1/0/34": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr03",
+        "target_port": "Hu0/1/0/2"
+      },
+      "HundredGigE0/1/0/35": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr03",
+        "target_port": "Hu0/1/0/3"
+      },
+      "HundredGigE0/2/0/34": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "sain-sj09-pe1",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/2/0/35": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "sain-sj09-pe1",
+        "target_port": "HundredGigE0/0/0/0"
+      }
+    },
+    "dr02": {
+      "FortyGigE0/1/0/6": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "sswB3",
+        "target_port": "Ethernet2/15"
+      },
+      "HundredGigE0/0/0/0": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/31"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswB1",
+        "target_port": "Ethernet1/33"
+      },
+      "HundredGigE0/0/0/23": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswB1",
+        "target_port": "Ethernet1/34"
+      },
+      "HundredGigE0/0/0/3": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/31"
+      },
+      "HundredGigE0/0/0/34": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA4",
+        "target_port": "Ethernet1/29"
+      },
+      "HundredGigE0/0/0/35": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA4",
+        "target_port": "Ethernet1/30"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/31"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/31"
+      },
+      "HundredGigE0/1/0/0": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr03",
+        "target_port": "Hu0/1/0/32"
+      },
+      "HundredGigE0/1/0/1": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr03",
+        "target_port": "Hu0/1/0/33"
+      },
+      "HundredGigE0/1/0/10": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "sain-sj09-pe2",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/1/0/2": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr03",
+        "target_port": "Hu0/1/0/34"
+      },
+      "HundredGigE0/1/0/22": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswB1",
+        "target_port": "Ethernet1/35"
+      },
+      "HundredGigE0/1/0/23": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswB1",
+        "target_port": "Ethernet1/36"
+      },
+      "HundredGigE0/1/0/34": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA4",
+        "target_port": "Ethernet1/31"
+      }
+    },
+    "dr03": {
+      "FortyGigE0/0/0/34": {
+        "data_source": "cdp",
+        "target_addr": "172.31.3.1",
+        "target_device": "sswB3",
+        "target_port": "Ethernet2/1"
+      },
+      "FortyGigE0/0/0/35": {
+        "data_source": "cdp",
+        "target_addr": "172.31.3.1",
+        "target_device": "sswB3",
+        "target_port": "Ethernet2/2"
+      },
+      "FortyGigE0/1/0/30": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "sswB3",
+        "target_port": "Ethernet2/3"
+      },
+      "FortyGigE0/1/0/31": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "sswB3",
+        "target_port": "Ethernet2/4"
+      },
+      "HundredGigE0/0/0/0": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/26"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "cdp",
+        "target_addr": "172.31.28.4",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/26"
+      },
+      "HundredGigE0/1/0/0": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/1/0/32"
+      },
+      "HundredGigE0/1/0/1": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/1/0/33"
+      },
+      "HundredGigE0/1/0/2": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/1/0/34"
+      },
+      "HundredGigE0/1/0/3": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/1/0/35"
+      },
+      "HundredGigE0/1/0/32": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/1/0/0"
+      },
+      "HundredGigE0/1/0/33": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/1/0/1"
+      },
+      "HundredGigE0/1/0/34": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/1/0/2"
+      }
+    },
+    "leaf1": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "cdp",
+        "target_addr": "172.31.21.1",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.21.3",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.4",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.6",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/3"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/3"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/3"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "cdp",
+        "target_addr": "-",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "cdp",
+        "target_addr": "172.31.34.0",
+        "target_device": "spine4-3464",
+        "target_port": "Ethernet1/1"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.0",
+        "target_device": "spine5",
+        "target_port": "HundredGigE1/0/1"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "cdp",
+        "target_addr": "172.31.21.114",
+        "target_device": "rswA5",
+        "target_port": "Ethernet1/32"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "cdp",
+        "target_addr": "172.31.21.13",
+        "target_device": "rswA6",
+        "target_port": "Ethernet1/13"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.0",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.2",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.4",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.6",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/3"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.0",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.2",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/1"
+      }
+    },
+    "leaf2": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "cdp",
+        "target_addr": "172.31.22.1",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.22.3",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/0/0/3"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.12",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.14",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "cdp",
+        "target_addr": "2.2.2.2",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "cdp",
+        "target_addr": "172.31.34.2",
+        "target_device": "spine4-3464",
+        "target_port": "Ethernet1/5"
+      },
+      "HundredGigE0/0/0/23": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.2",
+        "target_device": "spine5",
+        "target_port": "HundredGigE1/0/5"
+      },
+      "HundredGigE0/0/0/28": {
+        "data_source": "cdp",
+        "target_addr": "172.31.22.114",
+        "target_device": "rswA5",
+        "target_port": "Ethernet1/29"
+      },
+      "HundredGigE0/0/0/29": {
+        "data_source": "cdp",
+        "target_addr": "172.31.22.13",
+        "target_device": "rswA6",
+        "target_port": "Ethernet1/14"
+      },
+      "HundredGigE0/0/0/3": {
+        "data_source": "cdp",
+        "target_addr": "-",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.8",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.10",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.12",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.14",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.8",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.10",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/5"
+      }
+    },
+    "leaf3": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "cdp",
+        "target_addr": "172.31.23.1",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.23.3",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.20",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.22",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "cdp",
+        "target_addr": "172.31.22.22",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/3"
+      },
+      "HundredGigE0/0/0/21": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.4",
+        "target_device": "spine5",
+        "target_port": "HundredGigE1/0/9"
+      },
+      "HundredGigE0/0/0/3": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "cdp",
+        "target_addr": "172.31.23.114",
+        "target_device": "rswA5",
+        "target_port": "Ethernet1/30"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "cdp",
+        "target_addr": "172.31.23.13",
+        "target_device": "rswA6",
+        "target_port": "Ethernet1/15"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.16",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.18",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.20",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.22",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.16",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.18",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/9"
+      }
+    },
+    "leaf4": {
+      "HundredGigE0/0/0/1": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr01",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/3"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine5",
+        "target_port": "Hu1/0/13"
+      },
+      "HundredGigE0/0/0/26": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr03",
+        "target_port": "Hu0/0/0/0"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA5",
+        "target_port": "Ethernet1/31"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA6",
+        "target_port": "Ethernet1/16"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/13"
+      }
+    },
+    "leaf5": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswB1",
+        "target_port": "Ethernet1/13"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA4",
+        "target_port": "Ethernet1/13"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/18"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/19"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/16"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/17"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/18"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/19"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/16"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/17"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/18"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/19"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine5",
+        "target_port": "Hu1/0/17"
+      },
+      "HundredGigE0/0/0/28": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/28"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/0/0/0"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/0/0/1"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/16"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/17"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/18"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/19"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/16"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/17"
+      }
+    },
+    "leaf6": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "cdp",
+        "target_addr": "172.31.26.31",
+        "target_device": "rswB1",
+        "target_port": "Ethernet1/14"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.26.41",
+        "target_device": "rswA4",
+        "target_port": "Ethernet1/14"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.44",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/22"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.46",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/23"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/20"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/21"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/22"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/23"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/20"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/21"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/22"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/23"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.10",
+        "target_device": "spine5",
+        "target_port": "HundredGigE1/0/21"
+      },
+      "HundredGigE0/0/0/28": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/28"
+      },
+      "HundredGigE0/0/0/29": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/28"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/0/0/2"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/0/0/3"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.40",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/20"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.42",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/21"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.44",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/22"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.46",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/23"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.40",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/20"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.42",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/21"
+      }
+    },
+    "leaf7": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswB1",
+        "target_port": "Ethernet1/15"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "rswA4",
+        "target_port": "Ethernet1/15"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/26"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/27"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/24"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/25"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/26"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/27"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/24"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/25"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/26"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/27"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine4-3464",
+        "target_port": "Ethernet1/41"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine5",
+        "target_port": "Hu1/0/25"
+      },
+      "HundredGigE0/0/0/28": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/29"
+      },
+      "HundredGigE0/0/0/29": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/28"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/24"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/25"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/26"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/27"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/24"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/25"
+      }
+    },
+    "leaf8": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "cdp",
+        "target_addr": "172.31.28.31",
+        "target_device": "rswB1",
+        "target_port": "Ethernet1/17"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.28.41",
+        "target_device": "rswA4",
+        "target_port": "Ethernet1/16"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.60",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.62",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/31"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/28"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/29"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine3",
+        "target_port": "HundredGigE0/0/0/31"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/28"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/29"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "spine6",
+        "target_port": "HundredGigE0/0/0/31"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "cdp",
+        "target_addr": "172.31.34.6",
+        "target_device": "spine4-3464",
+        "target_port": "Ethernet1/45"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.14",
+        "target_device": "spine5",
+        "target_port": "HundredGigE1/0/29"
+      },
+      "HundredGigE0/0/0/26": {
+        "data_source": "cdp",
+        "target_addr": "172.31.28.5",
+        "target_device": "dr03",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/0/0/28": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/29"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "dr02",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.56",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/28"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.58",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/29"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.60",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/30"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.62",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/31"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.56",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/28"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.58",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/29"
+      }
+    },
+    "spine1": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.1",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.3",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.21",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.23",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.5",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/20": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.41",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/21": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.43",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.45",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/23": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.47",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/25": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/26": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/27": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/28": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.57",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/29": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.59",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/3": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.7",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.61",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.63",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/32": {
+        "data_source": "cdp",
+        "target_addr": "10.10.10.10",
+        "target_device": "spine2",
+        "target_port": "HundredGigE0/0/0/32"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.9",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.11",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/5"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.13",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/6"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.15",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/7"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.17",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/4"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "cdp",
+        "target_addr": "172.31.11.19",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/5"
+      }
+    },
+    "spine2": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.1",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.3",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.21",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.23",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.5",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/20": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.41",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/21": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.43",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.45",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/23": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.47",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/25": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/26": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/27": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/28": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.57",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/29": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.59",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/3": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.7",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.61",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.63",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/32": {
+        "data_source": "cdp",
+        "target_addr": "2.2.2.2",
+        "target_device": "spine1",
+        "target_port": "HundredGigE0/0/0/32"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.9",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.11",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/9"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.13",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/10"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.15",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/11"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.17",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/8"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "cdp",
+        "target_addr": "172.31.12.19",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/9"
+      }
+    },
+    "spine3": {
+      "HundredGigE0/0/0/0": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/1": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/10": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/11": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/12": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/13": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/14": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/15": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf4",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/16": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/17": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/18": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/19": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf5",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/2": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/20": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/21": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/22": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/23": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/24": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/25": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/26": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/27": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf7",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/28": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/29": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/3": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/30": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/31": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/4": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/5": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/13"
+      },
+      "HundredGigE0/0/0/6": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/14"
+      },
+      "HundredGigE0/0/0/7": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/15"
+      },
+      "HundredGigE0/0/0/8": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/12"
+      },
+      "HundredGigE0/0/0/9": {
+        "data_source": "lldp",
+        "target_addr": "",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/13"
+      }
+    },
+    "spine4-3464": {
+      "eth1/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.34.1",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/22"
+      },
+      "eth1/45": {
+        "data_source": "cdp",
+        "target_addr": "172.31.34.7",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/22"
+      },
+      "eth1/5": {
+        "data_source": "cdp",
+        "target_addr": "172.31.34.3",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/22"
+      },
+      "mgmt0": {
+        "data_source": "cdp",
+        "target_addr": "fe80::214:f2ff:fe9b:d0c1",
+        "target_device": "OOB-RB-04.cisco.com",
+        "target_port": "GigabitEthernet2/0/18"
+      }
+    },
+    "spine5": {
+      "GigabitEthernet0/0": {
+        "data_source": "cdp",
+        "target_addr": "-",
+        "target_device": "oobB5",
+        "target_port": "GigabitEthernet1/1"
+      },
+      "HundredGigE1/0/1": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.1",
+        "target_device": "leaf1",
+        "target_port": "HundredGigE0/0/0/24"
+      },
+      "HundredGigE1/0/21": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.11",
+        "target_device": "leaf6",
+        "target_port": "HundredGigE0/0/0/24"
+      },
+      "HundredGigE1/0/29": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.15",
+        "target_device": "leaf8",
+        "target_port": "HundredGigE0/0/0/24"
+      },
+      "HundredGigE1/0/5": {
+        "data_source": "cdp",
+        "target_addr": "-",
+        "target_device": "leaf2",
+        "target_port": "HundredGigE0/0/0/23"
+      },
+      "HundredGigE1/0/9": {
+        "data_source": "cdp",
+        "target_addr": "172.31.15.5",
+        "target_device": "leaf3",
+        "target_port": "HundredGigE0/0/0/24"
+      }
+    }
+  },
+  "errors": []
+}
