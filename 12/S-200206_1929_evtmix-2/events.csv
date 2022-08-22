@@ -1,0 +1,5 @@
+timestamp,event,duration,device,interface,comment
+1581018013.635716,ixchariot_traffic,,,,
+1581018063.828782,shutdown_interface,,leaf7,HundredGigE0/0/0/4,
+1581018663.725302,enable_interface,,leaf7,HundredGigE0/0/0/4,
+1581019063.635716,ixchariot_traffic_stopped,,,,
