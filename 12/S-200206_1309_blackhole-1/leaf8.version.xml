@@ -1,0 +1,19 @@
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <software-install xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-spirit-install-instmgr-oper">
+   <version>
+    <package>
+     <name>IOS-XR</name>
+     <version>6.5.3</version>
+     <built-by>ahoang</built-by>
+     <built-on>Tue Mar 26 06:46:13 PDT 2019</built-on>
+     <build-host>iox-ucs-027</build-host>
+     <workspace>/auto/srcarchive13/prod/6.5.3/ncs5500/ws</workspace>
+    </package>
+    <location>/opt/cisco/XR/packages/</location>
+    <copyright-info>Cisco IOS XR Software, Version 6.5.3
+Copyright (c) 2013-2019 by Cisco Systems, Inc.</copyright-info>
+    <hardware-info>cisco NCS-5500 () processor</hardware-info>
+    <system-uptime>System uptime is 7 weeks 3 days 4 hours 31 minutes</system-uptime>
+   </version>
+  </software-install>
+ </data>

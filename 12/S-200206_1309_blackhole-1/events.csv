@@ -1,0 +1,4 @@
+timestamp,event,duration,device,interface,comment
+1580995181.345217,ixchariot_traffic,,,,
+1580995571.748555,add_blackhole,,leaf3,,destroy 172.31.156.0/24
+1580996421.345217,ixchariot_traffic_stopped,,,,
